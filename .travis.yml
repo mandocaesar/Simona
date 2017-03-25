@@ -5,4 +5,5 @@ install:
   - npm install
   - npm install -g loopback-cli
 script:
-  - npm start
+  - npm test
+  - npm posttest
