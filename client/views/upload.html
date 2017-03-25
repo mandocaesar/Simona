@@ -1,0 +1,48 @@
+﻿<div class="container" ng-controller="app.views.upload as vm" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4">
+            <div class="col-md-12">
+                <div class="btn btn-primary btn-upload"
+                     upload-button
+                     url="/Upload/RetrieveCeisa"
+                     on-upload="uploadStart()"
+                     on-success="uploadSuccess(response,'Ceisa')"
+                     ng-disable="ceisabutton === false"
+                     >Upload Billing
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="col-md-12">
+                <div class="btn btn-primary btn-upload"
+                     upload-button
+                     url="/Upload/RetrieveSSP"
+                     on-upload="uploadStart()"
+                     on-success="uploadSuccess(response,'SSP')"
+                     on-complete="loadCeisa(response)"
+                     ng-disabled="sappbutton === false"
+                     >Upload SSP</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <br />
+    <br/>
+    <div class="row">
+        <div class="col-lg-push-2 col-lg-8 col-lg-pull-2"><button class="btn btn-success" ng-click="process()" style="width: 100%" ng-disabled=false>Process</button></div>
+    </div>
+    <br />
+    <div class="row" style="color:black; margin-top:200px">
+        <div id="grid1" ui-grid="gridOpts" class="grid" ui-grid-auto-resize ui-grid-resize-columns ui-grid-move-columns></div>
+    </div>
+</div>
+<style>
+    .grid {
+    width: 1000px;
+    height: 200px;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+</style>

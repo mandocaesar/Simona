@@ -1,0 +1,44 @@
+<h1>Passenger list</h1>
+<hr>
+<form name="passengerForm" novalidate ng-submit="addPassenger()">
+  <div class="form-group"  ng-class="{'has-error': passengerForm.content.$invalid && passengerForm.content.$dirty}">
+    <input type="text" class="form-control focus" name="content" placeholder="Name" autocomplete="off" required ng-model="newPassenger.Name">
+    <span class="has-error control-label" ng-show="passengerForm.name.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+    
+    <input type="text" class="form-control focus" name="content" placeholder="IDNumber" autocomplete="off" required ng-model="newPassenger.IDNumber">
+    <span class="has-error control-label" ng-show="passengerForm.idNumber.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+    
+    <input type="text" class="form-control focus" name="content" placeholder="Depart From" autocomplete="off" required ng-model="newPassenger.DepartFrom">
+    <span class="has-error control-label" ng-show="passengerForm.departFrom.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+
+    <input type="date" class="form-control focus" name="content" placeholder="Arrive At" autocomplete="off" required ng-model="newPassenger.ArriveAt">
+    <span class="has-error control-label" ng-show="passengerForm.arriveAt.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+
+    <input type="date" class="form-control focus" name="content" placeholder="Depart Time" autocomplete="off" required ng-model="newPassenger.DepartTime">
+    <span class="has-error control-label" ng-show="passengerForm.departTime.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+
+     <input type="text" class="form-control focus" name="content" placeholder="Gender" autocomplete="off" required ng-model="newPassenger.Gender">
+    <span class="has-error control-label" ng-show="passengerForm.gender.$invalid && passengerForm.content.$dirty">
+      Content is required.
+    </span>
+
+  </div>
+  <button class="btn btn-default" ng-disabled="passengerForm.$invalid">Add</button>
+</form>
+<hr>
+<div>Number of Passenger :  {{numberOfPassenger}}</div>
+<div class="list-group">
+  <a class="list-group-item" ng-repeat="passenger in passengers">{{passenger.Name}}&nbsp;
+    <i class="glyphicon glyphicon-remove pull-right"
+        ng-click="removePassenger(passenger)"></i></a>
+</div>

@@ -1,0 +1,398 @@
+﻿<div ng-controller="app.views.home as vm">
+   <div class="row" style="background-color:#05436a">
+        <div class="col-lg-2 col-md-2" style="background-color:#05436a">
+            <div class="row" style="align-content:center; text-align:center;color:black">
+                <label for="singleSelect" style="color:white"> Periode </label><br>
+                <select name="singleSelect" ng-model="singleSelect" ng-change="update()">
+                    <option ng-repeat="option in months" value="{{option | moment: 'format': 'MM/DD/YYYY'}}">{{option | moment: 'format': 'MMMM YYYY' }}</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10" style="background-color:#0b87d5; align-content:center; text-align:center;font-size:x-large;">
+            <div id="div1" style="height: 300px;position:relative;">
+                <div id="div2" style="max-height:100%;overflow:auto;">
+                    <div id="div3" style="width:1200px;">
+                        <div class="row" style="align-content:flex-end; text-align:left;padding-top:10px;padding-left: 20px;">{{singleSelect | moment: 'format': 'MMMM YYYY'}} / 01 Jan 2016 - Sekarang</div>
+                        <div class="row" style="padding:20px;">
+                            <div class="col-lg-1 col-md-1">{{dashboard.PIB}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.PIBB}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.PIBK}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.PPKP}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.CD}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.PE}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.SPKPBM}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.PBK}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.CK1}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.CK1A}}</div>
+                            <div class="col-lg-1 col-md-1">{{dashboard.CK5}}</div>
+                        </div>
+                        <div class="row" style="padding:20px;padding-top:-10px;font-size:small">
+                            <div class="col-lg-1 col-md-1">PIB</div>
+                            <div class="col-lg-1 col-md-1">PIB Berkala</div>
+                            <div class="col-lg-1 col-md-1">PIBK</div>
+                            <div class="col-lg-1 col-md-1">PPKP</div>
+                            <div class="col-lg-1 col-md-1">CD</div>
+                            <div class="col-lg-1 col-md-1">PE</div>
+                            <div class="col-lg-1 col-md-1">SPKPBM</div>
+                            <div class="col-lg-1 col-md-1">PBK</div>
+                            <div class="col-lg-1 col-md-1">CK-1</div>
+                            <div class="col-lg-1 col-md-1">CK-1A</div>
+                            <div class="col-lg-1 col-md-1">CK-5</div>
+                        </div>
+                        <div class="row" style="font-size:12px;padding:20px;font-size:small">
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PIB2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PIBB2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PIBK2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PPKP2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.CD2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PE2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.SPKPBM2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.PBK}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.CK12}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.CK1A2}}</div>
+                            </div>
+                            <div class="col-lg-1 col-md-1">
+                                <div class="row">BULAN SEBELUMNYA</div>
+                                <div class="row">{{dashboard.CK5}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" style="background-color:#83d3fd; color:black; padding:10px ">
+        <div class="col-lg-4 col-md-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Target 2016 :</div>
+                <div class="col-lg-6 col-md-6">{{target | currency : "Rp"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Target PABEAN :</div>
+                <div class="col-lg-6 col-md-6">{{targetPabean | currency : "Rp"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Target CUKAI :</div>
+                <div class="col-lg-6 col-md-6">{{targetCukai | currency : "Rp"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Total Capaian :</div>
+                <div class="col-lg-6 col-md-6">{{totalCapaian | currency : "Rp"}}</div>
+            </div>
+            <div class="row" style="margin-top:40px">
+                <div class="col-lg-12 col-md-12" style="align-content:center; text-align:center;color:black">
+                    <ng-gauge size="100" type="full" thick="5" value="persenTotalCapaian" cap="round" label="" foreground-color="#0b87d5" background-color="rgba(255,255,255, 0.4)" append="%"></ng-gauge>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Target PABEAN PER BULAN:</div>
+                <div class="col-lg-6 col-md-6">{{targetPabeanPerBulan | currency : "Rp"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">  CAPEAN BULAN {{singleSelect | moment: 'format': 'MMMM YYYY'}} :</div>
+                <div class="col-lg-6 col-md-6">{{Data.pPabean.total | currency : "Rp"}}</div>
+            </div>
+            <div class="row" style="margin-top:40px">
+                <div class="col-lg-12 col-md-12" style="align-content:center; text-align:center;color:black">
+                    <ng-gauge size="100" type="full" thick="5" value="((Data.pPabean.total/targetPabeanPerBulan) * 100) | number:0" cap="round" label="" foreground-color="#0b87d5" background-color="rgba(255,255,255, 0.4)" append="%"></ng-gauge>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6"> Target CUKAI PER BULAN:</div>
+                <div class="col-lg-6 col-md-6">{{targetCukaiPerBulan | currency : "Rp"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">  CAPEAN BULAN {{singleSelect | moment: 'format': 'MMMM YYYY'}} :</div>
+                <div class="col-lg-6 col-md-6">{{Data.pCukai.total | currency : "Rp"}}</div>
+            </div>
+            <div class="row" style="margin-top:40px">
+                <div class="col-lg-12 col-md-12" style="align-content:center; text-align:center;color:black">
+                    <ng-gauge size="100" type="full" thick="5" value="((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0" cap="round" label="" foreground-color="#0b87d5" background-color="rgba(255,255,255, 0.4)" append="%"></ng-gauge>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#5bbaf6;">
+        <div class="col-lg-2">
+            <div class="row">
+                <canvas canvas-gauge
+                        id="mygauge1"
+                        data-width="150"
+                        data-height="150"
+                        data-units="Penerimaan Pabean"
+                        data-title=""
+                        data-min-value="0"
+                        data-max-value="100"
+                        data-value="{{Data.pPabean.total | number:0}}"></canvas>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">PEN PABEAN {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row">100%</div>
+                    <div class="row">{{Data.pPabean.total | currency : "Rp"}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5" style="margin-top:10px;">
+            <canvas id="pie" class="chart-bar" chart-data="datapabean" chart-labels="labels" chart-colors="colors" chart-dataset-override="datasetOverride"></canvas>
+        </div>
+        <div class="col-lg-5 col-md-5" style="padding-left:10px">
+            <div class="row">
+                PENERIMAAN PABEAN - {{singleSelect | moment: 'format': 'MMMM YYYY'}}
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-4">Bea Masuk</div>
+                    <div class="col-sm-8"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><uib-progressbar value="(Data.pPabean.beamasuk/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)" type="danger"></uib-progressbar></div>
+                    <div class="col-sm-4">{{Data.pPabean.beamasuk | currency : "Rp"}}</div>
+                    <div class="col-sm-4">{{(Data.pPabean.beamasuk/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)}} %</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">Bea Keluar</div>
+                    <div class="col-sm-8"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><uib-progressbar value="(Data.pPabean.beakeluar/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)" type="warning"></uib-progressbar></div>
+                    <div class="col-sm-4">{{Data.pPabean.beakeluar | currency : "Rp"}}</div>
+                    <div class="col-sm-4">{{(Data.pPabean.beakeluar/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)}} %</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">Pabean Lainnya</div>
+                    <div class="col-sm-8"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><uib-progressbar value="(Data.pPabean.lainnya/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)"></uib-progressbar></div>
+                    <div class="col-sm-4">{{Data.pPabean.lainnya | currency : "Rp"}}</div>
+                    <div class="col-sm-4">{{(Data.pPabean.lainnya/(Data.pPabean.beamasuk + Data.pPabean.beakeluar + Data.pPabean.lainnya)*100 | number:0)}} %</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#73acf7">
+        <div class="col-lg-2">
+            <div class="row">
+                <canvas canvas-gauge
+                        id="mygauge2"
+                        data-width="150"
+                        data-height="150"
+                        data-units="Penerimaan Cukai"
+                        data-title=""
+                        data-min-value="0"
+                        data-max-value="100"
+                        data-value="{{(Data.pCukai.total / targetCukaiPerBulan) * 100 | number:0}}"></canvas>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">PEN CUKAI {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row">{{(Data.pCukai.total / targetCukaiPerBulan) * 100 | number:0}}%</div>
+                    <div class="row">{{Data.pCukai.total | currency : "Rp"}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5" style="margin-top:10px;">
+            <canvas id="pie" class="chart-bar" chart-data="datacukai" chart-labels="labels" chart-colors="colors" chart-dataset-override="datasetOverride"></canvas>
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <div class="row">
+                PENERIMAAN CUKAI - {{singleSelect | moment: 'format': 'MMMM YYYY'}}
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-sm-4">Cukai Hasil Tembakau</div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"><uib-progressbar value="(Data.pCukai.tembakau / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0" type="danger"></uib-progressbar></div>
+                        <div class="col-sm-4">{{Data.pCukai.tembakau | currency : "Rp"}}</div>
+                        <div class="col-sm-4">{{(Data.pCukai.tembakau / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0}} %</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">Cukai Etil Alkohol</div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"><uib-progressbar value="(Data.pCukai.alkohol / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0" type="info"></uib-progressbar></div>
+                        <div class="col-sm-4">{{Data.pCukai.alkohol | currency : "Rp"}}</div>
+                        <div class="col-sm-4">{{(Data.pCukai.alkohol / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0}} %</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">Cukai MMEA</div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"><uib-progressbar value="(Data.pCukai.mmea / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea)) * 100 | number:0" type="warning"></uib-progressbar></div>
+                        <div class="col-sm-4">{{Data.pCukai.mmea | currency : "Rp"}}</div>
+                        <div class="col-sm-4">{{(Data.pCukai.mmea / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0}} %</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">Cukai Lainnya</div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"><uib-progressbar value="(Data.pCukai.tembakau / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0"></uib-progressbar></div>
+                        <div class="col-sm-4">{{Data.pCukai.lainnya | currency : "Rp"}}</div>
+                        <div class="col-sm-4">{{(Data.pCukai.tembakau / (Data.pCukai.tembakau + Data.pCukai.alkohol+Data.pCukai.mmea + Data.pCukai.lainnya)) * 100 | number:0}} %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#9ce2ad">
+        <div class="col-lg-2">
+            <div class="row">
+                <canvas canvas-gauge
+                        id="mygauge3"
+                        data-width="150"
+                        data-height="150"
+                        data-units="Data Penerimaan Pajak"
+                        data-title=""
+                        data-min-value="0"
+                        data-max-value="100"
+                        data-value="{{(Data.pPajak.total / targetPajakPerBulan) * 100 | number:0}}"></canvas>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">PEN PAJAK {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row">{{(Data.pPajak.total / targetPajakPerBulan) * 100  | number:0}}%</div>
+                    <div class="row">{{Data.pPajak.total | currency : "Rp"}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5" style="margin-top:10px;">
+            <canvas id="pie" class="chart-bar" chart-data="datapajak" chart-labels="labels" chart-colors="colors" chart-dataset-override="datasetOverride"></canvas>
+        </div>
+        <div class="col-lg-5 col-md-5">
+            <div class="row">
+                PENERIMAAN PAJAK - {{singleSelect | moment: 'format': 'MMMM YYYY'}}
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-sm-4">PPN Impor</div>
+                            <div class="col-sm-8"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4"><uib-progressbar value="(Data.pPajak.ppnimpor/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100| number:0" type="danger"></uib-progressbar></div>
+                            <div class="col-sm-4">{{Data.pPajak.ppnimpor | currency : "Rp"}}</div>
+                            <div class="col-sm-4">{{(Data.pPajak.ppnimpor/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">PPN BM Impor</div>
+                            <div class="col-sm-8"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4"><uib-progressbar value="(Data.pPajak.ppnbm/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100| number:0" type="warning"></uib-progressbar></div>
+                            <div class="col-sm-4">{{Data.pPajak.ppnbm | currency : "Rp"}}</div>
+                            <div class="col-sm-4">{{(Data.pPajak.ppnbm/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">PPH pasal 22 Impor</div>
+                            <div class="col-sm-8"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4"><uib-progressbar value="(Data.pPajak.pph22/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100| number:0" type="info"></uib-progressbar></div>
+                            <div class="col-sm-4">{{Data.pPajak.pph22 | currency : "Rp"}}</div>
+                            <div class="col-sm-4">{{(Data.pPajak.pph22/(Data.pPajak.ppntembakau +Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>                           
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">PPBN Cukai Hasil Tembakau</div>
+                            <div class="col-sm-8"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4"><uib-progressbar value="(Data.pPajak.ppntembakau/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100| number:0"></uib-progressbar></div>
+                            <div class="col-sm-4">{{Data.pPajak.ppntembakau | currency : "Rp"}}</div>
+                            <div class="col-sm-4">{{(Data.pPajak.ppntembakau/(Data.pPajak.ppntembakau +Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#73acf7;color:black">
+        <div class="col-ls-8 col-md-8 col-xs-8">
+            <div class="row">
+                Devisa Impor
+            </div>
+            <div class="row" style="">
+                <div class="col-md-4" style="background-color:white;border-color:yellow;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
+                <div class="col-md-4" style="background-color:transparent;border-color:yellow;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
+                <div class="col-md-2" style="background-color:white;border-color:yellow;border-right-style:solid;border-top-style:solid;border-bottom-style:solid">55,555,555</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">Devisa Bayar</div>
+                    <div class="row">Devisa Bebas</div>
+                    <div class="row">Devisa Ditanggung Pemerintah</div>
+                    <div class="row">Devisa Ditangguhkan</div>
+                </div>
+                <div class="col-md-2" style="background-color:white">
+                    <div class="row">10000</div>
+                    <div class="row">10000</div>
+                    <div class="row">10000</div>
+                    <div class="row">10000</div>
+                </div>
+            </div>
+            <div class="row">
+                Devisa Ekspor
+            </div>
+            <div class="row" style="">
+                <div class="col-md-4" style="background-color:white;border-color:blue;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
+                <div class="col-md-4" style="background-color:transparent;border-color:blue;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
+                <div class="col-md-2" style="background-color:white;border-color:blue;border-right-style:solid;border-top-style:solid;border-bottom-style:solid">56,555,555</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<style>
+    .chartjs-hidden-iframe {
+        max-width: 70% !important;
+    }
+
+    .chart-bar {
+        max-width: 80% !important;
+    }
+</style>
+
+<!-- /#page-wrapper -->

@@ -1,0 +1,160 @@
+﻿<div ng-controller="app.views.cukai as vm">
+    <div class="row" style="background-color:#05436a;font-size:smaller;">
+        <div class="col-lg-2 col-md-2" style="background-color:#05436a;font-size:smaller;">
+            <div class="row" style="align-content:center; text-align:center;color:black">
+                <label for="singleSelect" style="color:white"> Periode </label><br>
+                <select name="singleSelect" ng-model="singleSelect" ng-change="update()">
+                    <option ng-repeat="option in months" value="{{option | moment: 'format': 'MM/DD/YYYY'}}">{{option | moment: 'format': 'MMMM YYYY' }}</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10" style="background-color:#0b87d5;">
+            <div class="row" style="color:yellow">
+                DETAIL PENERIMAAN CUKAI<br />
+                {{singleSelect | moment: 'format': 'MMMM YYYY'}}
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">TARGET TAHUN 2016</div>
+                    <div class="row">TOTAL CAPAIAN S/D {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row">TARGET BULAN {{singleSelect | moment: 'format': 'MMMM'}}</div>
+                    <div class="row">REALISASI PENERIMAAN PABEAN</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">{{target | currency : "Rp"}}</div>
+                            <div class="row">{{totalCapaian | currency : "Rp"}}</div>
+                            <div class="row">{{targetBulan | currency : "Rp"}}</div>
+                            <div class="row">{{realisasi | currency : "Rp"}}</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">{{persenTahun}} %</div>
+                            <div class="row">{{persenBulan}} %</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="div1" style="height: 300px;position:relative;">
+                    <div id="div2" style="max-height:100%;overflow:auto;">
+                        <div id="div3" style="width:1200px;">
+                            <div class="row" style="align-content:flex-end; text-align:left;padding-top:10px">{{singleSelect | moment: 'format': 'MMMM YYYY'}} / 01 Jan 2016 - Sekarang</div>
+                            <div class="row" style="padding:20px;">
+                                <div class="col-lg-1 col-md-1">{{dashboard.PIB}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PIBB}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PIBK}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PPKP}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.CD}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PE}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.SPKPBM}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PBK}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.CK1}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.CK1A}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.CK5}}</div>
+                            </div>
+                            <div class="row" style="padding:20px;padding-top:-10px;font-size:small">
+                                <div class="col-lg-1 col-md-1">PIB</div>
+                                <div class="col-lg-1 col-md-1">PIB Berkala</div>
+                                <div class="col-lg-1 col-md-1">PIBK</div>
+                                <div class="col-lg-1 col-md-1">PPKP</div>
+                                <div class="col-lg-1 col-md-1">CD</div>
+                                <div class="col-lg-1 col-md-1">PE</div>
+                                <div class="col-lg-1 col-md-1">SPKPBM</div>
+                                <div class="col-lg-1 col-md-1">PBK</div>
+                                <div class="col-lg-1 col-md-1">CK-1</div>
+                                <div class="col-lg-1 col-md-1">CK-1A</div>
+                                <div class="col-lg-1 col-md-1">CK-5</div>
+                            </div>
+                            <div class="row" style="font-size:12px;padding:20px;font-size:small">
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PIB2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PIB2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PIBB2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PIBB2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PIBK2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PIBK2P }} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PPKP2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PPKP2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.CD2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.CD2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PE2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PE2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.SPKPBM2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.SPKPBM2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.PBK2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PBK2P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.CK12 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.CK12P}} %</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.CK1A2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.CK1A2P}}</div>
+                                </div>
+                                <div class="col-lg-1 col-md-1">
+                                    <div class="row">{{dashboard.CK5 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.CK5P}} %</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#83d3fd; color:black; padding:10px;height:500px;">
+       <div> DETAIL PENERIMAAN BERDASARKAN DOKUMEN </div>
+        <div class="col-md-6 col-lg-6">
+            <div id="grid1" ui-grid="gridOpts2" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <canvas id="line" class="chart chart-line" chart-data="data"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+    </div>
+    <div class="row" style="background-color:#5bbaf6;color:black; padding:10px;height:500px;">
+        <div style="color:white"> DETAIL PIB </div>
+         <div class="col-md-6 col-lg-6">
+            <div id="grid2" ui-grid="gridOpts3" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <canvas id="line" class="chart chart-line" chart-data="data"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+    </div>
+    <div class="row" style="background-color:#73acf7;color:black; padding:10px;height:500px;">
+        <div style="color:white"> DETAIL PIBK </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div id="grid3" ui-grid="gridOpts3" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <canvas id="line" class="chart chart-line" chart-data="data"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+    </div>
+</div>
+

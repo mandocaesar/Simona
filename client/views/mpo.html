@@ -1,0 +1,863 @@
+﻿<div class="container" ng-controller="app.views.mpo as vm" style="margin-top: 30px;">
+    <div class="container" id="bypassme">
+        <div class="row">
+            <div class="col-md-2">Periode</div>
+            <div class="col-md-4">
+                <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options" jm-dp-refresh-view="dateUpdate" custom-class="dayClass(date, mode)">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4"><span class="btn btn-success" ng-click="loadReport()">Generate Report</span></div>
+                    <div class="col-md-4"><span class="btn btn-success" ng-click="saveMpo()">Save</span></div>
+                    <div class="col-md-4"><span class="btn btn-success" ng-click="generate()">Generate PDF</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <H1>Cetak Laporan Penerimaan</H1>
+    <table width="800" border="0" align="center" cellpadding="1" cellspacing="1" class="box08putih" id="report">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="64%">&nbsp;</td>
+                        <td colspan="3" class="Text"><strong>Lampiran I :</strong></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td width="15%" class="Text">
+                            <div align="left">Surat Dirjen</div>
+                        </td>
+                        <td width="2%" class="Text">
+                            <div align="center">:</div>
+                        </td>
+
+                        <td width="19%" class="Text">S-21/BC/2008</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">
+                            <div align="left">Tanggal </div>
+                        </td>
+                        <td class="Text">
+                            <div align="center">: </div>
+                        </td>
+
+                        <td class="Text">{{Data.periode}} </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+
+            <td align="center" class="TextBold">
+                REKAPITULASI LAPORAN HARIAN KANTOR PELAYANAN
+                UTAMA BEA DAN CUKAI /
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="TextBold">KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI</td>
+        </tr>
+        <tr>
+            <td align="center" class="tinyPutihBold"><hr /></td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="gray" class="tinyPutihBold">
+                <table width="95%" border="0" align="center" cellpadding="2" cellspacing="1">
+                    <tr>
+
+                        <td width="34%" class="TextBold">Nama Kantor KPUBC/KPPBC</td>
+
+                        <td width="1%" align="left" class="Text">:</td>
+
+                        <td width="65%" class="TextBoldBiru"><strong> 070500 - KPPBC Juanda</strong></td>
+                    </tr>
+                    <tr>
+
+                        <td class="TextBold">Periode Laporan</td>
+                        <td class="Text">:</td>
+
+                        <td class="TextBoldBiru">{{Data.periode}}</td>
+                    </tr>
+                    <tr>
+
+                        <td class="TextBold">Tanggal Cetak</td>
+                        <td class="Text">:</td>
+                        <td valign="bottom" class="TextBoldBiru">{{Data.tanggalCetak}}</td>
+                    </tr>
+                    <tr>
+
+                        <td class="TextBold">&nbsp;</td>
+
+                        <td class="Text">&nbsp;</td>
+
+                        <td valign="bottom" class="Text">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="tinyPutihBold"></td>
+        </tr>
+        <tr>
+            <td align="center" class="Text">
+                <table width="95%" border="0" align="center" cellpadding="1" cellspacing="1">
+                    <tr>
+                        <td colspan="7" align="center" class="TextBold"><hr></td>
+                    </tr>
+                    <tr>
+                        <td width="3%" align="center" class="TextBold">I.</td>
+                        <td colspan="6" class="TextBold">LAPORAN REALISASI PENERIMAAN</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td width="2%" align="center" class="Text">A.</td>
+                        <td colspan="2" class="Text">PENERIMAAN PABEAN </td>
+                        <td colspan="3" class="TextBold">
+                            <table width="100%" border="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        {{Data.pPabean.total | currency:"Rp"}}
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td width="3%" class="Text">1.</td>
+                        <td width="33%" class="Text">Dibayar</td>
+                        <td align="right" class="Text">&nbsp;</td>
+                        <td width="20%" align="right" class="Text">&nbsp; </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td width="3%" class="Text">&nbsp;</td>
+                        <td width="33%" class="Text">a. Bea Masuk</td>
+                        <td align="right" class="Text">Rp </td>
+                        <td width="20%" align="right" class="Text">
+                            {{Data.pPabean.beamasuk | currency:" "}}
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">b. Bea Keluar (Nilai Pungutan Ekspor)</td>
+                        <td align="right" class="Text">Rp</td>
+                        <td width="20%" align="right" class="Text"><span class="Text">{{Data.pPabean.beakeluar | currency:" "}}</span></td>
+                        <td align="right" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text"> c. Pabean Lainnya </td>
+                        <td align="right" class="Text">Rp </td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.pPabean.lainnya | currency:" "}}
+                            </span>
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td width="3%" class="Text">2.</td>
+                        <td width="33%" class="Text">Bea Masuk Ditanggung Pemerintah</td>
+                        <td align="right" class="Text">Rp </td>
+                        <td width="20%" align="right" class="Text">
+                            {{Data.pPabean.beamasukDitanggung | currency:" "}}
+                            <span class="Text"></span>
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr style="page-break-before: always">
+                        <td>&nbsp;</td>
+                        <td align="center" class="Text">B.</td>
+                        <td colspan="2" class="Text">PENERIMAAN CUKAI</td>
+                        <td colspan="3" class="TextBold">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        {{Data.pCukai.total | currency:"Rp"}}
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Cukai Hasil Tembakau</td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">{{Data.pCukai.tembakau | currency:" "}}</td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Cukai Etil Alkohol</td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">{{Data.pCukai.alkohol | currency:" "}}</td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">3.</td>
+                        <td class="Text">Cukai MMEA </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">{{Data.pCukai.mmea | currency:" "}}</td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">4.</td>
+                        <td class="Text">Cukai Lainnya </td>
+                        <td align="right" class="Text"> Rp</td>
+                        <td align="right" class="Text">{{Data.pCukai.lainnya | currency:" "}}</td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">C.</td>
+                        <td colspan="2" class="Text">PENERIMAAN PAJAK</td>
+                        <td colspan="3" class="TextBold">&nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Dibayar</td>
+                        <td colspan="3" align="right" class="Text">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        {{Data.pPajak.total | currency:"Rp"}}
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">a. PPN Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.pPajak.ppnimpor | currency:" "}}
+                            </span>
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">b. PPn BM Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.pPajak.bmimpor | currency:" "}}
+                            </span>
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">c. PPh pasal 22 Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.pPajak.pph22 | currency:" "}}
+                            </span>
+                        </td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">d. PPN Cukai Hasil Tembakau </td>
+                        <td align="right" class="Text"> Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.pPajak.ppntembakau | currency:" "}}
+                            </span>
+                        </td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Ditanggung Pemerintah</td>
+                        <td colspan="3" align="right" class="Text">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        Rp 0,00
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">a. PPN Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0,00
+                            </span>
+                        </td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">b. PPn BM Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0,00
+                            </span>
+                        </td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">c. PPh pasal 22 Impor </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0,00
+                            </span>
+                        </td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td align="right" class="Text">&nbsp;</td>
+                        <td align="right" class="Text"><span class="Text"> </span></td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="TextBold">II.</td>
+                        <td colspan="6" class="TextBold">LAPORAN REALISASI IMPOR</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">A.</td>
+                        <td colspan="2" class="Text">DEVISA IMPOR</td>
+                        <td colspan="3" class="TextBold">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        USD
+                                        {{Data.import.devisaImportTotal | currency:" "}}
+                                    </td>
+                                    <td width="52%"> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Devisa Bayar </td>
+                        <td align="right" class="Text">USD</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.devisaBayar" val="{{Data.import.devisaBayar | currency:" "}}" />
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Devisa Bebas </td>
+                        <td align="right" class="Text">USD</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.devisaBebas" val="{{Data.import.devisaBebas | currency:" "}}" />
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">3.</td>
+                        <td class="Text">Devisa Ditanggung Pemerintah </td>
+                        <td align="right" class="Text">USD</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.devisaDitanggung" val="{{Data.import.devisaDitanggung | currency:" "}}" />
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">4.</td>
+                        <td class="Text">Devisa Ditangguhkan </td>
+                        <td align="right" class="Text">USD</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.devisaDitangguhkan" val="{{Data.import.devisaDitangguhkan | currency:" "}}" />
+                        </td>
+                        <td width="8%" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">B.</td>
+                        <td colspan="2" class="Text">BERAT</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Bruto </td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.brutto" ng-pattern="/^\d+$/" />
+                        </td>
+                        <br>
+                        <td align="center" class="tiny">Kg.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Netto </td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.netto" ng-pattern="/^\d+$/" />
+                        </td>
+                        <td align="center" class="tiny">Kg.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">C.</td>
+                        <td colspan="2" class="Text">Dok. IMPOR</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Jumlah Inward manifest </td>
+                        <td class="Text">&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0
+                            </span><span class="kecil"> </span>
+                        </td>
+                        <td align="center" class="tiny">Dok.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Jumlah PIB </td>
+                        <td colspan="3" class="TextBold">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        <input type="text" ng-model="Data.import.jumlahPIB" ng-pattern="/^\d+$/" /> <span class="tiny"><strong>Dok. </strong></span>
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td colspan="2" class="Text">a. Jalur Merah</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.jalurMerah" ng-pattern="/^\d+$/" />
+                        </td>
+                        <td align="center" class="tiny">Dok.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td colspan="2" class="Text">b. Jalur Hijau</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.jalurHijau" ng-pattern="/^\d+$/" />
+                        </td>
+                        <td align="center" class="tiny">Dok.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td colspan="2" class="Text">c. Jalur Prioritas</td>
+                        <td align="right" class="Text">
+                            <input type="text" ng-model="Data.import.jalurPrioritas" ng-pattern="/^\d+$/" />
+                        </td>
+                        <td align="center" class="tiny">Dok.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">3.</td>
+                        <td colspan="2" class="Text">Jumlah PIBT </td>
+                        <td align="right" class="Text">
+                            {{Data.dokImpor.pibt}}
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">4</td>
+                        <td colspan="2" class="Text">Jumlah Dokumen PPKP</td>
+                        <td align="right" class="Text">
+                            {{Data.dokImpor.ppkp}}
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">5</td>
+                        <td colspan="2" class="Text">Jumlah Dokumen Custom Declaration</td>
+                        <td align="right" class="Text">
+                            {{Data.dokImpor.custom}}
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td class="TextBold">III.</td>
+                        <td colspan="6" class="TextBold">LAPORAN REALISASI EKSPOR</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">A.</td>
+                        <td colspan="2" class="Text">DEVISA EKSPOR </td>
+                        <td align="right" class="Text"> USD </td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                {{Data.export.total | currency:" "}}
+                            </span>
+                        </td>
+                        <td width="8%" align="center" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">B.</td>
+                        <td colspan="2" class="Text">BERAT</td>
+                        <td align="right">&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Bruto </td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="text" ng-model="Data.export.exportBrutto" />
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Kg.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Netto </td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="text" ng-model="Data.export.exportNetto" />
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Kg.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">C.</td>
+                        <td colspan="2" class="Text">Dok. EKSPOR</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Jumlah Outward Manifest </td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text"> Jumlah PEB </td>
+                        <td colspan="3" class="TextBold">
+                            <table width="100%" border="0">
+                                <tr>
+                                    <td width="48%" align="right" class="TextBold">
+                                        <input type="number" ng-model="Data.export.jumlahPEB" /> Dok.
+                                    </td>
+                                    <td width="52%">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">a. Umum</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="number" ng-model="Data.export.pebUmum" />
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">b. Terkena Pajak Ekspor</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="number" ng-model="Data.export.pebPajakExport" />
+
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">c. Fasilitas Kemudahan Ekspor</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="number" ng-model="Data.export.pebFasilitas" />
+
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">d. Lainnya</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="number" ng-model="Data.export.pebLainnya" />
+
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td height="25">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">e. Dari TPB</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                <input type="number" ng-model="Data.export.pebTpb" />
+
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td class="TextBold">IV.</td>
+                        <td colspan="6" class="TextBold">LAPORAN PEMESANAN PITA CUKAI</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">A.</td>
+                        <td colspan="2" class="Text">CK 1 (Hasil Tembakau) </td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text"><strong> </strong> </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Nilai Cukai </td>
+                        <td align="right" class="Text">Rp</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0,00
+                            </span>
+                        </td>
+                        <td width="8%" align="center" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text"> Jumlah Dokumen</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0
+                            </span>
+                        </td>
+                        <td width="8%" align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="Text">B.</td>
+                        <td colspan="2" class="Text">CK 1A (MMEA) </td>
+                        <td class="Text">&nbsp;</td>
+                        <td class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">1.</td>
+                        <td class="Text">Nilai Cukai </td>
+                        <td align="right" class="Text">Rp </td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0,00
+                            </span>
+                        </td>
+                        <td width="8%" align="center" class="Text">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="Text">2.</td>
+                        <td class="Text">Jumlah Dokumen</td>
+                        <td>&nbsp;</td>
+                        <td align="right" class="Text">
+                            <span class="Text">
+                                0
+                            </span>
+                        </td>
+                        <td align="center" class="tiny">Dok. </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><hr></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="tinyPutihBold">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <table width="40%" border="0" align="right" cellpadding="0" cellspacing="2">
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td class="Text">Mengetahui</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="Text">
+                                        <table width="75%" border="0">
+                                            <tr>
+                                                <td width="7%">&nbsp;</td>
+                                                <td width="93%" class="Text">Kepala Kantor</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td class="Text">MOCHAMAD MULYONO</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td class="Text">NIP :196808121989121001</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<style>
+    .appointment > button {
+        color: white;
+        background-color: red;
+    }
+
+    input[type=text] {
+        padding: 5px !important;
+        border: 2px solid #ccc !important;
+        -webkit-border-radius: 5px !important;
+        border-radius: 5px !important;
+        background-color: transparent !important;
+    }
+
+    input[type=number] {
+        padding: 5px !important;
+        border: 2px solid #ccc !important;
+        -webkit-border-radius: 5px !important;
+        border-radius: 5px !important;
+        background-color: transparent !important;
+    }
+</style>
