@@ -7,4 +7,3 @@ install:
   - npm install mocha chai chai-http
 script:
   - npm run test
-  - npm run posttest
