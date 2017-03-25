@@ -332,6 +332,164 @@ angular.module('app').controller(controllerId, [
 
         ];
 
+        $scope.gridOpts4 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [{
+                    name: 'Bulan',
+                    field: 'bulan',
+                    minWidth: 50
+                },
+                {
+                    name: 'Penerimaan',
+                    field: 'penerimaan',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Jumlah Dokumen',
+                    field: 'jumlah',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Rata2 Per Dokumen',
+                    field: 'rata',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: {
+                fontSize: 9
+            },
+            exporterPdfTableStyle: {
+                margin: [30, 30, 30, 30]
+            },
+            exporterPdfTableHeaderStyle: {
+                fontSize: 10,
+                bold: true,
+                italics: true,
+                color: 'red'
+            },
+            exporterPdfHeader: {
+                text: "SIMONA",
+                style: 'headerStyle'
+            },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return {
+                    text: currentPage.toString() + ' of ' + pageCount.toString(),
+                    style: 'footerStyle'
+                };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = {
+                    fontSize: 22,
+                    bold: true
+                };
+                docDefinition.styles.footerStyle = {
+                    fontSize: 10,
+                    bold: true
+                };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts4.data = [{
+                "bulan": "January",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "February",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "March",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "April",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "May",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "June",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "July",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "August",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "September",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "October",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "November",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "December",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+
+        ];
+
 
         $scope.getMonths = function () {
             // service.getMonths().success(function (result) {
@@ -347,6 +505,21 @@ angular.module('app').controller(controllerId, [
         $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
         $scope.series = ['Series A', 'Series B'];
         $scope.data = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+         $scope.datapib = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+         $scope.datapibk = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+         $scope.datappkb = [
             [65, 59, 80, 81, 56, 55, 40],
             [28, 48, 40, 19, 86, 27, 90]
         ];
@@ -418,7 +591,7 @@ angular.module('app').controller(controllerId, [
             console.log($scope.singleSelect);
 
             if ($scope.singleSelect === '01/01/2016') {
-                
+
                 $scope.target = 2000000;
                 $scope.totalCapaian = 200000;
                 $scope.targetBulan = 200000;

@@ -18,7 +18,7 @@
                     <div class="row">TARGET TAHUN 2016</div>
                     <div class="row">TOTAL CAPAIAN S/D {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
                     <div class="row">TARGET BULAN {{singleSelect | moment: 'format': 'MMMM'}}</div>
-                    <div class="row">REALISASI PENERIMAAN PABEAN</div>
+                    <div class="row">REALISASI PENERIMAAN PDRI</div>
                 </div>
                 <div class="col-md-4">
                     <div class="row"></div>
@@ -35,8 +35,8 @@
                             <div class="row">{{realisasi | currency : "Rp"}}</div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row">{{persenTahun}} %</div>
-                            <div class="row">{{persenBulan}} %</div>
+                            <div class="row">{{(totalCapaian/target) * 100 | number:0}} %</div>
+                            <div class="row">{{(realisasi/targetBulan) * 100 | number:0}} %</div>
                         </div>
                     </div>
                 </div>
