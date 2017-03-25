@@ -35,8 +35,8 @@
                             <div class="row">{{realisasi | currency : "Rp"}}</div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row">{{persenTahun}} %</div>
-                            <div class="row">{{persenBulan}} %</div>
+                            <div class="row">{{(totalCapaian/target) * 100 | number:0}} %</div>
+                            <div class="row">{{(realisasi/targetBulan) * 100 | number:0}} %</div>
                         </div>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
                                 <div class="col-lg-1 col-md-1">{{dashboard.CD}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.PE}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.SPKPBM}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PBK}}</div>
+                                <!--<div class="col-lg-1 col-md-1">{{dashboard.PBK}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.CK1}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.CK1A}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.CK5}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.CK5}}</div>-->
                             </div>
                             <div class="row" style="padding:20px;padding-top:-10px;font-size:small">
                                 <div class="col-lg-1 col-md-1">PIB</div>
@@ -67,10 +67,10 @@
                                 <div class="col-lg-1 col-md-1">CD</div>
                                 <div class="col-lg-1 col-md-1">PE</div>
                                 <div class="col-lg-1 col-md-1">SPKPBM</div>
-                                <div class="col-lg-1 col-md-1">PBK</div>
+                                <!--<div class="col-lg-1 col-md-1">PBK</div>
                                 <div class="col-lg-1 col-md-1">CK-1</div>
                                 <div class="col-lg-1 col-md-1">CK-1A</div>
-                                <div class="col-lg-1 col-md-1">CK-5</div>
+                                <div class="col-lg-1 col-md-1">CK-5</div>-->
                             </div>
                             <div class="row" style="font-size:12px;padding:20px;font-size:small">
                                 <div class="col-lg-1 col-md-1">
@@ -101,7 +101,7 @@
                                     <div class="row">{{dashboard.SPKPBM2 | currency : "Rp"}}</div>
                                     <div class="row">{{dashboard.SPKPBM2P}} %</div>
                                 </div>
-                                <div class="col-lg-1 col-md-1">
+                                <!--<div class="col-lg-1 col-md-1">
                                     <div class="row">{{dashboard.PBK2 | currency : "Rp"}}</div>
                                     <div class="row">{{dashboard.PBK2P}} %</div>
                                 </div>
@@ -116,7 +116,7 @@
                                 <div class="col-lg-1 col-md-1">
                                     <div class="row">{{dashboard.CK5 | currency : "Rp"}}</div>
                                     <div class="row">{{dashboard.CK5P}} %</div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
