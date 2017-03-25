@@ -16,10 +16,10 @@ angular.module('app').controller(controllerId, [
             enableSorting: true,
             columnDefs: [
                 { name: 'Bulan', field: 'bulan', minWidth: 50 },
-                { name: 'PIB', field: 'pib', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'PIBK', field: 'pibk', cellFilter: 'currency : "Rp"' },
-                { name: 'PPKP', field: 'ppkp', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'CD', field: 'cd', minWidth: 50 },
+                { name: 'PPN Impor', field: 'ppnimpor', minWidth: 50, cellFilter: 'currency : "Rp"' },
+                { name: 'PPnBM', field: 'ppnbm', cellFilter: 'currency : "Rp"' },
+                { name: 'PPH Psl 22', field: 'pph22', minWidth: 50, cellFilter: 'currency : "Rp"' },
+                { name: 'PPN Cukai HT', field: 'ppncukaiht', minWidth: 50, cellFilter: 'currency : "Rp"' },                
             ],
             enableGridMenu: true,
             enableSelectAll: true,
@@ -46,18 +46,18 @@ angular.module('app').controller(controllerId, [
             data: []
         };
         $scope.gridOpts2.data = [
-            {"bulan":"January","pib":"10000","pibk":"10000","ppkp":"10000","cd":"10000"},
-            { "bulan": "February", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "March", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "April", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "May", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "June", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "July", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "August", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "September", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "October", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "November", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
-            { "bulan": "December", "pib": "10000", "pibk": "10000", "ppkp": "10000", "cd": "10000" },
+            {"bulan":"January","ppnimpor":"10000","ppnbm":"10000","pph22":"10000","ppncukaiht":"10000"},
+            { "bulan": "February", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "March", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "April", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "May", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "June", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "July", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "August", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "September", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "October", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "November", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            { "bulan": "December", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
 
         ];
 
@@ -110,12 +110,165 @@ angular.module('app').controller(controllerId, [
 
         ];
 
+        
+        $scope.gridOpts4 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [
+                { name: 'Bulan', field: 'bulan', minWidth: 50 },
+                { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: { fontSize: 9 },
+            exporterPdfTableStyle: { margin: [30, 30, 30, 30] },
+            exporterPdfTableHeaderStyle: { fontSize: 10, bold: true, italics: true, color: 'red' },
+            exporterPdfHeader: { text: "SIMONA", style: 'headerStyle' },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return { text: currentPage.toString() + ' of ' + pageCount.toString(), style: 'footerStyle' };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = { fontSize: 22, bold: true };
+                docDefinition.styles.footerStyle = { fontSize: 10, bold: true };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts4.data = [
+            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+
+        ];
+
+        
+        $scope.gridOpts5 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [
+                { name: 'Bulan', field: 'bulan', minWidth: 50 },
+                { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: { fontSize: 9 },
+            exporterPdfTableStyle: { margin: [30, 30, 30, 30] },
+            exporterPdfTableHeaderStyle: { fontSize: 10, bold: true, italics: true, color: 'red' },
+            exporterPdfHeader: { text: "SIMONA", style: 'headerStyle' },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return { text: currentPage.toString() + ' of ' + pageCount.toString(), style: 'footerStyle' };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = { fontSize: 22, bold: true };
+                docDefinition.styles.footerStyle = { fontSize: 10, bold: true };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts5.data = [
+            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+
+        ];
+
+
+        $scope.gridOpts6 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [
+                { name: 'Bulan', field: 'bulan', minWidth: 50 },
+                { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: { fontSize: 9 },
+            exporterPdfTableStyle: { margin: [30, 30, 30, 30] },
+            exporterPdfTableHeaderStyle: { fontSize: 10, bold: true, italics: true, color: 'red' },
+            exporterPdfHeader: { text: "SIMONA", style: 'headerStyle' },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return { text: currentPage.toString() + ' of ' + pageCount.toString(), style: 'footerStyle' };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = { fontSize: 22, bold: true };
+                docDefinition.styles.footerStyle = { fontSize: 10, bold: true };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts6.data = [
+            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+
+        ];
 
         $scope.getMonths = function () {
             // service.getMonths().success(function (result) {
             //     console.log(result);
             //     $scope.months = result;
             // });
+            $scope.months = ['01-01-2016', '02-01-2016', '03-01-2016', '04-01-2016',
+                '05-01-2016', '06-01-2016', '07-01-2016', '08-01-2016',
+                '09-01-2016', '10-01-2016', '11-01-2016', '12-01-2016'
+            ]
         }
 
         $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
@@ -124,6 +277,27 @@ angular.module('app').controller(controllerId, [
           [65, 59, 80, 81, 56, 55, 40],
           [28, 48, 40, 19, 86, 27, 90]
         ];
+
+        $scope.datappnbm = [
+          [65, 59, 80, 81, 56, 55, 40],
+          [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+        $scope.datappnimpor = [
+          [65, 59, 80, 81, 56, 55, 40],
+          [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+        $scope.datapph22 = [
+          [65, 59, 80, 81, 56, 55, 40],
+          [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+        $scope.datappncukaiht = [
+          [65, 59, 80, 81, 56, 55, 40],
+          [28, 48, 40, 19, 86, 27, 90]
+        ];
+
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
         };
@@ -149,41 +323,285 @@ angular.module('app').controller(controllerId, [
 
         $scope.dashboard = {};
 
-        $scope.dashboard.PIB = 0;
-        $scope.dashboard.PIBB = 0;
-        $scope.dashboard.PIBK = 0;
-        $scope.dashboard.PPKP = 0;
-        $scope.dashboard.CD = 0;
-        $scope.dashboard.PE = 0;
-        $scope.dashboard.SPKPBM = 0;
-        $scope.dashboard.PBK = 0;
-        $scope.dashboard.CK1 = 0;
-        $scope.dashboard.CK1A = 0;
-        $scope.dashboard.CK5 = 0;
+        $scope.dashboard.PPNBM = 0;
+        $scope.dashboard.PPNIMPOR = 0;
+        $scope.dashboard.PPH22 = 0;
+        $scope.dashboard.PPNCUKAIHT = 0;
 
-        $scope.dashboard.PIB2 = 0;
-        $scope.dashboard.PIBB2 = 0;
-        $scope.dashboard.PIBK2 = 0;
-        $scope.dashboard.PPKP2 = 0;
-        $scope.dashboard.CD2 = 0;
-        $scope.dashboard.PE2 = 0;
-        $scope.dashboard.SPKPBM2 = 0;
-        $scope.dashboard.PBK2 = 0;
-        $scope.dashboard.CK12 = 0;
-        $scope.dashboard.CK1A2 = 0;
-        $scope.dashboard.CK52 = 0;
+        $scope.dashboard.PPNBM2 = 0;
+        $scope.dashboard.PPNIMPOR2 = 0;
+        $scope.dashboard.PPH222 = 0;
+        $scope.dashboard.PPNCUKAIHT2 = 0;
 
-        $scope.dashboard.PIB2P = 0;
-        $scope.dashboard.PIBB2P = 0;
-        $scope.dashboard.PIBK2P = 0;
-        $scope.dashboard.PPKP2P = 0;
-        $scope.dashboard.CD2P = 0;
-        $scope.dashboard.PE2P = 0;
-        $scope.dashboard.SPKPBM2P = 0;
-        $scope.dashboard.PBK2P = 0;
-        $scope.dashboard.CK12P = 0;
-        $scope.dashboard.CK1A2P = 0;
-        $scope.dashboard.CK52P = 0;
+        $scope.dashboard.PPNBM2P = 0;
+        $scope.dashboard.PPNIMPOR2P = 0;
+        $scope.dashboard.PPH222P = 0;
+        $scope.dashboard.PPNCUKAIHT2P = 0;
+
+        $scope.update = function(){
+
+               if ($scope.singleSelect === '01/01/2016') {
+                    $scope.target = 1000000;
+                    $scope.totalCapaian = 100000;
+                    $scope.targetBulan = 100000;
+                    $scope.realisasi = 100000;
+
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 0;
+                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNCUKAIHT = 0;
+
+                    $scope.dashboard.PPNBM2 = 0;
+                    $scope.dashboard.PPNIMPOR2 = 0;
+                    $scope.dashboard.PPH222 = 0;
+                    $scope.dashboard.PPNCUKAIHT2 = 0;
+
+                    $scope.dashboard.PPNBM2P = 0;
+                    $scope.dashboard.PPNIMPOR2P = 0;
+                    $scope.dashboard.PPH222P = 0;
+                    $scope.dashboard.PPNCUKAIHT2P = 0;
+               }
+
+               if ($scope.singleSelect === '01/01/2016') {
+                    $scope.target = 2000000;
+                    $scope.totalCapaian = 200000;
+                    $scope.targetBulan = 200000;
+                    $scope.realisasi = 200000;
+
+                    $scope.dashboard.PPNBM = 2;
+                    $scope.dashboard.PPNIMPOR = 2;
+                    $scope.dashboard.PPH22 = 2;
+                    $scope.dashboard.PPNCUKAIHT = 2;
+
+                    $scope.dashboard.PPNBM2 = 2;
+                    $scope.dashboard.PPNIMPOR2 = 2;
+                    $scope.dashboard.PPH222 = 2;
+                    $scope.dashboard.PPNCUKAIHT2 = 2;
+
+                    $scope.dashboard.PPNBM2P = 2;
+                    $scope.dashboard.PPNIMPOR2P = 2;
+                    $scope.dashboard.PPH222P = 2;
+                    $scope.dashboard.PPNCUKAIHT2P = 2;
+               }
+
+               if ($scope.singleSelect === '03/01/2016') {
+                    $scope.target = 3000000;
+                    $scope.totalCapaian = 300000;
+                    $scope.targetBulan = 300000;
+                    $scope.realisasi = 300000;
+
+                    $scope.dashboard.PPNBM = 3;
+                    $scope.dashboard.PPNIMPOR = 3;
+                    $scope.dashboard.PPH22 = 3;
+                    $scope.dashboard.PPNCUKAIHT = 3;
+
+                    $scope.dashboard.PPNBM2 = 3;
+                    $scope.dashboard.PPNIMPOR2 = 3;
+                    $scope.dashboard.PPH222 = 3;
+                    $scope.dashboard.PPNCUKAIHT2 = 3;
+
+                    $scope.dashboard.PPNBM2P = 3;
+                    $scope.dashboard.PPNIMPOR2P = 3;
+                    $scope.dashboard.PPH222P = 3;
+                    $scope.dashboard.PPNCUKAIHT2P = 3;
+               }
+
+               if ($scope.singleSelect === '04/01/2016') {
+                    $scope.target = 4000000;
+                    $scope.totalCapaian = 400000;
+                    $scope.targetBulan = 400000;
+                    $scope.realisasi = 400000;
+
+                    $scope.dashboard.PPNBM = 4;
+                    $scope.dashboard.PPNIMPOR = 4;
+                    $scope.dashboard.PPH22 = 4;
+                    $scope.dashboard.PPNCUKAIHT = 4;
+
+                    $scope.dashboard.PPNBM2 = 4;
+                    $scope.dashboard.PPNIMPOR2 = 4;
+                    $scope.dashboard.PPH222 = 4;
+                    $scope.dashboard.PPNCUKAIHT2 = 4;
+
+                    $scope.dashboard.PPNBM2P = 4;
+                    $scope.dashboard.PPNIMPOR2P = 4;
+                    $scope.dashboard.PPH222P = 4;
+                    $scope.dashboard.PPNCUKAIHT2P = 4;
+               }
+
+               if ($scope.singleSelect === '05/01/2016') {
+                    $scope.target = 5000000;
+                    $scope.totalCapaian = 500000;
+                    $scope.targetBulan = 500000;
+                    $scope.realisasi = 500000;
+
+                    $scope.dashboard.PPNBM = 5;
+                    $scope.dashboard.PPNIMPOR = 5;
+                    $scope.dashboard.PPH22 = 5;
+                    $scope.dashboard.PPNCUKAIHT = 5;
+
+                    $scope.dashboard.PPNBM2 = 5;
+                    $scope.dashboard.PPNIMPOR2 = 5;
+                    $scope.dashboard.PPH222 = 5;
+                    $scope.dashboard.PPNCUKAIHT2 = 5;
+
+                    $scope.dashboard.PPNBM2P = 5;
+                    $scope.dashboard.PPNIMPOR2P = 5;
+                    $scope.dashboard.PPH222P = 5;
+                    $scope.dashboard.PPNCUKAIHT2P = 5;
+               }
+
+               if ($scope.singleSelect === '06/01/2016') {
+                    $scope.target = 6000000;
+                    $scope.totalCapaian = 600000;
+                    $scope.targetBulan = 600000;
+                    $scope.realisasi = 600000;
+
+                    $scope.dashboard.PPNBM = 6;
+                    $scope.dashboard.PPNIMPOR = 6;
+                    $scope.dashboard.PPH22 = 6;
+                    $scope.dashboard.PPNCUKAIHT = 6;
+
+                    $scope.dashboard.PPNBM2 = 6;
+                    $scope.dashboard.PPNIMPOR2 = 6;
+                    $scope.dashboard.PPH222 = 6;
+                    $scope.dashboard.PPNCUKAIHT2 = 6;
+
+                    $scope.dashboard.PPNBM2P = 6;
+                    $scope.dashboard.PPNIMPOR2P = 6;
+                    $scope.dashboard.PPH222P = 6;
+                    $scope.dashboard.PPNCUKAIHT2P = 6;
+               }
+
+               if ($scope.singleSelect === '07/01/2016') {
+                    $scope.target = 7000000;
+                    $scope.totalCapaian = 700000;
+                    $scope.targetBulan = 70000;
+                    $scope.realisasi = 700000;
+
+                    $scope.dashboard.PPNBM = 7;
+                    $scope.dashboard.PPNIMPOR = 7;
+                    $scope.dashboard.PPH22 = 7;
+                    $scope.dashboard.PPNCUKAIHT = 7;
+
+                    $scope.dashboard.PPNBM2 = 7;
+                    $scope.dashboard.PPNIMPOR2 = 7;
+                    $scope.dashboard.PPH222 = 7;
+                    $scope.dashboard.PPNCUKAIHT2 = 7;
+
+                    $scope.dashboard.PPNBM2P = 7;
+                    $scope.dashboard.PPNIMPOR2P = 7;
+                    $scope.dashboard.PPH222P = 7;
+                    $scope.dashboard.PPNCUKAIHT2P = 7;
+               }
+
+               if ($scope.singleSelect === '08/01/2016') {
+                    $scope.target = 8000000;
+                    $scope.totalCapaian = 800000;
+                    $scope.targetBulan = 800000;
+                    $scope.realisasi = 800000;
+
+                    $scope.dashboard.PPNBM = 8;
+                    $scope.dashboard.PPNIMPOR = 8;
+                    $scope.dashboard.PPH22 = 8;
+                    $scope.dashboard.PPNCUKAIHT = 8;
+
+                    $scope.dashboard.PPNBM2 = 8;
+                    $scope.dashboard.PPNIMPOR2 = 8;
+                    $scope.dashboard.PPH222 = 8;
+                    $scope.dashboard.PPNCUKAIHT2 = 8;
+
+                    $scope.dashboard.PPNBM2P = 8;
+                    $scope.dashboard.PPNIMPOR2P = 8;
+                    $scope.dashboard.PPH222P = 8;
+                    $scope.dashboard.PPNCUKAIHT2P = 8;
+               }
+               if ($scope.singleSelect === '09/01/2016') {
+                    $scope.target = 9000000;
+                    $scope.totalCapaian = 900000;
+                    $scope.targetBulan = 900000;
+                    $scope.realisasi = 900000;
+
+                    $scope.dashboard.PPNBM = 9;
+                    $scope.dashboard.PPNIMPOR = 9;
+                    $scope.dashboard.PPH22 = 9;
+                    $scope.dashboard.PPNCUKAIHT = 9;
+
+                    $scope.dashboard.PPNBM2 = 9;
+                    $scope.dashboard.PPNIMPOR2 = 9;
+                    $scope.dashboard.PPH222 = 9;
+                    $scope.dashboard.PPNCUKAIHT2 = 9;
+
+                    $scope.dashboard.PPNBM2P = 9;
+                    $scope.dashboard.PPNIMPOR2P = 9;
+                    $scope.dashboard.PPH222P = 9;
+                    $scope.dashboard.PPNCUKAIHT2P = 9;
+               }
+               if ($scope.singleSelect === '10/01/2016') {
+                    $scope.target = 10000000;
+                    $scope.totalCapaian = 1000000;
+                    $scope.targetBulan = 1000000;
+                    $scope.realisasi = 1000000;
+
+                    $scope.dashboard.PPNBM = 10;
+                    $scope.dashboard.PPNIMPOR = 10;
+                    $scope.dashboard.PPH22 = 10;
+                    $scope.dashboard.PPNCUKAIHT = 10;
+
+                    $scope.dashboard.PPNBM2 = 10;
+                    $scope.dashboard.PPNIMPOR2 = 10;
+                    $scope.dashboard.PPH222 = 10;
+                    $scope.dashboard.PPNCUKAIHT2 = 10;
+
+                    $scope.dashboard.PPNBM2P = 10;
+                    $scope.dashboard.PPNIMPOR2P = 10;
+                    $scope.dashboard.PPH222P = 10;
+                    $scope.dashboard.PPNCUKAIHT2P = 10;
+               }
+               if ($scope.singleSelect === '11/01/2016') {
+                    $scope.target = 11000000;
+                    $scope.totalCapaian = 1100000;
+                    $scope.targetBulan = 1100000;
+                    $scope.realisasi = 1100000;
+
+                    $scope.dashboard.PPNBM = 11;
+                    $scope.dashboard.PPNIMPOR = 11;
+                    $scope.dashboard.PPH22 = 11;
+                    $scope.dashboard.PPNCUKAIHT = 11;
+
+                    $scope.dashboard.PPNBM2 = 11;
+                    $scope.dashboard.PPNIMPOR2 = 11;
+                    $scope.dashboard.PPH222 = 11;
+                    $scope.dashboard.PPNCUKAIHT2 = 11;
+
+                    $scope.dashboard.PPNBM2P = 11;
+                    $scope.dashboard.PPNIMPOR2P = 11;
+                    $scope.dashboard.PPH222P = 11;
+                    $scope.dashboard.PPNCUKAIHT2P = 11;
+               }
+
+               if ($scope.singleSelect === '12/01/2016') {
+                    $scope.target = 12000000;
+                    $scope.totalCapaian = 1200000;
+                    $scope.targetBulan = 1200000;
+                    $scope.realisasi = 1200000;
+
+                    $scope.dashboard.PPNBM = 12;
+                    $scope.dashboard.PPNIMPOR = 12;
+                    $scope.dashboard.PPH22 = 12;
+                    $scope.dashboard.PPNCUKAIHT = 12;
+
+                    $scope.dashboard.PPNBM2 = 12;
+                    $scope.dashboard.PPNIMPOR2 = 12;
+                    $scope.dashboard.PPH222 = 12;
+                    $scope.dashboard.PPNCUKAIHT2 = 12;
+
+                    $scope.dashboard.PPNBM2P = 12;
+                    $scope.dashboard.PPNIMPOR2P = 12;
+                    $scope.dashboard.PPH222P = 12;
+                    $scope.dashboard.PPNCUKAIHT2P = 12;
+               }
+        }
+
         $scope.getMonths();
     }
 ])

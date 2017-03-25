@@ -47,75 +47,34 @@
                         <div id="div3" style="width:1200px;">
                             <div class="row" style="align-content:flex-end; text-align:left;padding-top:10px">{{singleSelect | moment: 'format': 'MMMM YYYY'}} / 01 Jan 2016 - Sekarang</div>
                             <div class="row" style="padding:20px;">
-                                <div class="col-lg-1 col-md-1">{{dashboard.PIB}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PIBB}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PIBK}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PPKP}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.CD}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PE}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.SPKPBM}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.PBK}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.CK1}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.CK1A}}</div>
-                                <div class="col-lg-1 col-md-1">{{dashboard.CK5}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PPNBM}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PPNIMPOR}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PPH22}}</div>
+                                <div class="col-lg-1 col-md-1">{{dashboard.PPNCUKAIHT}}</div>
+
                             </div>
                             <div class="row" style="padding:20px;padding-top:-10px;font-size:small">
-                                <div class="col-lg-1 col-md-1">PIB</div>
-                                <div class="col-lg-1 col-md-1">PIB Berkala</div>
-                                <div class="col-lg-1 col-md-1">PIBK</div>
-                                <div class="col-lg-1 col-md-1">PPKP</div>
-                                <div class="col-lg-1 col-md-1">CD</div>
-                                <div class="col-lg-1 col-md-1">PE</div>
-                                <div class="col-lg-1 col-md-1">SPKPBM</div>
-                                <div class="col-lg-1 col-md-1">PBK</div>
-                                <div class="col-lg-1 col-md-1">CK-1</div>
-                                <div class="col-lg-1 col-md-1">CK-1A</div>
-                                <div class="col-lg-1 col-md-1">CK-5</div>
+                                <div class="col-lg-1 col-md-1">PPNBM</div>
+                                <div class="col-lg-1 col-md-1">PPNIMPOR</div>
+                                <div class="col-lg-1 col-md-1">PPH 22</div>
+                                <div class="col-lg-1 col-md-1">PPN CUKAI HT</div>
                             </div>
                             <div class="row" style="font-size:12px;padding:20px;font-size:small">
                                 <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PIB2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PIB2P}} %</div>
+                                    <div class="row">{{dashboard.PPNBM2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PPNBM2P}} %</div>
                                 </div>
                                 <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PIBB2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PIBB2P}} %</div>
+                                    <div class="row">{{dashboard.PPNIMPOR2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PPNIMPOR2P}} %</div>
                                 </div>
                                 <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PIBK2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PIBK2P }} %</div>
+                                    <div class="row">{{dashboard.PPH222 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PPH222P }} %</div>
                                 </div>
                                 <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PPKP2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PPKP2P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.CD2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.CD2P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PE2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PE2P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.SPKPBM2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.SPKPBM2P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PBK2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PBK2P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.CK12 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.CK12P}} %</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.CK1A2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.CK1A2P}}</div>
-                                </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.CK5 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.CK5P}} %</div>
+                                    <div class="row">{{dashboard.PPNCUKAIHT2 | currency : "Rp"}}</div>
+                                    <div class="row">{{dashboard.PPKPPPNCUKAIHT2P}} %</div>
                                 </div>
                             </div>
                         </div>
@@ -136,23 +95,44 @@
                     chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
     </div>
     <div class="row" style="background-color:#5bbaf6;color:black; padding:10px;height:500px;">
-        <div style="color:white"> DETAIL PIB </div>
+        <div style="color:white"> DETAIL PPN BM </div>
          <div class="col-md-6 col-lg-6">
             <div id="grid2" ui-grid="gridOpts3" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
         </div>
         <div class="col-md-6 col-lg-6">
-            <canvas id="line" class="chart chart-line" chart-data="data"
+            <canvas id="line" class="chart chart-line" chart-data="datappnbm"
                     chart-labels="labels" chart-series="series" chart-options="options"
                     chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
     </div>
     <div class="row" style="background-color:#73acf7;color:black; padding:10px;height:500px;">
-        <div style="color:white"> DETAIL PIBK </div>
+        <div style="color:white"> DETAIL PPN IMPOR </div>
 
         <div class="col-md-6 col-lg-6">
-            <div id="grid3" ui-grid="gridOpts3" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+            <div id="grid3" ui-grid="gridOpts4" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
         </div>
         <div class="col-md-6 col-lg-6">
-            <canvas id="line" class="chart chart-line" chart-data="data"
+            <canvas id="line" class="chart chart-line" chart-data="datappnimpor"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+    </div>
+    <div class="row" style="background-color:#5bbaf6;color:black; padding:10px;height:500px;">
+        <div style="color:white"> DETAIL PPH 22 </div>
+         <div class="col-md-6 col-lg-6">
+            <div id="grid2" ui-grid="gridOpts5" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <canvas id="line" class="chart chart-line" chart-data="datapph22"
+                    chart-labels="labels" chart-series="series" chart-options="options"
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+    </div>
+    <div class="row" style="background-color:#73acf7;color:black; padding:10px;height:500px;">
+        <div style="color:white"> DETAIL PPN CUKAI HT </div>
+
+        <div class="col-md-6 col-lg-6">
+            <div id="grid3" ui-grid="gridOpts6" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+            <canvas id="line" class="chart chart-line" chart-data="datappncukaiht"
                     chart-labels="labels" chart-series="series" chart-options="options"
                     chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
     </div>
