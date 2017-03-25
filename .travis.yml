@@ -15,8 +15,7 @@ addons:
         packages:
             - sshpass
 after_success:
-    - export SSHPASS=$DEPLOY_PASS
-    - sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST /home/user/Simona/deploy.sh
+    - sshpass -p 'ZXasqw12' ssh -o StrictHostKeyChecking=no root@45.62.249.178 '. /home/user/Simona/deploy.sh'
 env:
   global:
   - secure: PWivTaR3d82UH74i++C9kUu2US8YhABl765imbxcw+NWKoHP3wN8up5bSjrkSjEs+xVxYlDNddiR/sC7T1F2FbnAXdpolqkMvbSf4ujYq10j9nPBTtaJF3/cdE/FMaApYNIDSgmbzniPlfhB9/QM7ebh0YS8NQHyCkMrT7257G9N4zz31t+131aNAfttVCc+AuM5AF0jgdVZzYnVZSA+xhhtnWHhKslCDAZX2mdMFTpW4KFEEzhwsT5WZPpCfpnLle7n7ZTslw4A4W3020LfFt+W8DzSRD+3GR70FZ8uilL9wKyPsklEhFx727whdaxuiwH7ZQGPToxg+VJPtuG6PxHzMWSsZBPFpBPGuaOfaK8sXcroBJNZ7VDbcwN4VfMI4BJUFrXHXcJHOhdqWNdSC/fTY2mcVhFjYkeqV6ZYCOmiOZeJDozS+2v5jrjRFiYPB7Ylz6voGXeh0SmMQSCAZDCBrLtRb9SF/WzBszAyolRFsEs67sFifcASSFqdPVmlhIvdgSbuEYJa+E+axSNJ4fUNaHD6yk8uSYWFSDWHK3IeOQ6wCx239Vkhk3zAIrxc8PvhInrpzGaIde53Lx6IljyKut+TNLjbBT5QsQUD74cwa0To2xLVd4J5uZ/HPYn19YOORZubrjJhO55cgwsPGvXLyNA8J5DXh8eUJBGcAk4=
