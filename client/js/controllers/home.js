@@ -309,10 +309,10 @@ angular.module('app').controller(controllerId, [
 
         $scope.dashboard.PIB = 1762;
         $scope.dashboard.PIBB = 3877;
-        $scope.dashboard.PIBK = 400;
+        $scope.dashboard.PIBK = 297;
         $scope.dashboard.PPKP = 1039;
         $scope.dashboard.CD = 46;
-        $scope.dashboard.PE = 400;
+        $scope.dashboard.PE = 0;
         $scope.dashboard.SPKPBM = 87;
         $scope.dashboard.PBK = 1;
         $scope.dashboard.CK1 = 0;
@@ -355,39 +355,46 @@ angular.module('app').controller(controllerId, [
         $scope.bardata2 = [50000, 50000, 50000, 50000];
         $scope.bardata3 = [50000, 50000, 50000, 50000];
 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 28812059000;
+        $scope.Data.pPabean.beakeluar = 0;
+        $scope.Data.pPabean.lainnya = 1273323000;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 30085382000;
+
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 40000;
-        $scope.Data.pCukai.alkohol = 40000;
-        $scope.Data.pCukai.mmea = 40000;
-        $scope.Data.pCukai.lainnya = 40000;
-        $scope.Data.pCukai.total = 40000;
+        $scope.Data.pCukai.tembakau = 0;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 0;
+        $scope.Data.pCukai.total = 0;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 40000;
-        $scope.Data.pPajak.bmimpor = 40000;
-        $scope.Data.pPajak.pph22 = 40000;
-        $scope.Data.pPajak.ppntembakau = 40000;
-        $scope.Data.pPajak.ppnbm = 40000;
-        $scope.Data.pPajak.total = 40000;
+        $scope.Data.pPajak.ppnimpor = 63443115000;
+        $scope.Data.pPajak.bmimpor = 2795000;
+        $scope.Data.pPajak.pph22 = 16899406000;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.ppnbm = 0;
+        $scope.Data.pPajak.total = 0;
 
-        $scope.dashboard.PIB = 400;
-        $scope.dashboard.PIBB = 400;
-        $scope.dashboard.PIBK = 400;
-        $scope.dashboard.PPKP = 400;
-        $scope.dashboard.CD = 400;
-        $scope.dashboard.PE = 400;
-        $scope.dashboard.SPKPBM = 400;
-        $scope.dashboard.PBK = 400;
-        $scope.dashboard.CK1 = 400;
-        $scope.dashboard.CK1A = 400;
-        $scope.dashboard.CK5 = 400;
+        $scope.dashboard.PIB = 1749;
+        $scope.dashboard.PIBB = 4037;
+        $scope.dashboard.PIBK = 355;
+        $scope.dashboard.PPKP = 828;
+        $scope.dashboard.CD = 35;
+        $scope.dashboard.PE = 0;
+        $scope.dashboard.SPKPBM = 77;
+        $scope.dashboard.PBK = 2;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
         $scope.dashboard.PIB2 = 1762;
         $scope.dashboard.PIBB2 = 3877;
-        $scope.dashboard.PIBK2 = 400;
+        $scope.dashboard.PIBK2 = 297;
         $scope.dashboard.PPKP2 = 1039;
         $scope.dashboard.CD2 = 46;
-        $scope.dashboard.PE2 = 400;
+        $scope.dashboard.PE2 = 0;
         $scope.dashboard.SPKPBM2 = 87;
         $scope.dashboard.PBK2 = 1;
         $scope.dashboard.CK12 = 0;
@@ -415,44 +422,51 @@ angular.module('app').controller(controllerId, [
         $scope.bardata2 = [60000, 60000, 60000, 60000];
         $scope.bardata3 = [60000, 60000, 60000, 60000];
 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 38029072000;
+        $scope.Data.pPabean.beakeluar = 1010000;
+        $scope.Data.pPabean.lainnya = 686705000;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 38716787000;
+
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 40000;
-        $scope.Data.pCukai.alkohol = 40000;
-        $scope.Data.pCukai.mmea = 40000;
-        $scope.Data.pCukai.lainnya = 40000;
-        $scope.Data.pCukai.total = 40000;
+        $scope.Data.pCukai.tembakau = 22909091;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 13636364;
+        $scope.Data.pCukai.total = 36545455;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 40000;
-        $scope.Data.pPajak.bmimpor = 40000;
-        $scope.Data.pPajak.pph22 = 40000;
-        $scope.Data.pPajak.ppntembakau = 40000;
-        $scope.Data.pPajak.ppnbm = 40000;
-        $scope.Data.pPajak.total = 40000;
+        $scope.Data.pPajak.ppnimpor = 84474023000;
+        $scope.Data.pPajak.bmimpor = 2701000;
+        $scope.Data.pPajak.pph22 = 22151561000;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.ppnbm = 0;
+        $scope.Data.pPajak.total = 106692285000;
 
-        $scope.dashboard.PIB = 400;
-        $scope.dashboard.PIBB = 400;
-        $scope.dashboard.PIBK = 400;
-        $scope.dashboard.PPKP = 400;
-        $scope.dashboard.CD = 400;
-        $scope.dashboard.PE = 400;
-        $scope.dashboard.SPKPBM = 400;
-        $scope.dashboard.PBK = 400;
-        $scope.dashboard.CK1 = 400;
-        $scope.dashboard.CK1A = 400;
-        $scope.dashboard.CK5 = 400;
+        $scope.dashboard.PIB = 1793;
+        $scope.dashboard.PIBB = 359;
+        $scope.dashboard.PIBK = 4338;
+        $scope.dashboard.PPKP = 1851;
+        $scope.dashboard.CD = 36;
+        $scope.dashboard.PE = 1;
+        $scope.dashboard.SPKPBM = 62;
+        $scope.dashboard.PBK = 4;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
-        $scope.dashboard.PIB2 = 400;
-        $scope.dashboard.PIBB2 = 400;
-        $scope.dashboard.PIBK2 = 400;
-        $scope.dashboard.PPKP2 = 400;
-        $scope.dashboard.CD2 = 400;
-        $scope.dashboard.PE2 = 400;
-        $scope.dashboard.SPKPBM2 = 400;
-        $scope.dashboard.PBK2 = 400;
-        $scope.dashboard.CK12 = 400;
-        $scope.dashboard.CK1A2 = 400;
-        $scope.dashboard.CK52 = 400;
+        $scope.dashboard.PIB2 = 1749;
+        $scope.dashboard.PIBB2 = 4037;
+        $scope.dashboard.PIBK2 = 355;
+        $scope.dashboard.PPKP2 = 828;
+        $scope.dashboard.CD2 = 35;
+        $scope.dashboard.PE2 = 0;
+        $scope.dashboard.SPKPBM2 = 77;
+        $scope.dashboard.PBK2 = 2;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2 = 0;
+        $scope.dashboard.CK52 = 0;
       }
       if ($scope.singleSelect === '07/01/2016') {
 
@@ -475,44 +489,51 @@ angular.module('app').controller(controllerId, [
         $scope.bardata2 = [70000, 70000, 70000, 70000];
         $scope.bardata3 = [70000, 10000, 70000, 70000];
 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 38029072000;
+        $scope.Data.pPabean.beakeluar = 1010000;
+        $scope.Data.pPabean.lainnya = 686705000;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 38716787000;
+       
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 40000;
-        $scope.Data.pCukai.alkohol = 40000;
-        $scope.Data.pCukai.mmea = 40000;
-        $scope.Data.pCukai.lainnya = 40000;
-        $scope.Data.pCukai.total = 40000;
+        $scope.Data.pCukai.tembakau = 10000000;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 27272728;
+        $scope.Data.pCukai.total = 127272728;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 40000;
-        $scope.Data.pPajak.bmimpor = 40000;
-        $scope.Data.pPajak.pph22 = 40000;
-        $scope.Data.pPajak.ppntembakau = 40000;
-        $scope.Data.pPajak.ppnbm = 40000;
-        $scope.Data.pPajak.total = 40000;
+        $scope.Data.pPajak.ppnimpor = 50630668;
+        $scope.Data.pPajak.bmimpor = 0;
+        $scope.Data.pPajak.pph22 = 13384756000;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.ppnbm = 0;
+        $scope.Data.pPajak.total = 64015424000;
 
-        $scope.dashboard.PIB = 400;
-        $scope.dashboard.PIBB = 400;
-        $scope.dashboard.PIBK = 400;
-        $scope.dashboard.PPKP = 400;
-        $scope.dashboard.CD = 400;
-        $scope.dashboard.PE = 400;
-        $scope.dashboard.SPKPBM = 400;
-        $scope.dashboard.PBK = 400;
-        $scope.dashboard.CK1 = 400;
-        $scope.dashboard.CK1A = 400;
-        $scope.dashboard.CK5 = 400;
+        $scope.dashboard.PIB = 1151;
+        $scope.dashboard.PIBB = 337;
+        $scope.dashboard.PIBK = 2562;
+        $scope.dashboard.PPKP = 908;
+        $scope.dashboard.CD = 39;
+        $scope.dashboard.PE = 0;
+        $scope.dashboard.SPKPBM = 39;
+        $scope.dashboard.PBK = 4;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
-        $scope.dashboard.PIB2 = 400;
+        $scope.dashboard.PIB2 = 1793;
         $scope.dashboard.PIBB2 = 400;
-        $scope.dashboard.PIBK2 = 400;
-        $scope.dashboard.PPKP2 = 400;
-        $scope.dashboard.CD2 = 400;
-        $scope.dashboard.PE2 = 400;
-        $scope.dashboard.SPKPBM2 = 400;
-        $scope.dashboard.PBK2 = 400;
-        $scope.dashboard.CK12 = 400;
-        $scope.dashboard.CK1A2 = 400;
-        $scope.dashboard.CK52 = 400;
+        $scope.dashboard.PIBK2 = 4338;
+        $scope.dashboard.PPKP2 = 1851;
+        $scope.dashboard.CD2 = 36;
+        $scope.dashboard.PE2 = 1;
+        $scope.dashboard.SPKPBM2 = 62;
+        $scope.dashboard.PBK2 = 4;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2 = 0;
+        $scope.dashboard.CK52 = 0;
       }
       if ($scope.singleSelect === '08/01/2016') {
 
@@ -535,43 +556,50 @@ angular.module('app').controller(controllerId, [
         $scope.bardata2 = [80000, 80000, 80000, 80000];
         $scope.bardata3 = [80000, 80000, 80000, 80000];
 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 34831120000;
+        $scope.Data.pPabean.beakeluar = 4217000;
+        $scope.Data.pPabean.lainnya = 287868480;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 35123205480;
+
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 40000;
-        $scope.Data.pCukai.alkohol = 40000;
-        $scope.Data.pCukai.mmea = 40000;
-        $scope.Data.pCukai.lainnya = 40000;
-        $scope.Data.pCukai.total = 40000;
+        $scope.Data.pCukai.tembakau = 50000000;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 13636364;
+        $scope.Data.pCukai.total = 636366364;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 40000;
-        $scope.Data.pPajak.bmimpor = 40000;
-        $scope.Data.pPajak.pph22 = 40000;
-        $scope.Data.pPajak.ppntembakau = 40000;
-        $scope.Data.pPajak.total = 40000;
+        $scope.Data.pPajak.ppnimpor = 74476856000;
+        $scope.Data.pPajak.bmimpor = 0;
+        $scope.Data.pPajak.pph22 = 18251574000;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.total = 92728430000;
 
-        $scope.dashboard.PIB = 400;
-        $scope.dashboard.PIBB = 400;
-        $scope.dashboard.PIBK = 400;
-        $scope.dashboard.PPKP = 400;
-        $scope.dashboard.CD = 400;
-        $scope.dashboard.PE = 400;
-        $scope.dashboard.SPKPBM = 400;
-        $scope.dashboard.PBK = 400;
-        $scope.dashboard.CK1 = 400;
-        $scope.dashboard.CK1A = 400;
-        $scope.dashboard.CK5 = 400;
+        $scope.dashboard.PIB = 1897;
+        $scope.dashboard.PIBB = 220;
+        $scope.dashboard.PIBK = 4104;
+        $scope.dashboard.PPKP = 954;
+        $scope.dashboard.CD = 240;
+        $scope.dashboard.PE = 1;
+        $scope.dashboard.SPKPBM = 46;
+        $scope.dashboard.PBK = 5;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
-        $scope.dashboard.PIB2 = 400;
-        $scope.dashboard.PIBB2 = 400;
-        $scope.dashboard.PIBK2 = 400;
-        $scope.dashboard.PPKP2 = 400;
-        $scope.dashboard.CD2 = 400;
-        $scope.dashboard.PE2 = 400;
-        $scope.dashboard.SPKPBM2 = 400;
-        $scope.dashboard.PBK2 = 400;
-        $scope.dashboard.CK12 = 400;
-        $scope.dashboard.CK1A2 = 400;
-        $scope.dashboard.CK52 = 400;
+        $scope.dashboard.PIB2 = 1151;
+        $scope.dashboard.PIBB2 = 337;
+        $scope.dashboard.PIBK2 = 2562;
+        $scope.dashboard.PPKP2 = 908;
+        $scope.dashboard.CD2 = 39;
+        $scope.dashboard.PE2 = 0;
+        $scope.dashboard.SPKPBM2 = 39;
+        $scope.dashboard.PBK2 = 4;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2 = 0;
+        $scope.dashboard.CK52 = 0;
       }
       if ($scope.singleSelect === '09/01/2016') {
 
@@ -593,7 +621,14 @@ angular.module('app').controller(controllerId, [
         $scope.bardata1 = [90000, 90000, 90000];
         $scope.bardata2 = [90000, 90000, 90000, 90000];
         $scope.bardata3 = [90000, 90000, 90000, 90000];
-
+ 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 30847372000;
+        $scope.Data.pPabean.beakeluar = 0;
+        $scope.Data.pPabean.lainnya = 265025000;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 30847372000;
+        
         $scope.Data.pCukai = {};
         $scope.Data.pCukai.tembakau = 40000;
         $scope.Data.pCukai.alkohol = 40000;
@@ -621,17 +656,17 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A = 400;
         $scope.dashboard.CK5 = 400;
 
-        $scope.dashboard.PIB2 = 400;
-        $scope.dashboard.PIBB2 = 400;
-        $scope.dashboard.PIBK2 = 400;
-        $scope.dashboard.PPKP2 = 400;
-        $scope.dashboard.CD2 = 400;
-        $scope.dashboard.PE2 = 400;
-        $scope.dashboard.SPKPBM2 = 400;
-        $scope.dashboard.PBK2 = 400;
-        $scope.dashboard.CK12 = 400;
-        $scope.dashboard.CK1A2 = 400;
-        $scope.dashboard.CK52 = 400;
+        $scope.dashboard.PIB2 = 1897;
+        $scope.dashboard.PIBB2 = 220;
+        $scope.dashboard.PIBK2 = 4104;
+        $scope.dashboard.PPKP2 = 954;
+        $scope.dashboard.CD2 = 240;
+        $scope.dashboard.PE2 = 1;
+        $scope.dashboard.SPKPBM2 = 46;
+        $scope.dashboard.PBK2 = 5;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2= 0;
+        $scope.dashboard.CK52 = 0;
       }
       if ($scope.singleSelect === '10/01/2016') {
           
@@ -653,6 +688,13 @@ angular.module('app').controller(controllerId, [
         $scope.bardata2 = [100000, 100000, 100000, 100000];
         $scope.bardata3 = [100000, 100000, 100000, 100000];
 
+        $scope.Data.pPabean = {};
+        $scope.Data.pPabean.beamasuk = 34831120000;
+        $scope.Data.pPabean.beakeluar = 4217000;
+        $scope.Data.pPabean.lainnya = 287868480;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 35123205480;
+      
         $scope.Data.pCukai = {};
         $scope.Data.pCukai.tembakau = 40000;
         $scope.Data.pCukai.alkohol = 40000;
