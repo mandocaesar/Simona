@@ -59,14 +59,6 @@ angular.module('app').controller(controllerId, [
 
     $scope.update = function () {
       console.log($scope.singleSelect);
-      // service.reportDashboard($scope.singleSelect).success(function (result) {
-      //     $scope.Data = result[0];
-      //     console.log($scope.Data);
-      //     $scope.bardata1 = [$scope.Data.pPabean.beamasuk, $scope.Data.pPabean.beakeluar, $scope.Data.pPabean.lainnya];
-      //     $scope.bardata2 = [$scope.Data.pCukai.tembakau, $scope.Data.pCukai.alkohol, $scope.Data.pCukai.mmea, $scope.Data.pCukai.lainnya];
-      //     $scope.bardata3 = [$scope.Data.pPajak.ppnimpor, $scope.Data.pPajak.pph22, $scope.Data.pPajak.pph2, $scope.Data.pPajak.ppntembakau];
-
-      // });
       if ($scope.singleSelect === '01/01/2016') {
         $scope.datapabean = [
           [65],
@@ -87,21 +79,21 @@ angular.module('app').controller(controllerId, [
         $scope.bardata3 = [10000, 10000, 10000, 10000];
 
         $scope.Data.pPabean = {};
-        $scope.Data.pPabean.beamasuk = 10000;
+        $scope.Data.pPabean.beamasuk = 20000;
         $scope.Data.pPabean.beakeluar = 10000;
         $scope.Data.pPabean.lainnya = 10000;
         $scope.Data.pPabean.beamasukDitanggung = 10000;
         $scope.Data.pPabean.total = 10000;
 
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 10000;
+        $scope.Data.pCukai.tembakau = 20000;
         $scope.Data.pCukai.alkohol = 10000;
         $scope.Data.pCukai.mmea = 10000;
         $scope.Data.pCukai.lainnya = 10000;
         $scope.Data.pCukai.total = 10000;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 10000;
+        $scope.Data.pPajak.ppnimpor = 20000;
         $scope.Data.pPajak.bmimpor = 10000;
         $scope.Data.pPajak.pph22 = 10000;
         $scope.Data.pPajak.ppntembakau = 10000;
