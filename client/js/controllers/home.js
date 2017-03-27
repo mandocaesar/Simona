@@ -602,7 +602,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
       }
       if ($scope.singleSelect === '09/01/2016') {
-
+        
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100],
           [28, 80, 100, 100, 80, 89, 89, 88, 200]
@@ -667,7 +667,8 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK12 = 0;
         $scope.dashboard.CK1A2= 0;
         $scope.dashboard.CK52 = 0;
-      }
+    }
+
       if ($scope.singleSelect === '10/01/2016') {
           
         $scope.datapabean = [
