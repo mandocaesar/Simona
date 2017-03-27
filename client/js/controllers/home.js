@@ -39,10 +39,10 @@ angular.module('app').controller(controllerId, [
     $scope.singleSelect = {};
 
     $scope.getMonths = function () {
-      $scope.months = ['01-01-2016', '02-01-2016', '03-01-2016', '04-01-2016',
-        '05-01-2016', '06-01-2016', '07-01-2016', '08-01-2016',
-        '09-01-2016', '10-01-2016', '11-01-2016', '12-01-2016','01-01-2017'
-        ,'02-01-2017','03-01-2017'
+      $scope.months = ['03-01-2017', '02-01-2017', '01-01-2017', '12-01-2016',
+        '11-01-2016', '10-01-2016', '09-01-2016', '08-01-2016',
+        '07-01-2016', '06-01-2016', '05-01-2016', '04-01-2016','03-01-2016'
+        ,'02-01-2016','01-01-2016'
       ]
     }
 
@@ -97,23 +97,23 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPajak.ppnbm = 10000;
         $scope.Data.pPajak.total = 10000;
 
-        $scope.dashboard.PIB = 100;
+        $scope.dashboard.PIB = 1.306;
         $scope.dashboard.PIBB = 100;
-        $scope.dashboard.PIBK = 100;
-        $scope.dashboard.PPKP = 100;
-        $scope.dashboard.CD = 100;
-        $scope.dashboard.PE = 100;
-        $scope.dashboard.SPKPBM = 100;
+        $scope.dashboard.PIBK = 3;
+        $scope.dashboard.PPKP = 90;
+        $scope.dashboard.CD = 33;
+        $scope.dashboard.PE = 0;
+        $scope.dashboard.SPKPBM = 84;
         $scope.dashboard.PBK = 100;
-        $scope.dashboard.CK1 = 100;
-        $scope.dashboard.CK1A = 100;
-        $scope.dashboard.CK5 = 100;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
-        $scope.dashboard.PIB2 = 100;
-        $scope.dashboard.PIBB2 = 100;
-        $scope.dashboard.PIBK2 = 100;
-        $scope.dashboard.PPKP2 = 100;
-        $scope.dashboard.CD2 = 100;
+        $scope.dashboard.PIB2 = 0;
+        $scope.dashboard.PIBB2 = 0;
+        $scope.dashboard.PIBK2 = 0;
+        $scope.dashboard.PPKP2 = 0;
+        $scope.dashboard.CD2 = 0;
         $scope.dashboard.PE2 = 100;
         $scope.dashboard.SPKPBM2 = 100;
         $scope.dashboard.PBK2 = 100;
