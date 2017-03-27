@@ -16,7 +16,6 @@ addons:
             - sshpass
 after_success:
     - export SSHPASS=$DEPLOY_PASS
-    - sshpass -e scp package.tgz $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
     - sshpass -p $DEPLOY_PASS ssh -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST '. /home/user/Simona/deploy.sh'
 env:
   global:
