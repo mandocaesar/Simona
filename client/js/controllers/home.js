@@ -39,10 +39,10 @@ angular.module('app').controller(controllerId, [
     $scope.singleSelect = {};
 
     $scope.getMonths = function () {
-      $scope.months = ['2017-03-01T00:00:00', '2017-02-01T00:00:00', '2017-01-01T00:00:00', '12-01-2016',
-        '11-01-2016T00:00:00', '10-01-2016T00:00:00', '09-01-2016T00:00:00', '08-01-2016T00:00:00',
-        '07-01-2016T00:00:00', '06-01-2016T00:00:00', '05-01-2016T00:00:00', '04-01-2016T00:00:00','03-01-2016T00:00:00'
-        ,'02-01-2016T00:00:00','01-01-2016T00:00:00'
+      $scope.months = ['2017-03-01', '2017-02-01', '2017-01-01', '12-01-2016',
+        '11-01-2016', '10-01-2016', '09-01-2016', '08-01-2016',
+        '07-01-2016', '06-01-2016', '05-01-2016', '04-01-2016','03-01-2016'
+        ,'02-01-2016','01-01-2016'
       ]
     }
 
@@ -56,7 +56,7 @@ angular.module('app').controller(controllerId, [
 
     $scope.update = function () {
       console.log($scope.singleSelect);
-      if ($scope.singleSelect === '01-01-2016T00:00:00') {
+      if ($scope.singleSelect === '01-01-2016') {
         $scope.datapabean = [
           [65],
           [28]
@@ -123,7 +123,7 @@ angular.module('app').controller(controllerId, [
 
 
       }
-      if ($scope.singleSelect === '02-01-2016T00:00:00') {
+      if ($scope.singleSelect === '02-01-2016') {
         $scope.datapabean = [
           [65, 70],
           [28, 80]
@@ -192,7 +192,7 @@ angular.module('app').controller(controllerId, [
 
       }
 
-      if ($scope.singleSelect === '03-01-2016T00:00:00') {
+      if ($scope.singleSelect === '03-01-2016') {
 
         $scope.datapabean = [
           [65, 70, 100],
@@ -265,7 +265,7 @@ angular.module('app').controller(controllerId, [
 
       }
 
-      if ($scope.singleSelect === '04-01-2016T00:00:00') {
+      if ($scope.singleSelect === '04-01-2016') {
 
         $scope.datapabean = [
           [65, 70, 100, 200],
@@ -333,7 +333,7 @@ angular.module('app').controller(controllerId, [
         
 
       }
-      if ($scope.singleSelect === '05-01-2016T00:00:00') {
+      if ($scope.singleSelect === '05-01-2016') {
 
 
         $scope.datapabean = [
@@ -401,7 +401,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
       }
-      if ($scope.singleSelect === '06-01-2016T00:00:00') {
+      if ($scope.singleSelect === '06-01-2016') {
 
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77],
@@ -468,7 +468,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
       }
-      if ($scope.singleSelect === '07/01/2016T00:00:00') {
+      if ($scope.singleSelect === '07/01/2016') {
 
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56],
@@ -535,7 +535,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
       }
-      if ($scope.singleSelect === '08/01/2016T00:00:00') {
+      if ($scope.singleSelect === '08/01/2016') {
 
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80],
@@ -601,7 +601,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
       }
-      if ($scope.singleSelect === '09/01/2016T00:00:00') {
+      if ($scope.singleSelect === '09/01/2016') {
         
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100],
@@ -669,7 +669,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
     }
 
-      if ($scope.singleSelect === '10/01/2016T00:00:00') {
+      if ($scope.singleSelect === '10/01/2016') {
           
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100, 89],
@@ -736,7 +736,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
       }
 
-      if ($scope.singleSelect === '11/01/2016T00:00:00') {
+      if ($scope.singleSelect === '11/01/2016') {
         $scope.bardata1 = [110000, 110000, 110000];
         $scope.bardata2 = [110000, 110000, 110000, 110000];
         $scope.bardata3 = [110000, 110000, 110000, 110000];
@@ -857,7 +857,7 @@ angular.module('app').controller(controllerId, [
       
       }
 
-      if ($scope.singleSelect === '01/01/2017T00:00:00') {
+      if ($scope.singleSelect === '01/01/2017') {
         
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100, 89, 89],
@@ -926,7 +926,7 @@ angular.module('app').controller(controllerId, [
       }
 
 
-      if ($scope.singleSelect === '02/01/2017T00:00:00') {
+      if ($scope.singleSelect === '02/01/2017') {
         
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100, 89, 89],
@@ -995,7 +995,7 @@ angular.module('app').controller(controllerId, [
       }
 
 
-      if ($scope.singleSelect === '03/01/2017T00:00:00') {
+      if ($scope.singleSelect === '03/01/2017') {
         
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100, 89, 89],
