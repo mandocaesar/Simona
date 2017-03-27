@@ -712,8 +712,8 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPajak.total = 71593493000;
 
         $scope.dashboard.PIB = 1836;
-        $scope.dashboard.PIBB = 293;
-        $scope.dashboard.PIBK = 1;
+        $scope.dashboard.PIBB = 1;
+        $scope.dashboard.PIBK = 4080;
         $scope.dashboard.PPKP = 1291;
         $scope.dashboard.CD = 88;
         $scope.dashboard.PE = 0;
@@ -764,8 +764,8 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPajak.total = 79032244300;
 
         $scope.dashboard.PIB = 2250;
-        $scope.dashboard.PIBB = 4265;
-        $scope.dashboard.PIBK = 1;
+        $scope.dashboard.PIBB = 1;
+        $scope.dashboard.PIBK = 4265;
         $scope.dashboard.PPKP = 1888;
         $scope.dashboard.CD = 168;
         $scope.dashboard.PE = 4;
@@ -776,8 +776,8 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK5 = 0;
 
         $scope.dashboard.PIB2 = 1836;
-        $scope.dashboard.PIBB2 = 293;
-        $scope.dashboard.PIBK2 = 1;
+        $scope.dashboard.PIBB2 = 1;
+        $scope.dashboard.PIBK2 = 4080;
         $scope.dashboard.PPKP2 = 1291;
         $scope.dashboard.CD2 = 88;
         $scope.dashboard.PE2 = 0;
@@ -831,8 +831,8 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPajak.total = 89914831000;
 
         $scope.dashboard.PIB = 1490;
-        $scope.dashboard.PIBB = 4316;
-        $scope.dashboard.PIBK = 2;
+        $scope.dashboard.PIBB = 2;
+        $scope.dashboard.PIBK = 4316;
         $scope.dashboard.PPKP = 2019;
         $scope.dashboard.CD = 133;
         $scope.dashboard.PE = 4;
@@ -843,8 +843,8 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK5 = 0;
 
         $scope.dashboard.PIB2 = 2250;
-        $scope.dashboard.PIBB2 = 4265;
-        $scope.dashboard.PIBK2 = 1;
+        $scope.dashboard.PIBB2 = 1;
+        $scope.dashboard.PIBK2 = 4265;
         $scope.dashboard.PPKP2 = 1888;
         $scope.dashboard.CD2 = 168;
         $scope.dashboard.PE2 = 4;
