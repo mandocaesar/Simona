@@ -630,19 +630,19 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPabean.total = 30847372000;
         
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 40000;
-        $scope.Data.pCukai.alkohol = 40000;
-        $scope.Data.pCukai.mmea = 40000;
-        $scope.Data.pCukai.lainnya = 40000;
-        $scope.Data.pCukai.total = 40000;
+        $scope.Data.pCukai.tembakau = 90909091;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 13636364;
+        $scope.Data.pCukai.total = 104545455;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 40000;
-        $scope.Data.pPajak.bmimpor = 40000;
-        $scope.Data.pPajak.pph22 = 40000;
-        $scope.Data.pPajak.ppntembakau = 40000;
-        $scope.Data.pPajak.ppnbm = 40000;
-        $scope.Data.pPajak.total = 40000;
+        $scope.Data.pPajak.ppnimpor = 57960474000;
+        $scope.Data.pPajak.bmimpor = 0;
+        $scope.Data.pPajak.pph22 = 15267894000;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.ppnbm = 0;
+        $scope.Data.pPajak.total = 73228368000;
 
         $scope.dashboard.PIB = 400;
         $scope.dashboard.PIBB = 400;
