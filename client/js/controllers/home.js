@@ -623,7 +623,7 @@ angular.module('app').controller(controllerId, [
         $scope.bardata3 = [90000, 90000, 90000, 90000];
  
         $scope.Data.pPabean = {};
-        $scope.Data.pPabean.beamasuk = 30847372000;
+        $scope.Data.pPabean.beamasuk = 30591347000;
         $scope.Data.pPabean.beakeluar = 0;
         $scope.Data.pPabean.lainnya = 265025000;
         $scope.Data.pPabean.beamasukDitanggung = 0;
