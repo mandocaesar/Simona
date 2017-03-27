@@ -5,7 +5,7 @@ var should = chai.should();
 var assert = require('assert');
 
 chai.use(chaiHttp);
- describe('/ Root', function(){
+ describe('Root', function(){
       it('it should return 200', function(done) {
         chai.request("http://localhost:3000")
             .get('/')

@@ -1,0 +1,42 @@
+<div ng-controller="app.views.penerimaanterbesar as vm">
+    <div class="row" style="background-color:#05436a;font-size:smaller;">
+        <div class="col-lg-2 col-md-2" style="background-color:#05436a;font-size:smaller;">
+            <div class="row" style="align-content:center; text-align:center;color:black">
+                <label for="singleSelect" style="color:white"> Periode </label><br>
+                <select name="singleSelect" ng-model="singleSelect" ng-change="update()">
+                    <option ng-repeat="option in months" value="{{option | moment: 'format': 'MM/DD/YYYY'}}">{{option | moment: 'format': 'MMMM YYYY' }}</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10" style="background-color:#0b87d5;">
+            <div class="row" style="color:yellow" style="padding-left:20px">
+                DETAIL KONTRIBUSI PENERIMAAN TERBESAR<br /> {{singleSelect | moment: 'format': 'MMMM YYYY'}}
+            </div>
+            <div class="row" style="padding-left:20px">
+                <div class="col-md-4">
+                    <div class="row">TARGET TAHUN {{singleSelect | moment:'format': 'YYYY'}}</div>
+                    <div class="row">{{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                </div>
+            </div>
+            <div class="row" style="padding-left:20px">
+                <label for="singleSelect" style="color:white"> FILTER BY DOCUMENT </label><br>
+                <select name="singleDocument" ng-model="singleDocument" ng-change="update()" style="color:black">
+                    <option ng-repeat="option in doctypes" value="{{option.value}}">{{option.name}}</option>
+                </select><br/><br/><br/><br/>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#83d3fd; color:black; padding:10px;height:500px;">
+        <div> DETAIL PENERIMAAN BERDASARKAN DOKUMEN </div>
+        <div class="col-md-12 col-lg-12">
+            <div id="grid1" ui-grid="gridOpts2" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
+        </div>
+    </div>
+    <div class="row" style="background-color:#83d3fd; color:black; padding:10px;height:500px;">
+        <!--<div> DETAIL PENERIMAAN BERDASARKAN DOKUMEN </div>-->
+        <div class="col-md-12 col-lg-12">
+            <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+        </div>
+    </div>
+</div>

@@ -35,6 +35,7 @@
     'ui.jq',
     'lr.upload',
     'ui.grid', 'ui.grid.resizeColumns', 'ui.grid.moveColumns', 'ui.grid.exporter', 'ui.grid.selection',
+    'angular-underscore'
     // 'abp'
   ]);
 
@@ -67,6 +68,11 @@
         //      templateUrl: 'views/mpo.html',
         //      menu: 'Report'
         //  })
+        .state('about', {
+          url: '/about',
+          templateUrl: 'views/about.html',
+          menu: 'Home'
+        })
         .state('pdri', {
           url: '/pdri',
           templateUrl: 'views/pdri.html',
@@ -81,6 +87,11 @@
           url: '/cukai',
           templateUrl: 'views/cukai.html',
           menu: 'Report'
+        })
+         .state('capaian', {
+          url: '/capaian',
+          templateUrl: 'views/penerimaanterbesar.html',
+          menu: 'Penerimaan Terbesar'
         })
         .state('maintenance', {
           url: '/maintenance',
