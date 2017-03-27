@@ -95,7 +95,7 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPajak.pph22 = 12440842000;
         $scope.Data.pPajak.ppntembakau = 10000;
         $scope.Data.pPajak.ppnbm = 0;
-        $scope.Data.pPajak.total = 0;
+        $scope.Data.pPajak.total = 57417018;
 
         $scope.dashboard.PIB = 1.306;
         $scope.dashboard.PIBB = 100;
@@ -144,50 +144,51 @@ angular.module('app').controller(controllerId, [
         $scope.bardata3 = [20000, 20000, 20000, 20000];
 
         $scope.Data.pPabean = {};
-        $scope.Data.pPabean.beamasuk = 20000;
-        $scope.Data.pPabean.beakeluar = 20000;
-        $scope.Data.pPabean.lainnya = 20000;
-        $scope.Data.pPabean.beamasukDitanggung = 20000;
-        $scope.Data.pPabean.total = 20000;
+        $scope.Data.pPabean.beamasuk = 23324208000;
+        $scope.Data.pPabean.beakeluar = 0;
+        $scope.Data.pPabean.lainnya = 456350400;
+        $scope.Data.pPabean.beamasukDitanggung = 0;
+        $scope.Data.pPabean.total = 23780558400;
 
         $scope.Data.pCukai = {};
-        $scope.Data.pCukai.tembakau = 20000;
-        $scope.Data.pCukai.alkohol = 20000;
-        $scope.Data.pCukai.mmea = 20000;
-        $scope.Data.pCukai.lainnya = 20000;
-        $scope.Data.pCukai.total = 20000;
+        $scope.Data.pCukai.tembakau = 63600909;
+        $scope.Data.pCukai.alkohol = 0;
+        $scope.Data.pCukai.mmea = 0;
+        $scope.Data.pCukai.lainnya = 222898182;
+        $scope.Data.pCukai.total = 86499091;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 20000;
-        $scope.Data.pPajak.bmimpor = 20000;
-        $scope.Data.pPajak.pph22 = 20000;
-        $scope.Data.pPajak.ppntembakau = 20000;
-        $scope.Data.pPajak.ppnbm = 20000;
-        $scope.Data.pPajak.total = 20000;
+        $scope.Data.pPajak.ppnimpor = 52602234;
+        $scope.Data.pPajak.bmimpor = 0;
+        $scope.Data.pPajak.pph22 = 14436234;
+        $scope.Data.pPajak.ppntembakau = 0;
+        $scope.Data.pPajak.ppnbm = 0;
+        $scope.Data.pPajak.total = 67038468000;
 
-        $scope.dashboard.PIB = 200;
+        $scope.dashboard.PIB = 1293;
         $scope.dashboard.PIBB = 200;
-        $scope.dashboard.PIBK = 200;
-        $scope.dashboard.PPKP = 200;
-        $scope.dashboard.CD = 200;
-        $scope.dashboard.PE = 200;
-        $scope.dashboard.SPKPBM = 200;
-        $scope.dashboard.PBK = 200;
-        $scope.dashboard.CK1 = 200;
-        $scope.dashboard.CK1A = 200;
-        $scope.dashboard.CK5 = 200;
+        $scope.dashboard.PIBK = 3288;
+        $scope.dashboard.PPKP = 21038;
+        $scope.dashboard.CD = 45;
+        $scope.dashboard.PE = 0;
+        $scope.dashboard.SPKPBM = 77;
+        $scope.dashboard.PBK = 5;
+        $scope.dashboard.CK1 = 0;
+        $scope.dashboard.CK1A = 0;
+        $scope.dashboard.CK5 = 0;
 
-        $scope.dashboard.PIB2 = 200;
-        $scope.dashboard.PIBB2 = 200;
-        $scope.dashboard.PIBK2 = 200;
-        $scope.dashboard.PPKP2 = 200;
-        $scope.dashboard.CD2 = 200;
-        $scope.dashboard.PE2 = 200;
-        $scope.dashboard.SPKPBM2 = 200;
-        $scope.dashboard.PBK2 = 200;
-        $scope.dashboard.CK12 = 200;
-        $scope.dashboard.CK1A2 = 200;
-        $scope.dashboard.CK52 = 200;
+        $scope.dashboard.PIB2 = 1.306;
+        $scope.dashboard.PIBB2 = 100;
+        $scope.dashboard.PIBK2 = 3;
+        $scope.dashboard.PPKP2 = 90;
+        $scope.dashboard.CD2 = 33;
+        $scope.dashboard.PE2 = 0;
+        $scope.dashboard.SPKPBM2 = 84;
+        $scope.dashboard.PBK2 = 0;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2 = 0;
+        $scope.dashboard.CK52 = 0;
+
 
       }
 
@@ -247,17 +248,18 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A = 300;
         $scope.dashboard.CK5 = 300;
 
-        $scope.dashboard.PIB2 = 300;
-        $scope.dashboard.PIBB2 = 300;
-        $scope.dashboard.PIBK2 = 300;
-        $scope.dashboard.PPKP2 = 300;
-        $scope.dashboard.CD2 = 300;
-        $scope.dashboard.PE2 = 300;
-        $scope.dashboard.SPKPBM2 = 300;
-        $scope.dashboard.PBK2 = 300;
-        $scope.dashboard.CK12 = 300;
-        $scope.dashboard.CK1A2 = 300;
-        $scope.dashboard.CK52 = 300;
+        $scope.dashboard.PIB2 = 1293;
+        $scope.dashboard.PIBB2 = 200;
+        $scope.dashboard.PIBK2 = 3288;
+        $scope.dashboard.PPKP2 = 21038;
+        $scope.dashboard.CD2 = 45;
+        $scope.dashboard.PE2 = 0;
+        $scope.dashboard.SPKPBM2 = 77;
+        $scope.dashboard.PBK2 = 5;
+        $scope.dashboard.CK12 = 0;
+        $scope.dashboard.CK1A2 = 0;
+        $scope.dashboard.CK52 = 0;
+
 
       }
 
