@@ -35,11 +35,11 @@ angular.module('app').controller(controllerId, [
     $scope.Data.pPajak.total = 0;
 
 
-    $scope.target = 10000000;
-    $scope.targetPabean = 300000;
-    $scope.targetPabeanPerBulan = 300000;
-    $scope.targetCukai = 30000;
-    $scope.targetCukaiPerBulan = 300000;
+//    $scope.target = 10000000;
+//    $scope.targetPabean = 300000;
+//    $scope.targetPabeanPerBulan = 300000;
+//    $scope.targetCukai = 30000;
+//    $scope.targetCukaiPerBulan = 300000;
     $scope.totalCapaian = 0;
     $scope.persenTotalCapaian = 0;
 
@@ -89,7 +89,7 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pPabean.beakeluar = 5150000;
         $scope.Data.pPabean.lainnya = 382147000;
         $scope.Data.pPabean.beamasukDitanggung = 10000;
-        $scope.Data.pPabean.total = 27508688;
+        $scope.Data.pPabean.total = 27508688000;
 
         $scope.Data.pCukai = {};
         $scope.Data.pCukai.tembakau = 0;
@@ -132,17 +132,17 @@ angular.module('app').controller(controllerId, [
 
         //target 01
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 29679469376;
+        $scope.targetPabeanPerBulan = 27503518000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 0;
+        $scope.totalCapaian = 27508668000;
+ 
        }
 
 
-      if ($scope.singleSelect === '02-01-2016') {
+      if ($scope.singleSelect === '02/01/2016') {
         $scope.datapabean = [
           [65, 70],
           [28, 80]
@@ -208,20 +208,19 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 02
-        
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 29679469376;
+        $scope.targetPabeanPerBulan = 23789558400;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 86499091;
+        $scope.totalCapaian = 27508668000;
  
+
 
       }
 
-      if ($scope.singleSelect === '03-01-2016') {
+      if ($scope.singleSelect === '03/01/2016') {
 
         $scope.datapabean = [
           [65, 70, 100],
@@ -291,19 +290,17 @@ angular.module('app').controller(controllerId, [
         
      //target 03
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 29679469376;
+        $scope.targetPabeanPerBulan = 31151304360;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 48354545;
+        $scope.totalCapaian = 51375725491;
  
-
 
       }
 
-      if ($scope.singleSelect === '04-01-2016') {
+      if ($scope.singleSelect === '04/01/2016') {
 
         $scope.datapabean = [
           [65, 70, 100, 200],
@@ -371,14 +368,14 @@ angular.module('app').controller(controllerId, [
         
         //target 04
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 29679469376;
+        $scope.targetPabeanPerBulan = 32677935958;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 218481820;
+        $scope.totalCapaian = 82575384396;
  
+  
       }
       if ($scope.singleSelect === '05/01/2016') {
 
@@ -449,13 +446,12 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
       //target 05
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 29679469376;
+        $scope.targetPabeanPerBulan = 37220469000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 0;
+        $scope.totalCapaian = 116674440807;
  
         
       }
@@ -529,13 +525,12 @@ angular.module('app').controller(controllerId, [
 
         //target 06
        $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 37220469000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 36545455;
+        $scope.totalCapaian = 146759822807;
  
       }
       if ($scope.singleSelect === '07/01/2016') {
@@ -607,14 +602,19 @@ angular.module('app').controller(controllerId, [
 
         //target 07
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 23014857000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 122272728;
+        $scope.totalCapaian = 185513155262;
  
+        $scope.devisa.impor = 44602401;
+        $scope.devisa.bayar = 44602401;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 176770341;
       }
       if ($scope.singleSelect === '08/01/2016') {
 
@@ -684,14 +684,19 @@ angular.module('app').controller(controllerId, [
 
         //target 08
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 35116693;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 63636364;
+        $scope.totalCapaian = 208108006990;
  
+        $scope.devisa.impor = 62686703;
+        $scope.devisa.bayar = 62686703;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 501798706;
       }
       if ($scope.singleSelect === '09/01/2016') {
         
@@ -761,13 +766,19 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         //target 09
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 16000000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 104545455;
+        $scope.totalCapaian = 243294848834;
+ 
+        $scope.devisa.impor = 109238875;
+        $scope.devisa.bayar = 109238875;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 140364232;
  
     }
 
@@ -838,14 +849,19 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         //target 10
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 19098167765;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 100000002;
+        $scope.totalCapaian = 274246766289;
  
+        $scope.devisa.impor = 109238875;
+        $scope.devisa.bayar = 109238875;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 226440113;
       }
 
       if ($scope.singleSelect === '11/01/2016') {
@@ -900,14 +916,19 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         //target 11
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 33652294000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 40909091;
+        $scope.totalCapaian = 301716576119;
  
+        $scope.devisa.impor = 240387305;
+        $scope.devisa.bayar = 240387305;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 0;
       }
       if ($scope.singleSelect === '12/01/2016') {
         
@@ -978,14 +999,22 @@ angular.module('app').controller(controllerId, [
       
       //target 12
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 339942425295;
+        $scope.targetPabean = 339012027470;
+        $scope.targetPabeanPerBulan = 30116760000;
+        $scope.targetCukai = 899706825;
+        $scope.targetCukaiPerBulan = 73462274;
+        $scope.totalCapaian = 358387015784;
+      //  $scope.persenTotalCapaian = ($scope.totalCapaian/$scope.target) * 100 ;
  
+        $scope.devisa.impor = 82225123;
+        $scope.devisa.bayar = 82225123;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 0;
+     
+
       }
 
       if ($scope.singleSelect === '01/01/2017') {
@@ -1063,6 +1092,14 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 300000;
         $scope.totalCapaian = 0;
         $scope.persenTotalCapaian = 0;
+
+        $scope.devisa.impor = 121667722;
+        $scope.devisa.bayar = 121667722;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 0;
+     
  
       }
 
@@ -1142,6 +1179,15 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 300000;
         $scope.totalCapaian = 0;
         $scope.persenTotalCapaian = 0;
+        
+        $scope.devisa.impor = 38294285;
+        $scope.devisa.bayar = 38294285;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 0;
+       
+     
     }
 
 
@@ -1212,12 +1258,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
 
-        $scope.devisa.impor = 1000;
-        $scope.devisa.expor = 1000;
-        $scope.devisa.bayar = 1000;
-        $scope.devisa.bebas = 1000;
-        $scope.devisa.ditangguhkan = 10000;
-        $scope.devisa.ditanggung = 10000;
+       
 //target 0317
         $scope.setTarget(10000, 60000, 40000);
         $scope.target = 9999999;
@@ -1227,6 +1268,14 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 300000;
         $scope.totalCapaian = 0;
         $scope.persenTotalCapaian = 0;
+
+        $scope.devisa.impor = 46993480;
+        $scope.devisa.bayar = 46993480;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 0;
+       
      
       }
     }
