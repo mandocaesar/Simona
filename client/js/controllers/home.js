@@ -139,6 +139,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 0;
         $scope.totalCapaian = 27508668000;
  
+        $scope.devisa.impor = 33092296;
+        $scope.devisa.bayar = 33092296;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 391891096;
        }
 
 
@@ -216,7 +222,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 86499091;
         $scope.totalCapaian = 27508668000;
  
-
+        $scope.devisa.impor = 140411701;
+        $scope.devisa.bayar = 140411701;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 789293152;
 
       }
 
@@ -297,7 +308,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 48354545;
         $scope.totalCapaian = 51375725491;
  
-
+        $scope.devisa.impor = 53389040;
+        $scope.devisa.bayar = 53389040;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 643663490;
       }
 
       if ($scope.singleSelect === '04/01/2016') {
@@ -375,7 +391,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 218481820;
         $scope.totalCapaian = 82575384396;
  
-  
+        $scope.devisa.impor = 42630103;
+        $scope.devisa.bayar = 42630103;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 486686659;
       }
       if ($scope.singleSelect === '05/01/2016') {
 
@@ -453,6 +474,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 0;
         $scope.totalCapaian = 116674440807;
  
+        $scope.devisa.impor = 54009503;
+        $scope.devisa.bayar = 54009503;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 499992735;
         
       }
 
@@ -532,6 +559,12 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 36545455;
         $scope.totalCapaian = 146759822807;
  
+        $scope.devisa.impor = 56164346;
+        $scope.devisa.bayar = 56164346;
+        $scope.devisa.bebas = 0;
+        $scope.devisa.ditangguhkan = 0;
+        $scope.devisa.ditanggung = 0;
+        $scope.devisa.expor = 415104793;
       }
       if ($scope.singleSelect === '07/01/2016') {
 
@@ -609,8 +642,8 @@ angular.module('app').controller(controllerId, [
         $scope.targetCukaiPerBulan = 122272728;
         $scope.totalCapaian = 185513155262;
  
-        $scope.devisa.impor = 44602401;
-        $scope.devisa.bayar = 44602401;
+        $scope.devisa.impor = 446012401;
+        $scope.devisa.bayar = 446012401;
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
@@ -928,7 +961,7 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 0;
+        $scope.devisa.expor = 177267182;
       }
       if ($scope.singleSelect === '12/01/2016') {
         
@@ -1007,12 +1040,12 @@ angular.module('app').controller(controllerId, [
         $scope.totalCapaian = 358387015784;
       //  $scope.persenTotalCapaian = ($scope.totalCapaian/$scope.target) * 100 ;
  
-        $scope.devisa.impor = 82225123;
-        $scope.devisa.bayar = 82225123;
+        $scope.devisa.impor = 326501083;
+        $scope.devisa.bayar = 326501083;
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 0;
+        $scope.devisa.expor = 82225123;
      
 
       }
@@ -1098,7 +1131,7 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 0;
+        $scope.devisa.expor = 88091899;
      
  
       }
@@ -1185,7 +1218,7 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 0;
+        $scope.devisa.expor = 348059065;
        
      
     }
@@ -1274,7 +1307,7 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 0;
+        $scope.devisa.expor = 46933480;
        
      
       }
