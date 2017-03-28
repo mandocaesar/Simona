@@ -32,9 +32,9 @@
             item5.url = '/app/#!/pdri'; item5.icon='fa fa-file'; item5.displayName='Pajak (PDRI)';
             item6.url = '/app/#!/penerimaan'; item6.icon='fa fa-file'; item6.displayName='Pabean';
             item8.url = '/app/#!/capaian'; item8.icon='fa fa-file'; item8.displayName='Capaian Terbesar';
-            item9.url = '/app/#!/maintenance'; item9.icon='fa fa-file'; item9.displayName='Analisa Penerimaan';
+            item9.url = '/app/#!/analisis'; item9.icon='fa fa-file'; item9.displayName='Analisa Penerimaan';
             item10.url = '/app/#!/maintenance'; item10.icon='fa fa-file'; item10.displayName='Utility';
-            item11.url = '/app/#!/maintenance'; item11.icon='fa fa-file'; item11.displayName='About';
+            // item11.url = '/app/#!/maintenance'; item11.icon='fa fa-file'; item11.displayName='About';
          
             item7.url = ''; item7.icon='fa fa-file'; item7.displayName='Detail Penerimaan'; item7.items=[item4,item5,item6];        
             item12.url = '/app/#!/about'; item12.icon='fa fa-file'; item12.displayName='About';
