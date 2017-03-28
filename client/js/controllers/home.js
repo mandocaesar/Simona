@@ -1307,7 +1307,7 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
-        $scope.devisa.expor = 46933480;
+        $scope.devisa.expor = 0;
        
      
       }

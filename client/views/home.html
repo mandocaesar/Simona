@@ -352,12 +352,12 @@
     <div class="row" style="background-color:#73acf7;color:black;align-items: right">
         <div class="col-ls-8 col-md-8 col-xs-8">
             <div class="row">
-                Devisa Impor
+                
             </div>
             <div class="row" style="">
-                <div class="col-md-4" style="background-color:white;border-color:yellow;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Export (Dalam USD)</div>
-                <div class="col-md-4" style="background-color:transparent;border-color:yellow;border-top-style:solid;border-bottom-style:solid">Devisa Export (Dalam USD)</div>
-                <div class="col-md-2" style="background-color:white;border-color:yellow;border-right-style:solid;border-top-style:solid;border-bottom-style:solid;text-align: end">{{devisa.expor | currency : "US$"}}</div>
+                <div class="col-md-4" style="background-color:white;border-color:yellow;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Import (Dalam USD)</div>
+                <div class="col-md-4" style="background-color:transparent;border-color:yellow;border-top-style:solid;border-bottom-style:solid"> </div>
+                <div class="col-md-4" style="background-color:white;border-color:yellow;border-right-style:solid;border-top-style:solid;border-bottom-style:solid;text-align: end">{{devisa.impor | currency : "US$"}}</div>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -367,20 +367,20 @@
                     <div class="row">Devisa Ditangguhkan</div>
                 </div>
                 <div class="col-md-2" style="background-color:white; text-align: end">
-                    <div class="row">{{devisa.bayar | currency : "Rp"}} </div>
-                    <div class="row">{{devisa.bebas | currency : "Rp"}}</div>
-                    <div class="row">{{devisa.ditanggung | currency : "Rp"}}</div>
-                    <div class="row">{{devisa.ditangguhkan | currency : "Rp"}}</div>
+                    <div class="row">{{devisa.bayar | currency : "US$"}} </div>
+                    <div class="row">{{devisa.bebas | currency : "US$"}}</div>
+                    <div class="row">{{devisa.ditanggung | currency : "US$"}}</div>
+                    <div class="row">{{devisa.ditangguhkan | currency : "US$"}}</div>
                 </div>
             </div>
             <br/>
             <div class="row">
-                Devisa Ekspor
+               
             </div>
             <div class="row" style="">
-                <div class="col-md-4" style="background-color:white;border-color:blue;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
-                <div class="col-md-4" style="background-color:transparent;border-color:blue;border-top-style:solid;border-bottom-style:solid">Devisa Impor (Dalam USD)</div>
-                <div class="col-md-2" style="background-color:white;border-color:blue;border-right-style:solid;border-top-style:solid;border-bottom-style:solid;text-align: end">{{devisa.impor | currency : "Rp"}}</div>
+                <div class="col-md-4" style="background-color:white;border-color:blue;border-left-style:solid;border-top-style:solid;border-bottom-style:solid">Devisa Ekspor (Dalam USD)</div>
+                <div class="col-md-4" style="background-color:transparent;border-color:blue;border-top-style:solid;border-bottom-style:solid"></div>
+                <div class="col-md-4" style="background-color:white;border-color:blue;border-right-style:solid;border-top-style:solid;border-bottom-style:solid;text-align: end">{{devisa.expor | currency : "US$"}} </div>
             </div>
         </div>
     </div>
