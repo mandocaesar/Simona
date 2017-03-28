@@ -1358,6 +1358,21 @@ angular.module('app').controller(controllerId, [
     $scope.options = {
       // title: { display: true, text: 'JUMLAH DOKUMEN' },
       //legend: { display: true }
+       scales: {
+                yAxes: [{
+                        id: 'y-axis-1',
+                        type: 'linear',
+                        display: true,
+                        position: 'left'
+                    },
+                    {
+                        id: 'y-axis-2',
+                        type: 'linear',
+                        display: true,
+                        position: 'right'
+                    }
+                ]
+            }
     };
 
     $scope.getDoc = function () {

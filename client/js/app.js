@@ -93,6 +93,11 @@
           templateUrl: 'views/penerimaanterbesar.html',
           menu: 'Penerimaan Terbesar'
         })
+        .state('analisis', {
+          url: '/analisis',
+          templateUrl: 'views/analisis.html',
+          menu: 'Analisis'
+        })
         .state('maintenance', {
           url: '/maintenance',
           templateUrl: 'views/maintenance.html',
