@@ -1118,13 +1118,13 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         //target 0117
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 393202279000;
+        $scope.targetPabean = 393202279000;
+        $scope.targetPabeanPerBulan = 22748922000;
+        $scope.targetCukai = 0;
+        $scope.targetCukaiPerBulan = 0;
+        $scope.totalCapaian = 21742945273;
+      
 
         $scope.devisa.impor = 121667722;
         $scope.devisa.bayar = 121667722;
@@ -1205,13 +1205,12 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 //target 0217
         $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+        $scope.target = 393202279000;
+        $scope.targetPabean = 393202279000;
+        $scope.targetPabeanPerBulan = 22748922000;
+        $scope.targetCukai = 0;
+        $scope.targetCukaiPerBulan = 0;
+        $scope.totalCapaian = 23903458000;
         
         $scope.devisa.impor = 38294285;
         $scope.devisa.bayar = 38294285;
@@ -1293,14 +1292,13 @@ angular.module('app').controller(controllerId, [
 
        
 //target 0317
-        $scope.setTarget(10000, 60000, 40000);
-        $scope.target = 9999999;
-        $scope.targetPabean = 300000;
-        $scope.targetPabeanPerBulan = 300000;
-        $scope.targetCukai = 30000;
-        $scope.targetCukaiPerBulan = 300000;
-        $scope.totalCapaian = 0;
-        $scope.persenTotalCapaian = 0;
+     $scope.setTarget(10000, 60000, 40000);
+        $scope.target = 393202279000;
+        $scope.targetPabean = 393202279000;
+        $scope.targetPabeanPerBulan = 34770443000;
+        $scope.targetCukai = 0;
+        $scope.targetCukaiPerBulan = 0;
+        $scope.totalCapaian = 23903458000;
 
         $scope.devisa.impor = 46993480;
         $scope.devisa.bayar = 46993480;
