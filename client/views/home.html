@@ -156,8 +156,8 @@
                         data-units="Penerimaan Pabean"
                         data-title=""
                         data-min-value="0"
-                        data-max-value="100"
-                        data-value="{{Data.pPabean.total | number:0}}"></canvas>
+                        data-max-value="101"
+                        data-value="{{((Data.pPabean.total/targetPabeanPerBulan) * 100) | number:0}}"></canvas>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -215,13 +215,13 @@
                         data-units="Penerimaan Cukai"
                         data-title=""
                         data-min-value="0"
-                        data-max-value="100"
-                        data-value="{{(Data.pCukai.total / targetCukaiPerBulan) * 100 | number:0}}"></canvas>
+                        data-max-value="101"
+                        data-value="{{((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0}}"></canvas>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">PEN CUKAI {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
-                    <div class="row">{{(Data.pCukai.total / targetCukaiPerBulan) * 100 | number:0}}%</div>
+                    <div class="row">{{((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0 | number:0}}%</div>
                     <div class="row">{{Data.pCukai.total | currency : "Rp"}}</div>
                 </div>
             </div>

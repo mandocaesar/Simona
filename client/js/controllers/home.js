@@ -131,7 +131,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 
         //target 01
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 27503518000;
@@ -214,7 +214,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 02
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 23789558400;
@@ -300,7 +300,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         
      //target 03
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 31151304360;
@@ -383,7 +383,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
         
         //target 04
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 32677935958;
@@ -466,7 +466,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
       //target 05
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 37220469000;
@@ -551,7 +551,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 
         //target 06
-       $scope.setTarget(10000, 60000, 40000);
+       $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 37220469000;
@@ -634,7 +634,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 
         //target 07
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 23014857000;
@@ -716,7 +716,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 
         //target 08
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 35116693;
@@ -798,7 +798,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2= 0;
         $scope.dashboard.CK52 = 0;
         //target 09
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 16000000;
@@ -881,7 +881,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 10
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 19098167765;
@@ -948,7 +948,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 11
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 33652294000;
@@ -1031,7 +1031,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
       
       //target 12
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 339012027470;
         $scope.targetPabeanPerBulan = 30116760000;
@@ -1117,7 +1117,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 0117
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 393202279000;
         $scope.targetPabean = 393202279000;
         $scope.targetPabeanPerBulan = 22748922000;
@@ -1204,7 +1204,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
 //target 0217
-        $scope.setTarget(10000, 60000, 40000);
+        $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 393202279000;
         $scope.targetPabean = 393202279000;
         $scope.targetPabeanPerBulan = 22748922000;
@@ -1292,7 +1292,7 @@ angular.module('app').controller(controllerId, [
 
        
 //target 0317
-     $scope.setTarget(10000, 60000, 40000);
+     $scope.setTarget(10000, 60000, 40000, 100000);
         $scope.target = 393202279000;
         $scope.targetPabean = 393202279000;
         $scope.targetPabeanPerBulan = 34770443000;
@@ -1311,11 +1311,12 @@ angular.module('app').controller(controllerId, [
       }
     }
 
-    $scope.setTarget = function(targetPerBulan, targetCukaiPerBulan, targetPabeanPerBulan){
+    $scope.setTarget = function(targetPerBulan, targetCukaiPerBulan, targetPabeanPerBulan, targetPajakPerBulan){
         $scope.targetPerBulan = targetPerBulan;
         $scope.targetCukaiPerBulan = targetCukaiPerBulan;
         $scope.targetPabeanPerBulan = targetPabeanPerBulan;
-    };
+        $scope.targetPajakPerBulan = targetPajakPerBulan;
+  };
 
     $scope.getData = function () {
       // storeService.getConfig().success(function (result) {
