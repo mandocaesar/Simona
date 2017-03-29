@@ -55,7 +55,7 @@ angular.module('app').controller(controllerId, [
             { "bulan": "July", "ppnimpor": "50630668000", "ppnbm": "0", "pph22": "13384756000", "ppncukaiht": "0" },
             { "bulan": "August", "ppnimpor": "74476856000", "ppnbm": "0", "pph22": "18251574000", "ppncukaiht": "0" },
             { "bulan": "September", "ppnimpor": "57960474000", "ppnbm": "0", "pph22": "15267894000", "ppncukaiht": "0" },
-            { "bulan": "October", "ppnimpor": "56539163000", "ppnbm": "0", "pph22": "15054330", "ppncukaiht": "0" },
+            { "bulan": "October", "ppnimpor": "56539163000", "ppnbm": "0", "pph22": "15054330000", "ppncukaiht": "0" },
             { "bulan": "November", "ppnimpor": "61976801520", "ppnbm": "0", "pph22": "17055442780", "ppncukaiht": "0" },
             { "bulan": "December", "ppnimpor": "70384038000", "ppnbm": "0", "pph22": "19530793000", "ppncukaiht": "0" },
 
@@ -67,7 +67,7 @@ angular.module('app').controller(controllerId, [
             columnDefs: [
                 { name: 'Bulan', field: 'bulan', minWidth: 50 },
                 { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah' },
                 { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
             ],
             enableGridMenu: true,
@@ -95,18 +95,18 @@ angular.module('app').controller(controllerId, [
             data: []
         };
         $scope.gridOpts3.data = [
-            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "January", "penerimaan": "40000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "752000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "2795000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "2701000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "0", "jumlah": "10000", "rata": "10000", "cd": "10000" },
 
         ];
 
@@ -117,7 +117,7 @@ angular.module('app').controller(controllerId, [
             columnDefs: [
                 { name: 'Bulan', field: 'bulan', minWidth: 50 },
                 { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah' },
                 { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
             ],
             enableGridMenu: true,
@@ -145,18 +145,18 @@ angular.module('app').controller(controllerId, [
             data: []
         };
         $scope.gridOpts4.data = [
-            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "January", "penerimaan": "44976136000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "52602234000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "64403619000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "54674447000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "63443115000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "84474023000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "50630668000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "50630668000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "57960474000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "56539163000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "61976801520", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "70384038000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
 
         ];
 
@@ -167,7 +167,8 @@ angular.module('app').controller(controllerId, [
             columnDefs: [
                 { name: 'Bulan', field: 'bulan', minWidth: 50 },
                 { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+ //               { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah' },
                 { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
             ],
             enableGridMenu: true,
@@ -195,18 +196,19 @@ angular.module('app').controller(controllerId, [
             data: []
         };
         $scope.gridOpts5.data = [
-            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+        //pph 22
+            { "bulan": "January", "penerimaan": "12440842000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "February", "penerimaan": "144362334000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "March", "penerimaan": "17220639000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "April", "penerimaan": "115743081000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "May", "penerimaan": "16899406000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "June", "penerimaan": "10022215561000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "July", "penerimaan": "13384756000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "August", "penerimaan": "18251574000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "September", "penerimaan": "15267894000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "October", "penerimaan": "15054330000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "November", "penerimaan": "17055442780", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "December", "penerimaan": "19530793000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
 
         ];
 
@@ -217,7 +219,7 @@ angular.module('app').controller(controllerId, [
             columnDefs: [
                 { name: 'Bulan', field: 'bulan', minWidth: 50 },
                 { name: 'Penerimaan', field: 'penerimaan', minWidth: 50, cellFilter: 'currency : "Rp"' },
-                { name: 'Jumlah Dokumen', field: 'jumlah', cellFilter: 'currency : "Rp"' },
+                { name: 'Jumlah Dokumen', field: 'jumlah' },
                 { name: 'Rata2 Per Dokumen', field: 'rata', minWidth: 50, cellFilter: 'currency : "Rp"' },
             ],
             enableGridMenu: true,
@@ -244,19 +246,20 @@ angular.module('app').controller(controllerId, [
             },
             data: []
         };
+       //cukai ht
         $scope.gridOpts6.data = [
-            { "bulan": "January", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "February", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "March", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "April", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "May", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "June", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "July", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "August", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "September", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "October", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "November", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
-            { "bulan": "December", "penerimaan": "10000", "jumlah": "10000", "rata": "10000", "cd": "10000" },
+            { "bulan": "January", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "February", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "March", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "April", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "May", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "June", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "July", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "August", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "September", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "October", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "November", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
+            { "bulan": "December", "penerimaan": "0", "jumlah": "0", "rata": "0", "cd": "0" },
 
         ];
 
@@ -271,7 +274,7 @@ angular.module('app').controller(controllerId, [
             ]
         }
 
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+        $scope.labels = ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"];
         $scope.series = ['Series A', 'Series B'];
         $scope.data = [
           [65, 59, 80, 81, 56, 55, 40],
@@ -341,10 +344,10 @@ angular.module('app').controller(controllerId, [
         $scope.update = function(){
 
                if ($scope.singleSelect === '01/01/2016') {
-                    $scope.target = 9900000;
-                    $scope.totalCapaian = 100000;
-                    $scope.targetBulan = 100000;
-                    $scope.realisasi = 100000;
+                    $scope.target = 339942425295;
+                    $scope.totalCapaian = 27508668000;
+                    $scope.targetBulan = 27508668000;
+                    $scope.realisasi = 27508668000;
 
                     $scope.dashboard.PPNBM = 0;
                     $scope.dashboard.PPNIMPOR = 0;
@@ -362,7 +365,7 @@ angular.module('app').controller(controllerId, [
                     $scope.dashboard.PPNCUKAIHT2P = 0;
                }
 
-               if ($scope.singleSelect === '01/01/2016') {
+               if ($scope.singleSelect === '02/01/2016') {
                     $scope.target = 2000000;
                     $scope.totalCapaian = 200000;
                     $scope.targetBulan = 200000;

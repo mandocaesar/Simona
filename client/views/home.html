@@ -136,7 +136,7 @@
                 <div class="col-lg-6 col-md-6">{{targetCukaiPerBulan | currency : "Rp"}}</div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6">  CAPEAN BULAN {{singleSelect | moment: 'format': 'MMMM YYYY'}} :</div>
+                <div class="col-lg-6 col-md-6">  CAPAIAN BULAN {{singleSelect | moment: 'format': 'MMMM YYYY'}} :</div>
                 <div class="col-lg-6 col-md-6">{{Data.pCukai.total | currency : "Rp"}}</div>
             </div>
             <div class="row" style="margin-top:40px">
@@ -307,7 +307,7 @@
                 <div class="row">
                     <div class="row">
                         <div class="row">
-                            <div class="col-sm-4">PPN Impor</div>
+                            <div class="col-sm-4">PPn Impor</div>
                             <div class="col-sm-8"></div>
                         </div>
                         <div class="row">
@@ -316,7 +316,7 @@
                             <div class="col-sm-4">{{(Data.pPajak.ppnimpor/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">PPN BM Impor</div>
+                            <div class="col-sm-4">PPn BM Impor</div>
                             <div class="col-sm-8"></div>
                         </div>
                         <div class="row">
@@ -325,7 +325,7 @@
                             <div class="col-sm-4">{{(Data.pPajak.ppnbm/(Data.pPajak.ppntembakau + Data.pPajak.ppnimpor + Data.pPajak.ppnbmm + Data.pPajak.pph22)) * 100 | number:0}} %</div>                           
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">PPH pasal 22 Impor</div>
+                            <div class="col-sm-4">PPh pasal 22 Impor</div>
                             <div class="col-sm-8"></div>
                         </div>
                         <div class="row">
