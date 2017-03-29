@@ -1210,7 +1210,7 @@ angular.module('app').controller(controllerId, [
         $scope.targetPabeanPerBulan = 22748922000;
         $scope.targetCukai = 0;
         $scope.targetCukaiPerBulan = 0;
-        $scope.totalCapaian = 23903458000;
+        $scope.totalCapaian = 45095821273;
         
         $scope.devisa.impor = 38294285;
         $scope.devisa.bayar = 38294285;
@@ -1298,7 +1298,7 @@ angular.module('app').controller(controllerId, [
         $scope.targetPabeanPerBulan = 34770443000;
         $scope.targetCukai = 0;
         $scope.targetCukaiPerBulan = 0;
-        $scope.totalCapaian = 23903458000;
+        $scope.totalCapaian = 52256334000;
 
         $scope.devisa.impor = 46993480;
         $scope.devisa.bayar = 46993480;
