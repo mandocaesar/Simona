@@ -682,7 +682,7 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pCukai.alkohol = 0;
         $scope.Data.pCukai.mmea = 0;
         $scope.Data.pCukai.lainnya = 13636364;
-        $scope.Data.pCukai.total = 636366364;
+        $scope.Data.pCukai.total = 63636364;
         $scope.Data.pPajak = {};
 
         $scope.Data.pPajak.ppnimpor = 74476856000;

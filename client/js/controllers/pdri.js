@@ -46,18 +46,18 @@ angular.module('app').controller(controllerId, [
             data: []
         };
         $scope.gridOpts2.data = [
-            {"bulan":"January","ppnimpor":"10000","ppnbm":"10000","pph22":"10000","ppncukaiht":"10000"},
-            { "bulan": "February", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "March", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "April", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "May", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "June", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "July", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "August", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "September", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "October", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "November", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
-            { "bulan": "December", "ppnimpor": "10000", "ppnbm": "10000", "pph22": "10000", "ppncukaiht": "10000" },
+            {"bulan":"January","ppnimpor":"44976136000","ppnbm":"40000","pph22":"12440842000","ppncukaiht":"0"},
+            { "bulan": "February", "ppnimpor": "52602234000", "ppnbm": "0", "pph22": "144362334000", "ppncukaiht": "0" },
+            { "bulan": "March", "ppnimpor": "64403619000", "ppnbm": "0", "pph22": "17220639000", "ppncukaiht": "0" },
+            { "bulan": "April", "ppnimpor": "54674447000", "ppnbm": "752000", "pph22": "115743081000", "ppncukaiht": "0" },
+            { "bulan": "May", "ppnimpor": "63443115000", "ppnbm": "2795000", "pph22": "16899406000", "ppncukaiht": "0" },
+            { "bulan": "June", "ppnimpor": "84474023000", "ppnbm": "2701000", "pph22": "10022215561000", "ppncukaiht": "0" },
+            { "bulan": "July", "ppnimpor": "50630668000", "ppnbm": "0", "pph22": "13384756000", "ppncukaiht": "0" },
+            { "bulan": "August", "ppnimpor": "74476856000", "ppnbm": "0", "pph22": "18251574000", "ppncukaiht": "0" },
+            { "bulan": "September", "ppnimpor": "57960474000", "ppnbm": "0", "pph22": "15267894000", "ppncukaiht": "0" },
+            { "bulan": "October", "ppnimpor": "56539163000", "ppnbm": "0", "pph22": "15054330", "ppncukaiht": "0" },
+            { "bulan": "November", "ppnimpor": "61976801520", "ppnbm": "0", "pph22": "17055442780", "ppncukaiht": "0" },
+            { "bulan": "December", "ppnimpor": "70384038000", "ppnbm": "0", "pph22": "19530793000", "ppncukaiht": "0" },
 
         ];
 
@@ -341,7 +341,7 @@ angular.module('app').controller(controllerId, [
         $scope.update = function(){
 
                if ($scope.singleSelect === '01/01/2016') {
-                    $scope.target = 1000000;
+                    $scope.target = 9900000;
                     $scope.totalCapaian = 100000;
                     $scope.targetBulan = 100000;
                     $scope.realisasi = 100000;
