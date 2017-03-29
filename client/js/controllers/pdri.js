@@ -268,10 +268,11 @@ angular.module('app').controller(controllerId, [
             //     console.log(result);
             //     $scope.months = result;
             // });
-            $scope.months = ['01-01-2016', '02-01-2016', '03-01-2016', '04-01-2016',
-                '05-01-2016', '06-01-2016', '07-01-2016', '08-01-2016',
-                '09-01-2016', '10-01-2016', '11-01-2016', '12-01-2016'
-            ]
+          $scope.months = ['03-01-2017', '02-01-2017', '01-01-2017', '12-01-2016',
+        '11-01-2016', '10-01-2016', '09-01-2016', '08-01-2016',
+        '07-01-2016', '06-01-2016', '05-01-2016', '04-01-2016','03-01-2016'
+        ,'02-01-2016','01-01-2016'
+      ]
         }
 
         $scope.labels = ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"];
@@ -583,10 +584,10 @@ angular.module('app').controller(controllerId, [
                }
 
                if ($scope.singleSelect === '12/01/2016') {
-                    $scope.target = 12000000;
-                    $scope.totalCapaian = 1200000;
-                    $scope.targetBulan = 1200000;
-                    $scope.realisasi = 1200000;
+                    $scope.target = 339942425295;
+                    $scope.totalCapaian = 27508668000;
+                    $scope.targetBulan = 27508668000;
+                    $scope.realisasi = 27508668000;
 
                     $scope.dashboard.PPNBM = 12;
                     $scope.dashboard.PPNIMPOR = 12;
@@ -603,6 +604,69 @@ angular.module('app').controller(controllerId, [
                     $scope.dashboard.PPH222P = 12;
                     $scope.dashboard.PPNCUKAIHT2P = 12;
                }
+               if ($scope.singleSelect === '01/01/2017') {
+                    $scope.target = 393202279000;
+                    $scope.totalCapaian = 21665640000;
+                    $scope.targetBulan = 22748922000;
+                    $scope.realisasi = 21665640000;
+
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 0;
+                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNCUKAIHT = 0;
+
+                    $scope.dashboard.PPNBM2 = 0;
+                    $scope.dashboard.PPNIMPOR2 = 0;
+                    $scope.dashboard.PPH222 = 0;
+                    $scope.dashboard.PPNCUKAIHT2 = 0;
+
+                    $scope.dashboard.PPNBM2P = 0;
+                    $scope.dashboard.PPNIMPOR2P = 0;
+                    $scope.dashboard.PPH222P = 0;
+                    $scope.dashboard.PPNCUKAIHT2P = 0;
+               }
+                 if ($scope.singleSelect === '02/01/2017') {
+                    $scope.target = 393202279000;
+                    $scope.totalCapaian = 44917201000;
+                    $scope.targetBulan = 22748922000;
+                    $scope.realisasi = 23251561000;
+
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 0;
+                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNCUKAIHT = 0;
+
+                    $scope.dashboard.PPNBM2 = 0;
+                    $scope.dashboard.PPNIMPOR2 = 0;
+                    $scope.dashboard.PPH222 = 0;
+                    $scope.dashboard.PPNCUKAIHT2 = 0;
+
+                    $scope.dashboard.PPNBM2P = 0;
+                    $scope.dashboard.PPNIMPOR2P = 0;
+                    $scope.dashboard.PPH222P = 0;
+                    $scope.dashboard.PPNCUKAIHT2P = 0;
+               }  if ($scope.singleSelect === '03/01/2017') {
+                    $scope.target = 393202279000;
+                    $scope.totalCapaian = 72629218000;
+                    $scope.targetBulan = 34770443000;
+                    $scope.realisasi = 28052487000;
+
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 0;
+                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNCUKAIHT = 0;
+
+                    $scope.dashboard.PPNBM2 = 0;
+                    $scope.dashboard.PPNIMPOR2 = 0;
+                    $scope.dashboard.PPH222 = 0;
+                    $scope.dashboard.PPNCUKAIHT2 = 0;
+
+                    $scope.dashboard.PPNBM2P = 0;
+                    $scope.dashboard.PPNIMPOR2P = 0;
+                    $scope.dashboard.PPH222P = 0;
+                    $scope.dashboard.PPNCUKAIHT2P = 0;
+               }
+
         }
 
         $scope.getMonths();
