@@ -131,7 +131,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK52 = 0;
 
         //target 01
-        $scope.setTarget(10000, 60000, 40000, 100000);
+        $scope.setTarget(27503518000, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 27503518000;
@@ -214,7 +214,7 @@ angular.module('app').controller(controllerId, [
         $scope.dashboard.CK1A2 = 0;
         $scope.dashboard.CK52 = 0;
         //target 02
-        $scope.setTarget(10000, 60000, 40000, 100000);
+        $scope.setTarget(23789558400, 60000, 40000, 100000);
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 23789558400;
