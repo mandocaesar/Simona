@@ -95,19 +95,19 @@
         <div class="col-lg-4 col-md-4">
             <div class="row">
                 <div class="col-lg-6 col-md-6"> Target {{singleSelect | moment: 'format': 'YYYY' }} :</div>
-                <div class="col-lg-6 col-md-6">{{target | currency : "Rp"}}</div>
+                <div class="col-lg-6 col-md-6" style="text-align: right">{{target | currency : "Rp"}}</div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6"> Target PABEAN :</div>
-                <div class="col-lg-6 col-md-6">{{targetPabean | currency : "Rp"}}</div>
+                <div class="col-lg-6 col-md-6" style="text-align: right">{{targetPabean | currency : "Rp"}}</div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6"> Target CUKAI :</div>
-                <div class="col-lg-6 col-md-6">{{targetCukai | currency : "Rp"}}</div>
+                <div class="col-lg-6 col-md-6" style="text-align: right">{{targetCukai | currency : "Rp"}}</div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6"> Total Capaian :</div>
-                <div class="col-lg-6 col-md-6">{{totalCapaian | currency : "Rp"}}</div>
+                <div class="col-lg-6 col-md-6"style="text-align: right">{{totalCapaian | currency : "Rp"}}</div>
             </div>
             <div class="row" style="margin-top:40px">
                 <div class="col-lg-12 col-md-12" style="align-content:center; text-align:center;color:black">
@@ -148,7 +148,7 @@
     </div>
     <div class="row" style="background-color:#5bbaf6;">
         <div class="col-lg-2">
-            <div class="row">
+            <div class="row" style="text-align: center">
                 <canvas canvas-gauge
                         id="mygauge1"
                         data-width="150"
@@ -161,9 +161,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row">PEN PABEAN {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
-                    <div class="row">200%</div>
-                    <div class="row">{{Data.pPabean.total | currency : "Rp"}}</div>
+                    <div class="row" style="text-align: center">PEN PABEAN {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row"></div>
+                    <div class="row" style="text-align: center">{{Data.pPabean.total | currency : "Rp"}}</div>
                 </div>
             </div>
         </div>
@@ -221,7 +221,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">PEN CUKAI {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
-                    <div class="row"  >{{((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0 | number:0}}%</div>
+                   <!-- 
+                       <div class="row"  >{{((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0 | number:0}}%</div> 
+                       -->
                     <div class="row">{{Data.pCukai.total | currency : "Rp"}}</div>
                 </div>
             </div>
