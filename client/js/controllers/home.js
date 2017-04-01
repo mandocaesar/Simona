@@ -1,8 +1,9 @@
 ﻿var controllerId = 'app.views.home';
 angular.module('app').controller(controllerId, [
-  '$scope', 'upload', '$http', '$window',
-  function ($scope, upload, $http, $window) {
+  '$scope', 'upload', '$http', '$window','$rootScope',
+  function ($scope, upload, $http, $window, $rootScope) {
     var vm = this;
+
     $scope.devisa = {};
     $scope.devisa.impor = 0;
     $scope.devisa.expor = 0;
@@ -46,6 +47,7 @@ angular.module('app').controller(controllerId, [
     $scope.months = {};
     $scope.singleSelect = {};
 
+
     $scope.getMonths = function () {
       $scope.months = ['03-01-2017', '02-01-2017', '01-01-2017', '12-01-2016',
         '11-01-2016', '10-01-2016', '09-01-2016', '08-01-2016',
@@ -65,6 +67,10 @@ angular.module('app').controller(controllerId, [
     $scope.gaugePajak = 0;
     $scope.gaugeCukai = 0;
     $scope.gaugePabean = 0;
+
+    $scope.gauge1 = "Penerimaan Pabean";
+    $scope.gauge2 = "Penerimaan Cukai";
+    $scope.gauge3 = "Penerimaan Pajak";
 
     $scope.setGauge = function (pabean, cukai, pajak) {
       $scope.gaugePajak = pajak;

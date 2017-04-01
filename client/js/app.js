@@ -56,7 +56,8 @@
         .state('home', {
           url: '/',
           templateUrl: 'views/home.html',
-          menu: 'Home'
+          menu: 'Home',
+          cache:false
         })
         // .state('upload', {
         //     url: '/upload',

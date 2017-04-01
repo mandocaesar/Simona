@@ -5,9 +5,9 @@
             var vm = this;
             $rootScope.load = function () {
                 $window.onload = function () {
-                    alert("click start fetch Data");
-                    if (Gauge.Collection.length > 0) {
-                        var config = Gauge.Collection[0].config;
+                    // alert("click start fetch Data");
+                    for (var i = 0 ; i < Gauge.Collection.length ;i ++) {
+                        var config = Gauge.Collection[i].config;
                         config.colors.plate = '#666';
                         config.colors.majorTicks = 'rgba(192,192,192,0.3)';
                         config.colors.minorTicks = 'rgba(192,192,192,0.3)';
@@ -62,10 +62,10 @@
                                     color: '#9CA621'
                                 }]
 
-                        for (var i = 0; i < Gauge.Collection.length; i++) {
+                        //for (var i = 0; i < Gauge.Collection.length; i++) {
                             Gauge.Collection[i].updateConfig(config);
-                            console.log(Gauge.Collection[i].config)
-                        }
+                          //  console.log(Gauge.Collection[i].config)
+                       // }
                     }
                 };
             }
