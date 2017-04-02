@@ -73,28 +73,27 @@ angular.module('app').controller(controllerId, [
     $scope.gauge3 = "Penerimaan Pajak";
 
     $scope.setGauge = function () {
-      $scope.gaugePajak = Math.ceil((Data.pPajak.total / targetPajakPerBulan) * 100);
-      $scope.gaugeCukai = Math.ceil((Data.pCukai.total / targetCukaiPerBulan) * 100);
+      $scope.gaugePajak = Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
+      $scope.gaugeCukai = Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
       $scope.gaugePabean = Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
     };
 
     $scope.update = function () {
       console.log($scope.singleSelect);
       if ($scope.singleSelect === '01/01/2016') {
-
         $scope.datapabean = [
-          [27121371000],
+          [$scope.Data.pPabean.beamasuk],
           [5150000]
         ];
 
         $scope.datacukai = [
-          [65],
-          [28]
+          [0],
+          [0]
         ];
 
         $scope.datapajak = [
-          [65],
-          [28]
+          [44976136000],
+          [12440842000]
         ];
         $scope.bardata1 = [10000, 10000, 10000];
         $scope.bardata2 = [10000, 10000, 10000, 10000];
@@ -151,10 +150,10 @@ angular.module('app').controller(controllerId, [
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 27503518000;
-
         $scope.targetCukai = 899706825;
         $scope.targetCukaiPerBulan = 0;
         $scope.totalCapaian = 27508668000;
+
 
         $scope.devisa.impor = 33092296;
         $scope.devisa.bayar = 33092296;
@@ -163,12 +162,10 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.ditanggung = 0;
         $scope.devisa.expor = 391891096;
         $scope.setGauge();
-
       }
 
 
       if ($scope.singleSelect === '02/01/2016') {
-        //        $scope.setGauge(20,20,20);
         $scope.datapabean = [
           [27121371000, 23324208000],
           [5150000, 456350400]
@@ -256,9 +253,10 @@ angular.module('app').controller(controllerId, [
       if ($scope.singleSelect === '03/01/2016') {
         //        $scope.setGauge(30,30,30);
 
-        $scope.datapabean = [
-          [65, 70, 100],
-          [28, 80, 100]
+       $scope.datapabean = [
+          [27121371000,23324208000,30950570000],
+          [5150000,456350400,200734360] 
+        
         ];
 
         $scope.datacukai = [
