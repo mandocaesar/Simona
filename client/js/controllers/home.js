@@ -1440,9 +1440,9 @@ angular.module('app').controller(controllerId, [
     ];
 
     $scope.options = {
-      legend: {
-        display: true
-      },
+      // legend: {
+      //   display: true
+      // },
       scales: {
         yAxes: [{
             id: 'y-axis-1',
