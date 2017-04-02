@@ -81,21 +81,21 @@ angular.module('app').controller(controllerId, [
     $scope.update = function () {
       console.log($scope.singleSelect);
       if ($scope.singleSelect === '01/01/2016') {
-        $scope.setGauge(10,10,10);
+        $scope.setGauge(100,0,0);
         
         $scope.datapabean = [
-          [27121371000],
+          [$scope.Data.pPabean.beamasuk],
           [5150000]
         ];
 
         $scope.datacukai = [
-          [65],
-          [28]
+          [0],
+          [0]
         ];
 
         $scope.datapajak = [
-          [65],
-          [28]
+          [44976136000],
+          [12440842000]
         ];
         $scope.bardata1 = [10000, 10000, 10000];
         $scope.bardata2 = [10000, 10000, 10000, 10000];
@@ -152,9 +152,10 @@ angular.module('app').controller(controllerId, [
         $scope.target = 339942425295;
         $scope.targetPabean = 29679469376;
         $scope.targetPabeanPerBulan = 27503518000;
-        $scope.targetCukai = 899706825;
+        $scope.targetCukai = 0;
         $scope.targetCukaiPerBulan = 0;
         $scope.totalCapaian = 27508668000;
+
 
         $scope.devisa.impor = 33092296;
         $scope.devisa.bayar = 33092296;
@@ -162,6 +163,23 @@ angular.module('app').controller(controllerId, [
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
         $scope.devisa.expor = 391891096;
+
+        $scope.setGauge(100,0,0);
+        
+        $scope.datapabean = [
+          [$scope.Data.pPabean.beamasuk],
+          [5150000]
+        ];
+
+        $scope.datacukai = [
+          [0],
+          [0]
+        ];
+
+        $scope.datapajak = [
+          [44976136000],
+          [12440842000]
+        ];
       }
 
 
@@ -253,9 +271,10 @@ angular.module('app').controller(controllerId, [
       if ($scope.singleSelect === '03/01/2016') {
         $scope.setGauge(30,30,30);
 
-        $scope.datapabean = [
-          [65, 70, 100],
-          [28, 80, 100]
+       $scope.datapabean = [
+          [27121371000,23324208000,30950570000],
+          [5150000,456350400,200734360] 
+        
         ];
 
         $scope.datacukai = [

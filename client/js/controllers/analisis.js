@@ -1,7 +1,7 @@
 var controllerId = 'app.views.analisis';
 angular.module('app').controller(controllerId, ['$scope', 'upload', '$http',
     function ($scope, upload, $http) {
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
+        $scope.labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December"];
         $scope.series = ['T.A 2016', 'T.A 2017'];
 
         $scope.datasetOverride = [{
@@ -39,7 +39,7 @@ angular.module('app').controller(controllerId, ['$scope', 'upload', '$http',
 
         $scope.datadokbm = [
             [15000463.24, 11956304.71, 13392992.02, 11594449.80, 13840120.08, 14116237.97, 17234978.80, 15179048.46, 16812889.25, 12695847.38, 11380048.46, 10083468.40],
-            [4000, 1000, 2000, 4000, 2000, 1000, 6000, 7000, 8000, 8000, 21000, 12000]
+            [20463027.38, 23229646.35, 24676164.26]
         ];
 
         $scope.datadokdevisa = [

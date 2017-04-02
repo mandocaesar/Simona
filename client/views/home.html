@@ -207,7 +207,7 @@
     </div>
     <div class="row" style="background-color:#73acf7">
         <div class="col-lg-2">
-            <div class="row">
+            <div class="row" style="text-align: center">
                 <canvas canvas-gauge
                         id="mygauge2"
                         data-width="150"
@@ -220,11 +220,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row">PEN CUKAI {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row" style="text-align: center">PEN CUKAI {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
                    <!-- 
                        <div class="row"  >{{((Data.pCukai.total/targetCukaiPerBulan) * 100) | number:0 | number:0}}%</div> 
                        -->
-                    <div class="row">{{Data.pCukai.total | currency : "Rp"}}</div>
+                    <div class="row" style="text-align: center">{{Data.pCukai.total | currency : "Rp"}}</div>
                 </div>
             </div>
         </div>
@@ -279,7 +279,7 @@
     </div>
     <div class="row" style="background-color:#9ce2ad">
         <div class="col-lg-2">
-            <div class="row">
+            <div class="row" style="text-align: center">
                 <canvas canvas-gauge
                         id="mygauge3"
                         data-width="150"
@@ -292,9 +292,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row">PEN PAJAK {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
+                    <div class="row" style="text-align: center">PEN PAJAK {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
                     <div class="row"></div>
-                    <div class="row">{{Data.pPajak.total | currency : "Rp"}}</div>
+                    <div class="row" style="text-align: center">{{Data.pPajak.total | currency : "Rp"}}</div>
                 </div>
             </div>
         </div>
