@@ -1273,17 +1273,17 @@ angular.module('app').controller(controllerId, [
 
         $scope.datapabean = [
           [65, 70, 100, 200, 100, 77, 56, 80, 100, 89, 89],
-          [28, 80, 100, 100, 80, 89, 89, 88, 200, 77, 100]
+          [28, 80, 100, 100, 80, 89, 89, 88, 200, 77, 1000000]
         ];
 
         $scope.datacukai = [
           [65, 70, 100, 200, 100, 67, 78, 89, 100, 67, 100],
-          [28, 80, 100, 85, 77, 66, 90, 100, 100, 55, 100]
+          [28, 80, 100, 85, 77, 66, 90, 100, 100, 55, 1000000]
         ];
 
         $scope.datapajak = [
           [65, 70, 100, 56, 90, 50, 90, 89, 78, 89, 100],
-          [28, 80, 100, 90, 66, 77, 88, 100, 88, 100, 100]
+          [28, 80, 100, 90, 66, 77, 880000, 10000000, 88, 100, 100000]
         ];
 
         $scope.bardata1 = [120000, 120000, 120000];
@@ -1420,18 +1420,7 @@ angular.module('app').controller(controllerId, [
       [65, -59, 80, 81, -56, 55, -40],
       [28, 48, -40, 19, 86, 27, 90]
     ];
-    $scope.datasetOverride = [{
-        label: "Bar chart",
-        borderWidth: 1,
-        type: 'bar'
-      },
-      {
-        label: "Line chart",
-        borderWidth: 3,
-        hoverBackgroundColor: "rgba(255,99,132,0.4)",
-        hoverBorderColor: "rgba(255,99,132,1)",
-        type: 'line'
-      }, {
+    $scope.datasetOverride = [ {
         yAxisID: 'y-axis-1'
       }, {
         yAxisID: 'y-axis-2'
