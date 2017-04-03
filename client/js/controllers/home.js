@@ -82,7 +82,7 @@ angular.module('app').controller(controllerId, [
       console.log($scope.singleSelect);
       if ($scope.singleSelect === '01/01/2016') {
         $scope.datapabean = [
-          [$scope.Data.pPabean.beamasuk],
+          [27121371000],
           [5150000]
         ];
 
@@ -167,19 +167,18 @@ angular.module('app').controller(controllerId, [
 
       if ($scope.singleSelect === '02/01/2016') {
         $scope.datapabean = [
-          [27121371000, 23324208000],
-          [5150000, 456350400]
-
+          [27121371000,23324208000],
+          [5150000,456350400]
         ];
 
         $scope.datacukai = [
-          [65, 70],
-          [28, 80]
+          [0,],
+          [0,]
         ];
 
         $scope.datapajak = [
-          [65, 70],
-          [28, 80]
+          [44976136000,],
+          [12440842000,]
         ];
 
         $scope.bardata1 = [20000, 20000, 20000];
