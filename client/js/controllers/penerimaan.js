@@ -40,7 +40,20 @@ angular.module('app').controller(controllerId, [
                 {
                     name: 'CD',
                     field: 'cd',
-                    minWidth: 50
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                }, 
+                {
+                    name: 'PE',
+                    field: 'pe',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                 {
+                    name: 'SPKPBM',
+                    field: 'spkpbm',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
                 },
             ],
             enableGridMenu: true,
@@ -90,7 +103,7 @@ angular.module('app').controller(controllerId, [
         };
         $scope.gridOpts2.data = [{
                 "bulan": "January",
-                "pib": "10000",
+                "pib": "19590605000",
                 "pibk": "10000",
                 "ppkp": "10000",
                 "cd": "10000"
@@ -1263,25 +1276,18 @@ angular.module('app').controller(controllerId, [
                  $scope.dashboard.PPKP = 909;
                  $scope.dashboard.CD = 33;
                  $scope.dashboard.PE = 1;
-                 $scope.dashboard.SPKPBM = 84;
+                 $scope.dashboard.SPKPBM = 83;
                 
 
-                $scope.dashboard.PIB2 = 0;
+                $scope.dashboard.PIB2 = 19590605000;
                 $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIBK2 = 5223443000;
+                $scope.dashboard.PPKP2 = 199316000;
+                $scope.dashboard.CD2 = 20575000;
+                $scope.dashboard.PE2 = 5150000;
+                $scope.dashboard.SPKPBM2 = 2072068000;
                 $scope.dashboard.PBK2 = 0;
        
-                $scope.dashboard.PIB2P = 10;
-                $scope.dashboard.PIBB2P = 10;
-                $scope.dashboard.PIBK2P = 10;
-                $scope.dashboard.PPKP2P = 10;
-                $scope.dashboard.CD2P = 10;
-                $scope.dashboard.PE2P = 10;
-                $scope.dashboard.SPKPBM2P = 10;
             }
 
             if ($scope.singleSelect === '02/01/2016') {
@@ -1293,27 +1299,21 @@ angular.module('app').controller(controllerId, [
 
                 $scope.dashboard.PIB = 1050;
                 $scope.dashboard.PIBB = 167;
-                $scope.dashboard.PIBK = 3288;
+                $scope.dashboard.PIBK = 3248;
                 $scope.dashboard.PPKP = 1038;
                 $scope.dashboard.CD = 45;
                 $scope.dashboard.PE = 0;
                 $scope.dashboard.SPKPBM = 77;
 
-                $scope.dashboard.PIB2 = 20;
-                $scope.dashboard.PIBB2 = 20;
-                $scope.dashboard.PIBK2 = 20;
-                $scope.dashboard.PPKP2 = 20;
-                $scope.dashboard.CD2 = 20;
-                $scope.dashboard.PE2 = 20;
-                $scope.dashboard.SPKPBM2 = 20;
+                $scope.dashboard.PIB2 = 15459502000;
+                $scope.dashboard.PIBB2 = 0;
+                $scope.dashboard.PIBK2 = 5859651000;
+                $scope.dashboard.PPKP2 = 206314000;
+                $scope.dashboard.CD2 = 69452000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 470096000;
 
-                $scope.dashboard.PIB2P = 20;
-                $scope.dashboard.PIBB2P = 20;
-                $scope.dashboard.PIBK2P = 20;
-                $scope.dashboard.PPKP2P = 20;
-                $scope.dashboard.CD2P = 20;
-                $scope.dashboard.PE2P = 20;
-                $scope.dashboard.SPKPBM2P = 20;
+               
             }
 
             if ($scope.singleSelect === '03/01/2016') {
@@ -1324,28 +1324,22 @@ angular.module('app').controller(controllerId, [
                 $scope.realisasi = 31151304360;
 
                 $scope.dashboard.PIB = 1457;
-                $scope.dashboard.PIBB = 242;
+                $scope.dashboard.PIBB = 167;
                 $scope.dashboard.PIBK = 3248;
-                $scope.dashboard.PPKP = 1169;
+                $scope.dashboard.PPKP = 1208;
                 $scope.dashboard.CD = 55;
                 $scope.dashboard.PE = 0;
                 $scope.dashboard.SPKPBM = 63;
 
-                $scope.dashboard.PIB2 = 30;
-                $scope.dashboard.PIBB2 = 30;
-                $scope.dashboard.PIBK2 = 30;
+                $scope.dashboard.PIB2 = 23518094000;
+                $scope.dashboard.PIBB2 = 0;
+                $scope.dashboard.PIBK2 = 5303044000;
                 $scope.dashboard.PPKP2 = 30;
-                $scope.dashboard.CD2 = 30;
-                $scope.dashboard.PE2 = 30;
-                $scope.dashboard.SPKPBM2 = 30;
+                $scope.dashboard.CD2 = 233909000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 329443000;
 
-                $scope.dashboard.PIB2P = 30;
-                $scope.dashboard.PIBB2P = 30;
-                $scope.dashboard.PIBK2P = 30;
-                $scope.dashboard.PPKP2P = 30;
-                $scope.dashboard.CD2P = 30;
-                $scope.dashboard.PE2P = 30;
-                $scope.dashboard.SPKPBM2P = 30;
+              
             }
 
             if ($scope.singleSelect === '04/01/2016') {
@@ -1363,21 +1357,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 0;
                 $scope.dashboard.SPKPBM = 87;
 
-                $scope.dashboard.PIB2 = 40;
-                $scope.dashboard.PIBB2 = 40;
-                $scope.dashboard.PIBK2 = 40;
-                $scope.dashboard.PPKP2 = 40;
-                $scope.dashboard.CD2 = 40;
-                $scope.dashboard.PE2 = 40;
-                $scope.dashboard.SPKPBM2 = 40;
+                $scope.dashboard.PIB2 = 20441015000;
+                $scope.dashboard.PIBB2 = 2345143000;
+                $scope.dashboard.PIBK2 = 5901329000;
+                $scope.dashboard.PPKP2 = 253731000;
+                $scope.dashboard.CD2 = 11210000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 4723568000;
 
-                $scope.dashboard.PIB2P = 40;
-                $scope.dashboard.PIBB2P = 40;
-                $scope.dashboard.PIBK2P = 40;
-                $scope.dashboard.PPKP2P = 40;
-                $scope.dashboard.CD2P = 40;
-                $scope.dashboard.PE2P = 40;
-                $scope.dashboard.SPKPBM2P = 40;
             }
 
             if ($scope.singleSelect === '05/01/2016') {
@@ -1395,21 +1382,14 @@ angular.module('app').controller(controllerId, [
                  $scope.dashboard.PE = 0;
                  $scope.dashboard.SPKPBM = 77;
 
-                $scope.dashboard.PIB2 = 50;
-                $scope.dashboard.PIBB2 = 50;
-                $scope.dashboard.PIBK2 = 50;
-                $scope.dashboard.PPKP2 = 50;
-                $scope.dashboard.CD2 = 50;
-                $scope.dashboard.PE2 = 50;
-                $scope.dashboard.SPKPBM2 = 50;
+                $scope.dashboard.PIB2 = 19708331000;
+                $scope.dashboard.PIBB2 = 2381105000;
+                $scope.dashboard.PIBK2 = 5898720000;
+                $scope.dashboard.PPKP2 = 186561000;
+                $scope.dashboard.CD2 = 8176000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 629166000;
 
-                $scope.dashboard.PIB2P = 50;
-                $scope.dashboard.PIBB2P = 50;
-                $scope.dashboard.PIBK2P = 50;
-                $scope.dashboard.PPKP2P = 50;
-                $scope.dashboard.CD2P = 50;
-                $scope.dashboard.PE2P = 50;
-                $scope.dashboard.SPKPBM2P = 50;
             }
 
             if ($scope.singleSelect === '06/01/2016') {
@@ -1427,21 +1407,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 1;
                 $scope.dashboard.SPKPBM = 62;
 
-                $scope.dashboard.PIB2 = 60;
-                $scope.dashboard.PIBB2 = 60;
-                $scope.dashboard.PIBK2 = 60;
-                $scope.dashboard.PPKP2 = 60;
-                $scope.dashboard.CD2 = 60;
-                $scope.dashboard.PE2 = 60;
-                $scope.dashboard.SPKPBM2 = 60;
+                $scope.dashboard.PIB2 = 25804483000;
+                $scope.dashboard.PIBB2 = 1923334000;
+                $scope.dashboard.PIBK2 = 6507628000;
+                $scope.dashboard.PPKP2 = 338557000;
+                $scope.dashboard.CD2 = 16080000;
+                $scope.dashboard.PE2 = 1010000;
+                $scope.dashboard.SPKPBM2 = 3438990000;
 
-                $scope.dashboard.PIB2P = 60;
-                $scope.dashboard.PIBB2P = 60;
-                $scope.dashboard.PIBK2P = 60;
-                $scope.dashboard.PPKP2P = 60;
-                $scope.dashboard.CD2P = 60;
-                $scope.dashboard.PE2P = 60;
-                $scope.dashboard.SPKPBM2P = 60;
             }
 
             if ($scope.singleSelect === '07/01/2016') {
@@ -1459,21 +1432,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 1;
                 $scope.dashboard.SPKPBM = 39;
 
-                $scope.dashboard.PIB2 = 70;
-                $scope.dashboard.PIBB2 = 70;
-                $scope.dashboard.PIBK2 = 70;
-                $scope.dashboard.PPKP2 = 70;
-                $scope.dashboard.CD2 = 70;
-                $scope.dashboard.PE2 = 70;
-                $scope.dashboard.SPKPBM2 = 70;
+                $scope.dashboard.PIB2 = 16252585000;
+                $scope.dashboard.PIBB2 = 1842045000;
+                $scope.dashboard.PIBK2 = 1842045000;
+                $scope.dashboard.PPKP2 = 201828000;
+                $scope.dashboard.CD2 = 9722000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 239139000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
             }
 
             if ($scope.singleSelect === '08/01/2016') {
@@ -1491,21 +1457,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 1;
                 $scope.dashboard.SPKPBM = 46;
 
-                $scope.dashboard.PIB2 = 80;
-                $scope.dashboard.PIBB2 = 80;
-                $scope.dashboard.PIBK2 = 80;
-                $scope.dashboard.PPKP2 = 80;
-                $scope.dashboard.CD2 = 80;
-                $scope.dashboard.PE2 = 80;
-                $scope.dashboard.SPKPBM2 = 80;
+                $scope.dashboard.PIB2 = 23182457000;
+                $scope.dashboard.PIBB2 = 1775491000;
+                $scope.dashboard.PIBK2 = 6566752000;
+                $scope.dashboard.PPKP2 = 187147000;
+                $scope.dashboard.CD2 = 14467000;
+                $scope.dashboard.PE2 = 4217000;
+                $scope.dashboard.SPKPBM2 = 3104806000;
 
-                $scope.dashboard.PIB2P = 80;
-                $scope.dashboard.PIBB2P = 80;
-                $scope.dashboard.PIBK2P = 80;
-                $scope.dashboard.PPKP2P = 80;
-                $scope.dashboard.CD2P = 80;
-                $scope.dashboard.PE2P = 80;
-                $scope.dashboard.SPKPBM2P = 80;
             }
 
             if ($scope.singleSelect === '09/01/2016') {
@@ -1524,21 +1483,15 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 0;
                 $scope.dashboard.SPKPBM = 41;
 
-                $scope.dashboard.PIB2 = 90;
-                $scope.dashboard.PIBB2 = 90;
-                $scope.dashboard.PIBK2 = 90;
-                $scope.dashboard.PPKP2 = 90;
-                $scope.dashboard.CD2 = 90;
-                $scope.dashboard.PE2 = 90;
-                $scope.dashboard.SPKPBM2 = 90;
+                $scope.dashboard.PIB2 = 20494912000;
+                $scope.dashboard.PIBB2 = 2254282000;
+                $scope.dashboard.PIBK2 = 4550802000;
+                $scope.dashboard.PPKP2 = 181102000;
+                $scope.dashboard.CD2 = 27090000;
+                $scope.dashboard.PE2 = 0;
+                $scope.dashboard.SPKPBM2 = 3083159000;
 
-                $scope.dashboard.PIB2P = 90;
-                $scope.dashboard.PIBB2P = 90;
-                $scope.dashboard.PIBK2P = 90;
-                $scope.dashboard.PPKP2P = 90;
-                $scope.dashboard.CD2P = 90;
-                $scope.dashboard.PE2P = 90;
-                $scope.dashboard.SPKPBM2P = 90;
+              
             }
 
             if ($scope.singleSelect === '10/01/2016') {
@@ -1556,21 +1509,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 2;
                 $scope.dashboard.SPKPBM = 58;
                 
-                $scope.dashboard.PIB2 = 100;
-                $scope.dashboard.PIBB2 = 100;
-                $scope.dashboard.PIBK2 = 100;
-                $scope.dashboard.PPKP2 = 100;
-                $scope.dashboard.CD2 = 100;
-                $scope.dashboard.PE2 = 100;
-                $scope.dashboard.SPKPBM2 = 100;
+                $scope.dashboard.PIB2 = 18218541000;
+                $scope.dashboard.PIBB2 = 1722868000;
+                $scope.dashboard.PIBK2 = 6234659000;
+                $scope.dashboard.PPKP2 = 272682000;
+                $scope.dashboard.CD2 = 45658428;
+                $scope.dashboard.PE2 = 45658428;
+                $scope.dashboard.SPKPBM2 = 163887000;
 
-                $scope.dashboard.PIB2P = 100;
-                $scope.dashboard.PIBB2P = 100;
-                $scope.dashboard.PIBK2P = 100;
-                $scope.dashboard.PPKP2P = 100;
-                $scope.dashboard.CD2P = 100;
-                $scope.dashboard.PE2P = 100;
-                $scope.dashboard.SPKPBM2P = 100;
             }
 
             if ($scope.singleSelect === '11/01/2016') {
@@ -1592,21 +1538,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 6;
                 $scope.dashboard.SPKPBM = 60;
 
-                $scope.dashboard.PIB2 = 0;
-                $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIB2 = 19960605000;
+                $scope.dashboard.PIBB2 = 1915538000;
+                $scope.dashboard.PIBK2 = 7225365200;
+                $scope.dashboard.PPKP2 = 280291000;
+                $scope.dashboard.CD2 = 71247000;
+                $scope.dashboard.PE2 = 14360000;
+                $scope.dashboard.SPKPBM2 = 1581647000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
             }
 
             if ($scope.singleSelect === '12/01/2016') {
@@ -1626,21 +1565,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 1;
                 $scope.dashboard.SPKPBM = 75;
 
-                $scope.dashboard.PIB2 = 0;
-                $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIB2 = 14358859000;
+                $scope.dashboard.PIBB2 = 3208673000;
+                $scope.dashboard.PIBK2 = 6479609000;
+                $scope.dashboard.PPKP2 = 401635000;
+                $scope.dashboard.CD2 = 80197000;
+                $scope.dashboard.PE2 = 1609000;
+                $scope.dashboard.SPKPBM2 = 660112000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
             }
              if ($scope.singleSelect === '01/01/2017') {
 
@@ -1659,21 +1591,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 3;
                 $scope.dashboard.SPKPBM = 47;
 
-                $scope.dashboard.PIB2 = 0;
-                $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIB2 = 14431605000;
+                $scope.dashboard.PIBB2 = 28838000;
+                $scope.dashboard.PIBK2 = 6280388000;
+                $scope.dashboard.PPKP2 = 297716000;
+                $scope.dashboard.CD2 = 69940000;
+                $scope.dashboard.PE2 = 4706000;
+                $scope.dashboard.SPKPBM2 = 401853000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
             }
              if ($scope.singleSelect === '02/01/2017') {
 
@@ -1692,21 +1617,15 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE = 2;
                 $scope.dashboard.SPKPBM = 50;
 
-                $scope.dashboard.PIB2 = 0;
-                $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIB2 = 14544825000;
+                $scope.dashboard.PIBB2 = 706343000;
+                $scope.dashboard.PIBK2 = 5094212000;
+                $scope.dashboard.PPKP2 = 303891000;
+                $scope.dashboard.CD2 = 52460000;
+                $scope.dashboard.PE2 = 1315000;
+                $scope.dashboard.SPKPBM2 = 2364660000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
+              
             }
              if ($scope.singleSelect === '03/01/2017') {
 
@@ -1726,21 +1645,14 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.SPKPBM = 112;
       
 
-                $scope.dashboard.PIB2 = 0;
-                $scope.dashboard.PIBB2 = 0;
-                $scope.dashboard.PIBK2 = 0;
-                $scope.dashboard.PPKP2 = 0;
-                $scope.dashboard.CD2 = 0;
-                $scope.dashboard.PE2 = 0;
-                $scope.dashboard.SPKPBM2 = 0;
+                $scope.dashboard.PIB2 =21720468000;
+                $scope.dashboard.PIBB2 = 580731000;
+                $scope.dashboard.PIBK2 = 6347630000;
+                $scope.dashboard.PPKP2 = 203204000;
+                $scope.dashboard.CD2 = 58085000;
+                $scope.dashboard.PE2 = 198000;
+                $scope.dashboard.SPKPBM2 =7181408000;
 
-                $scope.dashboard.PIB2P = 0;
-                $scope.dashboard.PIBB2P = 0;
-                $scope.dashboard.PIBK2P = 0;
-                $scope.dashboard.PPKP2P = 0;
-                $scope.dashboard.CD2P = 0;
-                $scope.dashboard.PE2P = 0;
-                $scope.dashboard.SPKPBM2P = 0;
             }
         }
 
