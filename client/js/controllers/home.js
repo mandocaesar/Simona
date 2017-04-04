@@ -73,9 +73,11 @@ angular.module('app').controller(controllerId, [
     $scope.gauge3 = "Penerimaan Pajak";
 
     $scope.setGauge = function () {
-      $scope.gaugePajak = Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
-      $scope.gaugeCukai = Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
-      $scope.gaugePabean = Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
+
+      $scope.gaugePajak = $scope.Data.pPajak.total === 0 ? 0 : Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
+      $scope.gaugeCukai = $scope.Data.pCukai.total === 0 ? 0 : Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
+      $scope.gaugePabean = $scope.Data.pPabean.total === 0 ? 0 :  Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
+      debugger;
     };
 
     $scope.update = function () {
@@ -1432,7 +1434,7 @@ angular.module('app').controller(controllerId, [
     console.log($scope.dashboard);
 
 
-    $scope.colors = ['#45b7cd', '#ff6384', '#ff8e72'];
+    $scope.colors = ['#ff6384', '#ffa31a'];
 
     $scope.labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     $scope.data = [

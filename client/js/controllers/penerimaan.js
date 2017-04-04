@@ -11,6 +11,7 @@ angular.module('app').controller(controllerId, [
         $scope.persenTahun = ($scope.totalCapaian / $scope.target) * 100;
         $scope.persenBulan = ($scope.realisasi / $scope.targetBulan) * 100;
 
+        //data pib
         $scope.gridOpts2 = {
             enableColumnResize: true,
             enableSorting: true,
@@ -174,6 +175,7 @@ angular.module('app').controller(controllerId, [
 
         ];
 
+        //datapibberkala
         $scope.gridOpts3 = {
             enableColumnResize: true,
             enableSorting: true,
@@ -332,6 +334,7 @@ angular.module('app').controller(controllerId, [
 
         ];
 
+        //data pibk
         $scope.gridOpts4 = {
             enableColumnResize: true,
             enableSorting: true,
@@ -490,6 +493,641 @@ angular.module('app').controller(controllerId, [
 
         ];
 
+        //data ppkp
+        $scope.gridOpts5 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [{
+                    name: 'Bulan',
+                    field: 'bulan',
+                    minWidth: 50
+                },
+                {
+                    name: 'Penerimaan',
+                    field: 'penerimaan',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Jumlah Dokumen',
+                    field: 'jumlah',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Rata2 Per Dokumen',
+                    field: 'rata',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: {
+                fontSize: 9
+            },
+            exporterPdfTableStyle: {
+                margin: [30, 30, 30, 30]
+            },
+            exporterPdfTableHeaderStyle: {
+                fontSize: 10,
+                bold: true,
+                italics: true,
+                color: 'red'
+            },
+            exporterPdfHeader: {
+                text: "SIMONA",
+                style: 'headerStyle'
+            },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return {
+                    text: currentPage.toString() + ' of ' + pageCount.toString(),
+                    style: 'footerStyle'
+                };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = {
+                    fontSize: 22,
+                    bold: true
+                };
+                docDefinition.styles.footerStyle = {
+                    fontSize: 10,
+                    bold: true
+                };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts5.data = [{
+                "bulan": "January",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "February",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "March",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "April",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "May",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "June",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "July",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "August",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "September",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "October",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "November",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "December",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+
+        ];
+
+        //data cd
+        $scope.gridOpts6 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [{
+                    name: 'Bulan',
+                    field: 'bulan',
+                    minWidth: 50
+                },
+                {
+                    name: 'Penerimaan',
+                    field: 'penerimaan',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Jumlah Dokumen',
+                    field: 'jumlah',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Rata2 Per Dokumen',
+                    field: 'rata',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: {
+                fontSize: 9
+            },
+            exporterPdfTableStyle: {
+                margin: [30, 30, 30, 30]
+            },
+            exporterPdfTableHeaderStyle: {
+                fontSize: 10,
+                bold: true,
+                italics: true,
+                color: 'red'
+            },
+            exporterPdfHeader: {
+                text: "SIMONA",
+                style: 'headerStyle'
+            },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return {
+                    text: currentPage.toString() + ' of ' + pageCount.toString(),
+                    style: 'footerStyle'
+                };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = {
+                    fontSize: 22,
+                    bold: true
+                };
+                docDefinition.styles.footerStyle = {
+                    fontSize: 10,
+                    bold: true
+                };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts6.data = [{
+                "bulan": "January",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "February",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "March",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "April",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "May",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "June",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "July",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "August",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "September",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "October",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "November",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "December",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+
+        ];
+
+        //data pe
+        $scope.gridOpts7 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [{
+                    name: 'Bulan',
+                    field: 'bulan',
+                    minWidth: 50
+                },
+                {
+                    name: 'Penerimaan',
+                    field: 'penerimaan',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Jumlah Dokumen',
+                    field: 'jumlah',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Rata2 Per Dokumen',
+                    field: 'rata',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: {
+                fontSize: 9
+            },
+            exporterPdfTableStyle: {
+                margin: [30, 30, 30, 30]
+            },
+            exporterPdfTableHeaderStyle: {
+                fontSize: 10,
+                bold: true,
+                italics: true,
+                color: 'red'
+            },
+            exporterPdfHeader: {
+                text: "SIMONA",
+                style: 'headerStyle'
+            },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return {
+                    text: currentPage.toString() + ' of ' + pageCount.toString(),
+                    style: 'footerStyle'
+                };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = {
+                    fontSize: 22,
+                    bold: true
+                };
+                docDefinition.styles.footerStyle = {
+                    fontSize: 10,
+                    bold: true
+                };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts7.data = [{
+                "bulan": "January",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "February",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "March",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "April",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "May",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "June",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "July",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "August",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "September",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "October",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "November",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "December",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+
+        ];
+
+        //data skkbm
+        $scope.gridOpts8 = {
+            enableColumnResize: true,
+            enableSorting: true,
+            columnDefs: [{
+                    name: 'Bulan',
+                    field: 'bulan',
+                    minWidth: 50
+                },
+                {
+                    name: 'Penerimaan',
+                    field: 'penerimaan',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Jumlah Dokumen',
+                    field: 'jumlah',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'Rata2 Per Dokumen',
+                    field: 'rata',
+                    minWidth: 50,
+                    cellFilter: 'currency : "Rp"'
+                },
+            ],
+            enableGridMenu: true,
+            enableSelectAll: true,
+            exporterCsvFilename: 'myFile.csv',
+            exporterPdfDefaultStyle: {
+                fontSize: 9
+            },
+            exporterPdfTableStyle: {
+                margin: [30, 30, 30, 30]
+            },
+            exporterPdfTableHeaderStyle: {
+                fontSize: 10,
+                bold: true,
+                italics: true,
+                color: 'red'
+            },
+            exporterPdfHeader: {
+                text: "SIMONA",
+                style: 'headerStyle'
+            },
+            exporterPdfFooter: function (currentPage, pageCount) {
+                return {
+                    text: currentPage.toString() + ' of ' + pageCount.toString(),
+                    style: 'footerStyle'
+                };
+            },
+            exporterPdfCustomFormatter: function (docDefinition) {
+                docDefinition.styles.headerStyle = {
+                    fontSize: 22,
+                    bold: true
+                };
+                docDefinition.styles.footerStyle = {
+                    fontSize: 10,
+                    bold: true
+                };
+                return docDefinition;
+            },
+            exporterPdfOrientation: 'portrait',
+            exporterPdfPageSize: 'LETTER',
+            exporterPdfMaxGridWidth: 500,
+            exporterCsvLinkElement: angular.element(document.querySelectorAll(".custom-csv-link-location")),
+            onRegisterApi: function (gridApi) {
+                $scope.gridApi = gridApi;
+            },
+            data: []
+        };
+        $scope.gridOpts8.data = [{
+                "bulan": "January",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "February",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "March",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "April",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "May",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "June",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "July",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "August",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "September",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "October",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "November",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+            {
+                "bulan": "December",
+                "penerimaan": "10000",
+                "jumlah": "10000",
+                "rata": "10000",
+                "cd": "10000"
+            },
+
+        ];
 
         $scope.getMonths = function () {
             // service.getMonths().success(function (result) {
@@ -509,20 +1147,42 @@ angular.module('app').controller(controllerId, [
             [28, 48, 40, 19, 86, 27, 90]
         ];
 
-         $scope.datapib = [
+        $scope.datapib = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+    
+        $scope.datapibberkala = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+
+        $scope.datapibk = [
             [65, 59, 80, 81, 56, 55, 40],
             [1158, 1050, 1457, 1435, 1424, 1565,948,1540,1220,1408,1505,1371,1059,1001]
         ];
 
-         $scope.datapibk = [
+        $scope.datappkp = [
             [65, 59, 80, 81, 56, 55, 40],
             [3334, 3288, 3248, 3877, 4037, 4338, 2562,4104,3014,4080,4265,4316,4025,3126,3814]
         ];
 
-         $scope.datappkb = [
+        $scope.datacd = [
             [65, 59, 80, 81, 56, 55, 40],
             [28, 48, 40, 19, 86, 27, 90]
         ];
+
+        $scope.datape = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+        
+         $scope.dataskkbm = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+        
+
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
         };
