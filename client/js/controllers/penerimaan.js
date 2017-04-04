@@ -21,36 +21,41 @@ angular.module('app').controller(controllerId, [
                     minWidth: 50
                 },
                 {
-                    name: 'PIB',
+                    name: 'PIB ',
                     field: 'pib',
                     minWidth: 50,
                     cellFilter: 'currency : "Rp"'
                 },
                 {
-                    name: 'PIBK',
+                    name: 'PIB Berkala',
+                    field: 'pibb',
+                    cellFilter: 'currency : "Rp"'
+                },
+                {
+                    name: 'PIBK ',
                     field: 'pibk',
                     cellFilter: 'currency : "Rp"'
                 },
                 {
-                    name: 'PPKP',
+                    name: 'PPKP ',
                     field: 'ppkp',
                     minWidth: 50,
                     cellFilter: 'currency : "Rp"'
                 },
                 {
-                    name: 'CD',
+                    name: 'CD ',
                     field: 'cd',
                     minWidth: 50,
                     cellFilter: 'currency : "Rp"'
                 }, 
                 {
-                    name: 'PE',
+                    name: 'PE ',
                     field: 'pe',
                     minWidth: 50,
                     cellFilter: 'currency : "Rp"'
                 },
                  {
-                    name: 'SPKPBM',
+                    name: 'SPKPBM ',
                     field: 'spkpbm',
                     minWidth: 50,
                     cellFilter: 'currency : "Rp"'
@@ -104,30 +109,43 @@ angular.module('app').controller(controllerId, [
         $scope.gridOpts2.data = [{
                 "bulan": "January",
                 "pib": "19590605000",
-                "pibk": "10000",
-                "ppkp": "10000",
-                "cd": "10000"
+                "pibk": "5223443000",
+                "pibb": "15364000",
+                "ppkp": "199316000",
+                "cd": "20575000",
+                "pe": "5150000",
+                "spkpbm": "2072068000"
+                
             },
             {
                 "bulan": "February",
-                "pib": "10000",
-                "pibk": "10000",
-                "ppkp": "10000",
-                "cd": "10000"
+                 "pib": "15459502000",
+                "pibk": "5859651000",
+                "pibb": "1266563000",
+                "ppkp": "206314000",
+                "cd": "62082000",
+                "pe": "0",
+                "spkpbm": "470096000"
             },
             {
                 "bulan": "March",
-                "pib": "10000",
-                "pibk": "10000",
-                "ppkp": "10000",
-                "cd": "10000"
+                "pib": "23518094000",
+                "pibk": "5303044000",
+                "pibb": "1540564000",
+                "ppkp": "233909000",
+                "cd": "25516000",
+                "pe": "0",
+                "spkpbm": "329443000"
             },
             {
                 "bulan": "April",
-                "pib": "10000",
-                "pibk": "10000",
-                "ppkp": "10000",
-                "cd": "10000"
+                "pib": "20441015000",
+                "pibk": "5901329000",
+                "pibb": "2345143000",
+                "ppkp": "253731000",
+                "cd": "11210000",
+                "pe": "0",
+                "spkpbm": "4723568000"
             },
             {
                 "bulan": "May",
