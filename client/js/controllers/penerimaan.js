@@ -1140,48 +1140,94 @@ angular.module('app').controller(controllerId, [
             ]
         }
 
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July","August","September","November","December"];
+        $scope.labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
         $scope.series = ['Series A', 'Series B'];
-        $scope.data = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+        $scope.set2016 = function () {
+            $scope.data = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
 
-        $scope.datapib = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
-    
-        $scope.datapibberkala = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+            $scope.datapib = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
 
-        $scope.datapibk = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+            $scope.datapibberkala = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
 
-        $scope.datappkp = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+            $scope.datapibk = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
 
-        $scope.datacd = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
+            $scope.datappkp = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
 
-        $scope.datape = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
-        
-         $scope.dataskkbm = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
-        
+            $scope.datacd = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
+
+            $scope.datape = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
+
+            $scope.dataskkbm = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
+
+        };
+
+        $scope.set2017 = function () {
+            $scope.data = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datapib = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datapibberkala = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datapibk = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datappkp = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datacd = [
+                [165, 159, 180, 181, 156, 155, 140],
+                [128, 148, 140, 119, 186, 127, 190]
+            ];
+
+            $scope.datape = [
+                [165, 159, 180, 811, 156, 155, 140],
+                [128, 148, 140, 119, 186, 217, 190]
+            ];
+
+            $scope.dataskkbm = [
+                [65, 159, 180, 81, 56, 55, 40],
+                [28, 148, 140, 19, 86, 27, 90]
+            ];
+
+        };
+
 
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
@@ -1251,20 +1297,20 @@ angular.module('app').controller(controllerId, [
             console.log($scope.singleSelect);
 
             if ($scope.singleSelect === '01/01/2016') {
-
+                $scope.set2016();
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 27508668000;
                 $scope.targetBulan = 27503518000;
                 $scope.realisasi = 27508668000;
 
-                 $scope.dashboard.PIB = 1158;
-                 $scope.dashboard.PIBB = 3;
-                 $scope.dashboard.PIBK = 3334;
-                 $scope.dashboard.PPKP = 909;
-                 $scope.dashboard.CD = 33;
-                 $scope.dashboard.PE = 1;
-                 $scope.dashboard.SPKPBM = 84;
-                
+                $scope.dashboard.PIB = 1158;
+                $scope.dashboard.PIBB = 3;
+                $scope.dashboard.PIBK = 3334;
+                $scope.dashboard.PPKP = 909;
+                $scope.dashboard.CD = 33;
+                $scope.dashboard.PE = 1;
+                $scope.dashboard.SPKPBM = 84;
+
 
                 $scope.dashboard.PIB2 = 0;
                 $scope.dashboard.PIBB2 = 0;
@@ -1274,7 +1320,7 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE2 = 0;
                 $scope.dashboard.SPKPBM2 = 0;
                 $scope.dashboard.PBK2 = 0;
-       
+
                 $scope.dashboard.PIB2P = 10;
                 $scope.dashboard.PIBB2P = 10;
                 $scope.dashboard.PIBK2P = 10;
@@ -1285,6 +1331,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '02/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 51289226400;
@@ -1317,6 +1364,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '03/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 82440530760;
@@ -1349,6 +1397,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '04/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 116321105351;
@@ -1381,19 +1430,20 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '05/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 146406487351;
                 $scope.targetBulan = 29679469376;
                 $scope.realisasi = 30085382000;
 
-                 $scope.dashboard.PIB = 1424;
-                 $scope.dashboard.PIBB = 355;
-                 $scope.dashboard.PIBK = 4037;
-                 $scope.dashboard.PPKP = 828;
-                 $scope.dashboard.CD = 35;
-                 $scope.dashboard.PE = 0;
-                 $scope.dashboard.SPKPBM = 77;
+                $scope.dashboard.PIB = 1424;
+                $scope.dashboard.PIBB = 355;
+                $scope.dashboard.PIBK = 4037;
+                $scope.dashboard.PPKP = 828;
+                $scope.dashboard.CD = 35;
+                $scope.dashboard.PE = 0;
+                $scope.dashboard.SPKPBM = 77;
 
                 $scope.dashboard.PIB2 = 50;
                 $scope.dashboard.PIBB2 = 50;
@@ -1413,6 +1463,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '06/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 185123274351;
@@ -1445,6 +1496,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '07/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 207590853351;
@@ -1477,6 +1529,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '08/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 207590853351;
@@ -1509,6 +1562,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '09/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 273561430831;
@@ -1542,6 +1596,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '10/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 300931240659;
@@ -1555,7 +1610,7 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.CD = 88;
                 $scope.dashboard.PE = 2;
                 $scope.dashboard.SPKPBM = 58;
-                
+
                 $scope.dashboard.PIB2 = 100;
                 $scope.dashboard.PIBB2 = 100;
                 $scope.dashboard.PIBK2 = 100;
@@ -1574,17 +1629,18 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '11/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 332066460459;
                 $scope.targetBulan = 33652294000;
                 $scope.realisasi = 31135219800;
-                
+
                 $scope.persenBulan = 0;
                 $scope.persenTahun = 0;
-              
 
-                 $scope.dashboard.PIB = 1505;
+
+                $scope.dashboard.PIB = 1505;
                 $scope.dashboard.PIBB = 404;
                 $scope.dashboard.PIBK = 4265;
                 $scope.dashboard.PPKP = 1769;
@@ -1610,6 +1666,7 @@ angular.module('app').controller(controllerId, [
             }
 
             if ($scope.singleSelect === '12/01/2016') {
+                $scope.set2016();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 357487308959;
@@ -1642,7 +1699,9 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE2P = 0;
                 $scope.dashboard.SPKPBM2P = 0;
             }
-             if ($scope.singleSelect === '01/01/2017') {
+
+            if ($scope.singleSelect === '01/01/2017') {
+                $scope.set2017();
 
                 $scope.target = 393202279000;
                 $scope.totalCapaian = 21670346000;
@@ -1675,7 +1734,9 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE2P = 0;
                 $scope.dashboard.SPKPBM2P = 0;
             }
-             if ($scope.singleSelect === '02/01/2017') {
+
+            if ($scope.singleSelect === '02/01/2017') {
+                $scope.set2017();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 44923222000;
@@ -1708,7 +1769,9 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.PE2P = 0;
                 $scope.dashboard.SPKPBM2P = 0;
             }
-             if ($scope.singleSelect === '03/01/2017') {
+
+            if ($scope.singleSelect === '03/01/2017') {
+                $scope.set2017();
 
                 $scope.target = 339942425295;
                 $scope.totalCapaian = 80827041000;
@@ -1716,7 +1779,7 @@ angular.module('app').controller(controllerId, [
                 $scope.realisasi = 35903819000;
                 $scope.persenTahun = 0;
                 $scope.persenBulan = 0;
-  
+
                 $scope.dashboard.PIB = 1455;
                 $scope.dashboard.PIBB = 67;
                 $scope.dashboard.PIBK = 3814;
@@ -1724,7 +1787,7 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.CD = 177;
                 $scope.dashboard.PE = 1;
                 $scope.dashboard.SPKPBM = 112;
-      
+
 
                 $scope.dashboard.PIB2 = 0;
                 $scope.dashboard.PIBB2 = 0;
@@ -1745,5 +1808,7 @@ angular.module('app').controller(controllerId, [
         }
 
         $scope.getMonths();
+        $scope.singleSelect = '03/01/2017';
+        $scope.update();
     }
 ])
