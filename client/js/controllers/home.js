@@ -74,7 +74,7 @@ angular.module('app').controller(controllerId, [
 
     $scope.setGauge = function () {
 
-      $scope.gaugePajak = $scope.Data.pPajak.total === 0 ? 0 : Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
+      $scope.gaugePajak = $scope.Data.pPajak.total === 0 ? 0 : Math.ceil(($scope.Data.pPajak.total / $scope.Data.pPajak.total) * 100);
       $scope.gaugeCukai = $scope.Data.pCukai.total === 0 ? 0 : Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
       $scope.gaugePabean = $scope.Data.pPabean.total === 0 ? 0 :  Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
       debugger;
@@ -1291,32 +1291,30 @@ angular.module('app').controller(controllerId, [
 
       if ($scope.singleSelect === '03/01/2017') {
 //        $scope.setGauge(78, 44, 23);
-
         $scope.datapabean = [
-          [65, 70, 100, 200, 100, 77, 56, 80, 100, 89, 89],
-          [28, 80, 100, 100, 80, 89, 89, 88, 200, 77, 1000000]
+          [21510340000,23066391000,35041152000],
+          [155300000,185170000,824947000]
         ];
 
         $scope.datacukai = [
-          [65, 70, 100, 200, 100, 67, 78, 89, 100, 67, 100],
-          [28, 80, 100, 85, 77, 66, 90, 100, 100, 55, 1000000]
+          [54545455,63636364,0],
+          [0,36363636,0]
         ];
 
         $scope.datapajak = [
-          [65, 70, 100, 56, 90, 50, 90, 89, 78, 89, 100],
-          [28, 80, 100, 90, 66, 77, 880000, 10000000, 88, 100, 100000]
+          [49800465000,49099621000,64339812000],
+          [13890748000,13302743812,18230764000]
         ];
-
         $scope.bardata1 = [120000, 120000, 120000];
         $scope.bardata2 = [120000, 120000, 120000, 120000];
         $scope.bardata3 = [120000, 120000, 120000, 120000];
 
         $scope.Data.pPabean = {};
-        $scope.Data.pPabean.beamasuk = 24644066000;
+        $scope.Data.pPabean.beamasuk = 35041152000;
         $scope.Data.pPabean.beakeluar = 19000;
-        $scope.Data.pPabean.lainnya = 824947000;
+        $scope.Data.pPabean.lainnya = 862648000;
         $scope.Data.pPabean.beamasukDitanggung = 0;
-        $scope.Data.pPabean.total = 25469032000;
+        $scope.Data.pPabean.total = 35903819000;
 
         $scope.Data.pCukai = {};
         $scope.Data.pCukai.tembakau = 0;
@@ -1326,21 +1324,21 @@ angular.module('app').controller(controllerId, [
         $scope.Data.pCukai.total = 0;
         $scope.Data.pPajak = {};
 
-        $scope.Data.pPajak.ppnimpor = 45804545000;
+        $scope.Data.pPajak.ppnimpor = 64339812000;
         $scope.Data.pPajak.bmimpor = 0;
-        $scope.Data.pPajak.pph22 = 12970173000;
+        $scope.Data.pPajak.pph22 = 18230764000;
         $scope.Data.pPajak.ppntembakau = 0;
         $scope.Data.pPajak.ppnbm = 0;
-        $scope.Data.pPajak.total = 58594718000;
+        $scope.Data.pPajak.total = 82570576000;
 
-        $scope.dashboard.PIB = 1455;
-        $scope.dashboard.PIBB = 67;
-        $scope.dashboard.PIBK = 3814;
-        $scope.dashboard.PPKP = 902;
-        $scope.dashboard.CD = 177;
-        $scope.dashboard.PE = 1;
-        $scope.dashboard.SPKPBM = 112;
-        $scope.dashboard.PBK = 0;
+        $scope.dashboard.PIB = 1552;
+        $scope.dashboard.PIBB = 76;
+        $scope.dashboard.PIBK = 4153;
+        $scope.dashboard.PPKP = 959;
+        $scope.dashboard.CD = 198;
+        $scope.dashboard.PE = 2;
+        $scope.dashboard.SPKPBM = 116;
+        $scope.dashboard.PBK = 3;
         $scope.dashboard.CK1 = 0;
         $scope.dashboard.CK1A = 0;
         $scope.dashboard.CK5 = 0;
@@ -1365,10 +1363,10 @@ angular.module('app').controller(controllerId, [
         $scope.targetPabeanPerBulan = 34770443000;
         $scope.targetCukai = 0;
         $scope.targetCukaiPerBulan = 0;
-        $scope.totalCapaian = 52256334000;
+        $scope.totalCapaian = 35903819000;
 
-        $scope.devisa.impor = 46993480;
-        $scope.devisa.bayar = 46993480;
+        $scope.devisa.impor = 0;
+        $scope.devisa.bayar = 0;
         $scope.devisa.bebas = 0;
         $scope.devisa.ditangguhkan = 0;
         $scope.devisa.ditanggung = 0;
