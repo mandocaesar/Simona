@@ -73,9 +73,10 @@ angular.module('app').controller(controllerId, [
     $scope.gauge3 = "Penerimaan Pajak";
 
     $scope.setGauge = function () {
-      $scope.gaugePajak = Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
-      $scope.gaugeCukai = Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
-      $scope.gaugePabean = Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
+
+      $scope.gaugePajak = $scope.Data.pPajak.total === 0 ? 0 : Math.ceil(($scope.Data.pPajak.total / $scope.targetPajakPerBulan) * 100);
+      $scope.gaugeCukai = $scope.Data.pCukai.total === 0 ? 0 : Math.ceil(($scope.Data.pCukai.total / $scope.targetCukaiPerBulan) * 100);
+      $scope.gaugePabean = $scope.Data.pPabean.total === 0 ? 0 :  Math.ceil(($scope.Data.pPabean.total / $scope.targetPabeanPerBulan) * 100);
       debugger;
     };
 
