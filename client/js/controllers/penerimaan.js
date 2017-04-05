@@ -463,29 +463,29 @@ angular.module('app').controller(controllerId, [
         };
         $scope.gridOpts4.data = [{
                 "bulan": "January",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "99000",
+                "jumlah": "3334",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "February",
                 "penerimaan": "10000",
-                "jumlah": "10000",
+                "jumlah": "3288",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "March",
                 "penerimaan": "10000",
-                "jumlah": "10000",
+                "jumlah": "3248",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "April",
                 "penerimaan": "10000",
-                "jumlah": "10000",
+                "jumlah": "3877",
                 "rata": "10000",
                 "cd": "10000"
             },
@@ -1195,16 +1195,17 @@ angular.module('app').controller(controllerId, [
             ]
         }
 
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July","August","September","November","December"];
+        $scope.labels = ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"];
         $scope.series = ['Series A', 'Series B'];
         $scope.data = [
-            [65, 59, 80, 81, 56, 55, 40],
+        [65, 59, 80, 81, 56, 55, 40],
             [28, 48, 40, 19, 86, 27, 90]
         ];
 
         $scope.datapib = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
+           [19590605000, 15459502000, 23518094000, 20441015000, 19708331000, 25804483000, 16252585000,23182457000,20494912000,18218541000,19960605000,14358859000   ],
+            [1158, 1050, 1457, 1435, 1424, 1565, 1151,1540,1220,1408,1505,1371]
+            
         ];
     
         $scope.datapibberkala = [
