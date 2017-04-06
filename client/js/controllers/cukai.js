@@ -346,10 +346,10 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.CK52 = 0;
 
             
-                $scope.dashboard.PBK2P = 1;
-                $scope.dashboard.CK12P = 1;
-                $scope.dashboard.CK1A2P = 1;
-                $scope.dashboard.CK52P = 1;
+                $scope.dashboard.PBK2P = 0;
+                $scope.dashboard.CK12P = 0;
+                $scope.dashboard.CK1A2P = 0;
+                $scope.dashboard.CK52P = 0;
             }
 
             if ($scope.singleSelect === '02/01/2016') {
@@ -370,10 +370,10 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.CK52 = 0;
 
         //persen    
-                $scope.dashboard.PBK2P = 2;
-                $scope.dashboard.CK12P = 2;
-                $scope.dashboard.CK1A2P = 2;
-                $scope.dashboard.CK52P = 2;
+                $scope.dashboard.PBK2P = 0;
+                $scope.dashboard.CK12P = 0;
+                $scope.dashboard.CK1A2P = 0;
+                $scope.dashboard.CK52P = 0;
             }
 
             if ($scope.singleSelect === '03/01/2016') {
