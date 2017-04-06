@@ -248,7 +248,7 @@ angular.module('app').controller(controllerId, [
                 {
                     name: 'Jumlah Dokumen',
                     field: 'jumlah',
-                    cellFilter: 'currency : "Rp"'
+                    cellFilter: 'currency : ""'
                 },
                 {
                     name: 'Rata2 Per Dokumen',
@@ -304,85 +304,85 @@ angular.module('app').controller(controllerId, [
         };
         $scope.gridOpts3.data = [{
                 "bulan": "January",
-                "penerimaan": "19590605000",
-                "jumlah": "1158",
-                "rata": "10000",
+                "penerimaan": "15364000",
+                "jumlah": "3",
+                "rata": "5121333",
                 "cd": "10000"
             },
             {
                 "bulan": "February",
                 "penerimaan": "15459502000",
-                "jumlah": "1050",
+                "jumlah": "167",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "March",
                 "penerimaan": "23518094000",
-                "jumlah": "1457",
+                "jumlah": "242",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "April",
                 "penerimaan": "20441015000",
-                "jumlah": "1435",
+                "jumlah": "297",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "May",
                 "penerimaan": "19708331000",
-                "jumlah": "1424",
+                "jumlah": "355",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "June",
                 "penerimaan": "25804483000",
-                "jumlah": "1565",
+                "jumlah": "359",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "July",
                 "penerimaan": "16252585000",
-                "jumlah": "1151",
+                "jumlah": "337",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "August",
                 "penerimaan": "23182457000",
-                "jumlah": "1540",
+                "jumlah": "220",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "September",
                 "penerimaan": "20494912000",
-                "jumlah": "1220",
+                "jumlah": "358",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "October",
                 "penerimaan": "18218541000",
-                "jumlah": "1408",
+                "jumlah": "293",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "November",
                 "penerimaan": "19960605000",
-                "jumlah": "1505",
+                "jumlah": "404",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "December",
                 "penerimaan": "14358859000",
-                "jumlah": "1371",
+                "jumlah": "531",
                 "rata": "10000",
                 "cd": "10000"
             },
@@ -407,7 +407,7 @@ angular.module('app').controller(controllerId, [
                 {
                     name: 'Jumlah Dokumen',
                     field: 'jumlah',
-                    cellFilter: 'currency : "Rp"'
+                    cellFilter: 'currency : ""'
                 },
                 {
                     name: 'Rata2 Per Dokumen',
@@ -463,85 +463,85 @@ angular.module('app').controller(controllerId, [
         };
         $scope.gridOpts4.data = [{
                 "bulan": "January",
-                "penerimaan": "99000",
+                "penerimaan": "5223443000",
                 "jumlah": "3334",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "February",
-                "penerimaan": "10000",
+                "penerimaan": "5859651000",
                 "jumlah": "3288",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "March",
-                "penerimaan": "10000",
+                "penerimaan": "5303044000",
                 "jumlah": "3248",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "April",
-                "penerimaan": "10000",
+                "penerimaan": "9482776000",
                 "jumlah": "3877",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "May",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "5898720000",
+                "jumlah": "4037",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "June",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "6507628000",
+                "jumlah": "4338",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "July",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "3863411000",
+                "jumlah": "2562",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "August",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "6566752000",
+                "jumlah": "4104",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "September",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "4550802000",
+                "jumlah": "3014",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "October",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "6234659000",
+                "jumlah": "4080",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "November",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "7225365200",
+                "jumlah": "4265",
                 "rata": "10000",
                 "cd": "10000"
             },
             {
                 "bulan": "December",
-                "penerimaan": "10000",
-                "jumlah": "10000",
+                "penerimaan": "6479609000",
+                "jumlah": "4316",
                 "rata": "10000",
                 "cd": "10000"
             },
