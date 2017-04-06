@@ -258,9 +258,9 @@ angular.module('app').controller(controllerId, [
         ];
         
         $scope.getMonths = function () {
-              $scope.months = ['01-01-2016', '02-01-2016', '03-01-2016', '04-01-2016',
+              $scope.months = ['03-01-2017', '02-01-2076', '01-01-2017', '01-01-2016', '02-01-2016', '03-01-2016', '04-01-2016',
                 '05-01-2016', '06-01-2016', '07-01-2016', '08-01-2016',
-                '09-01-2016', '10-01-2016', '11-01-2016', '12-01-2016'
+                '09-01-2016', '10-01-2016', '11-01-2016', '12-01-2016',
             ]
         }
 
@@ -619,6 +619,77 @@ angular.module('app').controller(controllerId, [
                 $scope.dashboard.CK1A2P = 12;
                 $scope.dashboard.CK52P = 12;
             } 
+             if ($scope.singleSelect === '01/01/2017') {
+                
+                $scope.target = 0;
+                $scope.totalCapaian = 72727273;
+                $scope.targetBulan = 0;
+                $scope.realisasi = 72727273;
+
+                $scope.dashboard.PBK = 5;
+                $scope.dashboard.CK1 = 0;
+                $scope.dashboard.CK1A = 0;
+                $scope.dashboard.CK5 =0;
+
+                $scope.dashboard.PBK2 = 0;
+                $scope.dashboard.CK12 = 0;
+                $scope.dashboard.CK1A2 =0;
+                $scope.dashboard.CK52 = 0;
+
+            
+                $scope.dashboard.PBK2P = 0;
+                $scope.dashboard.CK12P = 0;
+                $scope.dashboard.CK1A2P = 0;
+                $scope.dashboard.CK52P = 0;
+            }
+
+            if ($scope.singleSelect === '02/01/2017') {
+                
+                 $scope.target = 0;
+                $scope.totalCapaian = 172727273;
+                $scope.targetBulan = 0;
+                $scope.realisasi = 100000000;
+//jumlah
+                $scope.dashboard.PBK = 7;
+                $scope.dashboard.CK1 = 0;
+                $scope.dashboard.CK1A = 0;
+                $scope.dashboard.CK5 = 0;
+//rupiah
+                $scope.dashboard.PBK2 = 100000000;
+                $scope.dashboard.CK12 = 0;
+                $scope.dashboard.CK1A2 = 0;
+                $scope.dashboard.CK52 = 0;
+
+        //persen    
+                $scope.dashboard.PBK2P = 0;
+                $scope.dashboard.CK12P = 0;
+                $scope.dashboard.CK1A2P = 0;
+                $scope.dashboard.CK52P = 0;
+            }
+
+            if ($scope.singleSelect === '03/01/2017') {
+                
+                $scope.target = 0;
+                $scope.totalCapaian = 268181819;
+                $scope.targetBulan = 0;
+                $scope.realisasi = 95454546;
+
+                $scope.dashboard.PBK = 3;
+                $scope.dashboard.CK1 = 0;
+                $scope.dashboard.CK1A = 0;
+                $scope.dashboard.CK5 = 0;
+
+                $scope.dashboard.PBK2 = 95454546;
+                $scope.dashboard.CK12 = 0;
+                $scope.dashboard.CK1A2 = 0;
+                $scope.dashboard.CK52 = 0;
+
+            
+                $scope.dashboard.PBK2P = 0;
+                $scope.dashboard.CK12P = 0;
+                $scope.dashboard.CK1A2P = 0;
+                $scope.dashboard.CK52P = 0;
+            }
         }
        
         $scope.getMonths();
