@@ -1257,86 +1257,86 @@ angular.module('app').controller(controllerId, [
         };
         $scope.gridOpts8.data = [{
                 "bulan": "January",
-                "penerimaan": "10000",
+                "penerimaan": "2072068000",
                 "jumlah": "84",
-                "rata": "10000",
+                "rata": "24667476.1",
                 "cd": "10000"
             },
             {
                 "bulan": "February",
-                "penerimaan": "10000",
+                "penerimaan": "470096000",
                 "jumlah": "77",
-                "rata": "10000",
+                "rata": "6105142.8",
                 "cd": "10000"
             },
             {
                 "bulan": "March",
-                "penerimaan": "10000",
+                "penerimaan": "329443000",
                 "jumlah": "63",
-                "rata": "10000",
+                "rata": "3786701.1",
                 "cd": "10000"
             },
             {
                 "bulan": "April",
-                "penerimaan": "10000",
+                "penerimaan": "4723568000",
                 "jumlah": "87",
-                "rata": "10000",
+                "rata": "54293885",
                 "cd": "10000"
             },
             {
                 "bulan": "May",
-                "penerimaan": "10000",
+                "penerimaan": "629166000",
                 "jumlah": "77",
-                "rata": "10000",
+                "rata": "8170987",
                 "cd": "10000"
             },
             {
                 "bulan": "June",
-                "penerimaan": "10000",
+                "penerimaan": "3438990000",
                 "jumlah": "62",
-                "rata": "10000",
+                "rata": "55467580.6",
                 "cd": "10000"
             },
             {
                 "bulan": "July",
-                "penerimaan": "10000",
+                "penerimaan": "239139000",
                 "jumlah": "39",
-                "rata": "10000",
+                "rata": "6131769.2",
                 "cd": "10000"
             },
             {
                 "bulan": "August",
-                "penerimaan": "10000",
+                "penerimaan": "3104806000",
                 "jumlah": "46",
-                "rata": "10000",
+                "rata": "67495782.6",
                 "cd": "10000"
             },
             {
                 "bulan": "September",
-                "penerimaan": "10000",
+                "penerimaan": "3083159000",
                 "jumlah": "41",
-                "rata": "10000",
+                "rata": "1834121.9",
                 "cd": "10000"
             },
             {
                 "bulan": "October",
-                "penerimaan": "10000",
+                "penerimaan": "163887000",
                 "jumlah": "58",
-                "rata": "10000",
+                "rata": "2825637.9",
                 "cd": "10000"
             },
             {
                 "bulan": "November",
-                "penerimaan": "10000",
+                "penerimaan": "1581647000",
                 "jumlah": "60",
-                "rata": "10000",
+                "rata": "26360783.3",
                 "cd": "10000"
             },
             {
                 "bulan": "December",
-                "penerimaan": "10000",
+                "penerimaan": "660112000",
                 "jumlah": "75",
-                "rata": "10000",
+                "rata": "8801493.3",
                 "cd": "10000"
             },
 
@@ -1392,8 +1392,8 @@ angular.module('app').controller(controllerId, [
         ];
         
          $scope.dataskkbm = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
+            [2072068000, 470096000, 329443000, 4723568000, 629166000, 3438990000, 239139000,3104806000,3083159000,163887000,1581647000,660112000],
+            [84, 77, 63, 87, 77, 62, 39,46,41,58,60,75]
         ];
         
 
