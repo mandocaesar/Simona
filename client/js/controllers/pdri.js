@@ -192,11 +192,11 @@ angular.module('app').controller(controllerId, [
         $scope.gridOpts5.data = [
         //pph 22
             { "bulan": "January", "penerimaan": "12440842000"  },
-            { "bulan": "February", "penerimaan": "144362334000"  },
+            { "bulan": "February", "penerimaan": "14436233400"  },
             { "bulan": "March", "penerimaan": "17220639000"  },
-            { "bulan": "April", "penerimaan": "115743081000"  },
+            { "bulan": "April", "penerimaan": "11574308100"  },
             { "bulan": "May", "penerimaan": "16899406000"  },
-            { "bulan": "June", "penerimaan": "10022215561000"  },
+            { "bulan": "June", "penerimaan": "22215561000"  },
             { "bulan": "July", "penerimaan": "13384756000"  },
             { "bulan": "August", "penerimaan": "18251574000"  },
             { "bulan": "September", "penerimaan": "15267894000"  },
@@ -275,29 +275,30 @@ angular.module('app').controller(controllerId, [
         ];
 
         $scope.datappnbm = [
-          [65, 59, 80, 81, 56, 55, 40],
-          [28, 48, 40, 19, 86, 27, 90]
+            
+          [40000, 0, 0, 752000, 2795000, 2701000, 0,0,0,0,0,0,0,0,0,0],
+         
         ];
 
         $scope.datappnimpor = [
-          [65, 59, 80, 81, 56, 55, 40],
-          [28, 48, 40, 19, 86, 27, 90]
+          [44976136000, 52602234000, 64403619000, 54674447000,63443115000,84474023000,50630668000,50630668000,57960474000,56539163000,61976801520,70384038000]
+         
         ];
 
         $scope.datapph22 = [
-          [65, 59, 80, 81, 56, 55, 40],
-          [28, 48, 40, 19, 86, 27, 90]
+          [12440842000, 14436233400,17220639000, 11574308100, 16899406000,22215561000, 13384756000,18251574000,15267894000,15054330000,17055442780,19530793000]
+         
         ];
 
         $scope.datappncukaiht = [
-          [65, 59, 80, 81, 56, 55, 40],
-          [28, 48, 40, 19, 86, 27, 90]
+          [0,0,0,0,0,0,0,0,0,0,0,0]
+         
         ];
 
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
         };
-        $scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
+        $scope.datasetOverride = [{ yAxisID: 'y-axis-1' }];
         $scope.options = {
             scales: {
                 yAxes: [
@@ -306,12 +307,6 @@ angular.module('app').controller(controllerId, [
                       type: 'linear',
                       display: true,
                       position: 'left'
-                  },
-                  {
-                      id: 'y-axis-2',
-                      type: 'linear',
-                      display: true,
-                      position: 'right'
                   }
                 ]
             }
@@ -337,264 +332,139 @@ angular.module('app').controller(controllerId, [
         $scope.update = function(){
 
                if ($scope.singleSelect === '01/01/2016') {
-                    $scope.target = 339942425295;
+                    
                     $scope.totalCapaian = 27508668000;
-                    $scope.targetBulan = 27508668000;
+                   
                     $scope.realisasi = 27508668000;
 
-                    $scope.dashboard.PPNBM = 0;
-                    $scope.dashboard.PPNIMPOR = 0;
-                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNBM = 40000;
+                    $scope.dashboard.PPNIMPOR = 44976136000;
+                    $scope.dashboard.PPH22 = 12440842000;
                     $scope.dashboard.PPNCUKAIHT = 0;
 
-                    $scope.dashboard.PPNBM2 = 0;
-                    $scope.dashboard.PPNIMPOR2 = 0;
-                    $scope.dashboard.PPH222 = 0;
-                    $scope.dashboard.PPNCUKAIHT2 = 0;
-
-                    $scope.dashboard.PPNBM2P = 0;
-                    $scope.dashboard.PPNIMPOR2P = 0;
-                    $scope.dashboard.PPH222P = 0;
-                    $scope.dashboard.PPNCUKAIHT2P = 0;
                }
 
                if ($scope.singleSelect === '02/01/2016') {
-                    $scope.target = 2000000;
-                    $scope.totalCapaian = 200000;
-                    $scope.targetBulan = 200000;
-                    $scope.realisasi = 200000;
+                    $scope.totalCapaian = 51289226400;
+                   
+                    $scope.realisasi = 23780558400;
 
-                    $scope.dashboard.PPNBM = 2;
-                    $scope.dashboard.PPNIMPOR = 2;
-                    $scope.dashboard.PPH22 = 2;
-                    $scope.dashboard.PPNCUKAIHT = 2;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 52602234000;
+                    $scope.dashboard.PPH22 = 14436233400;
+                    $scope.dashboard.PPNCUKAIHT = 0;
 
-                    $scope.dashboard.PPNBM2 = 2;
-                    $scope.dashboard.PPNIMPOR2 = 2;
-                    $scope.dashboard.PPH222 = 2;
-                    $scope.dashboard.PPNCUKAIHT2 = 2;
-
-                    $scope.dashboard.PPNBM2P = 2;
-                    $scope.dashboard.PPNIMPOR2P = 2;
-                    $scope.dashboard.PPH222P = 2;
-                    $scope.dashboard.PPNCUKAIHT2P = 2;
                }
 
                if ($scope.singleSelect === '03/01/2016') {
-                    $scope.target = 3000000;
-                    $scope.totalCapaian = 300000;
-                    $scope.targetBulan = 300000;
-                    $scope.realisasi = 300000;
+                    $scope.totalCapaian = 82440530760;
+                   
+                    $scope.realisasi = 31151304360;
 
-                    $scope.dashboard.PPNBM = 3;
-                    $scope.dashboard.PPNIMPOR = 3;
-                    $scope.dashboard.PPH22 = 3;
-                    $scope.dashboard.PPNCUKAIHT = 3;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 64403619000;
+                    $scope.dashboard.PPH22 = 17220639000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
 
-                    $scope.dashboard.PPNBM2 = 3;
-                    $scope.dashboard.PPNIMPOR2 = 3;
-                    $scope.dashboard.PPH222 = 3;
-                    $scope.dashboard.PPNCUKAIHT2 = 3;
-
-                    $scope.dashboard.PPNBM2P = 3;
-                    $scope.dashboard.PPNIMPOR2P = 3;
-                    $scope.dashboard.PPH222P = 3;
-                    $scope.dashboard.PPNCUKAIHT2P = 3;
                }
 
                if ($scope.singleSelect === '04/01/2016') {
-                    $scope.target = 4000000;
-                    $scope.totalCapaian = 400000;
-                    $scope.targetBulan = 400000;
-                    $scope.realisasi = 400000;
+                    $scope.totalCapaian = 116321105351;
+                   
+                    $scope.realisasi = 33880574591;
 
-                    $scope.dashboard.PPNBM = 4;
-                    $scope.dashboard.PPNIMPOR = 4;
-                    $scope.dashboard.PPH22 = 4;
-                    $scope.dashboard.PPNCUKAIHT = 4;
+                    $scope.dashboard.PPNBM = 752000;
+                    $scope.dashboard.PPNIMPOR = 54674447000;
+                    $scope.dashboard.PPH22 = 11574308100;
+                    $scope.dashboard.PPNCUKAIHT = 0;
 
-                    $scope.dashboard.PPNBM2 = 4;
-                    $scope.dashboard.PPNIMPOR2 = 4;
-                    $scope.dashboard.PPH222 = 4;
-                    $scope.dashboard.PPNCUKAIHT2 = 4;
-
-                    $scope.dashboard.PPNBM2P = 4;
-                    $scope.dashboard.PPNIMPOR2P = 4;
-                    $scope.dashboard.PPH222P = 4;
-                    $scope.dashboard.PPNCUKAIHT2P = 4;
                }
 
                if ($scope.singleSelect === '05/01/2016') {
-                    $scope.target = 5000000;
-                    $scope.totalCapaian = 500000;
-                    $scope.targetBulan = 500000;
-                    $scope.realisasi = 500000;
+                     $scope.totalCapaian = 146406487351;
+                   
+                    $scope.realisasi = 30085382000;
 
-                    $scope.dashboard.PPNBM = 5;
-                    $scope.dashboard.PPNIMPOR = 5;
-                    $scope.dashboard.PPH22 = 5;
-                    $scope.dashboard.PPNCUKAIHT = 5;
-
-                    $scope.dashboard.PPNBM2 = 5;
-                    $scope.dashboard.PPNIMPOR2 = 5;
-                    $scope.dashboard.PPH222 = 5;
-                    $scope.dashboard.PPNCUKAIHT2 = 5;
-
-                    $scope.dashboard.PPNBM2P = 5;
-                    $scope.dashboard.PPNIMPOR2P = 5;
-                    $scope.dashboard.PPH222P = 5;
-                    $scope.dashboard.PPNCUKAIHT2P = 5;
+                    $scope.dashboard.PPNBM = 2795000;
+                    $scope.dashboard.PPNIMPOR = 63443115000;
+                    $scope.dashboard.PPH22 = 16899406000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
 
                if ($scope.singleSelect === '06/01/2016') {
-                    $scope.target = 6000000;
-                    $scope.totalCapaian = 600000;
-                    $scope.targetBulan = 600000;
-                    $scope.realisasi = 600000;
+                    $scope.totalCapaian = 146406487351;
+                   
+                    $scope.realisasi = 30085382000;
 
-                    $scope.dashboard.PPNBM = 6;
-                    $scope.dashboard.PPNIMPOR = 6;
-                    $scope.dashboard.PPH22 = 6;
-                    $scope.dashboard.PPNCUKAIHT = 6;
-
-                    $scope.dashboard.PPNBM2 = 6;
-                    $scope.dashboard.PPNIMPOR2 = 6;
-                    $scope.dashboard.PPH222 = 6;
-                    $scope.dashboard.PPNCUKAIHT2 = 6;
-
-                    $scope.dashboard.PPNBM2P = 6;
-                    $scope.dashboard.PPNIMPOR2P = 6;
-                    $scope.dashboard.PPH222P = 6;
-                    $scope.dashboard.PPNCUKAIHT2P = 6;
+                    $scope.dashboard.PPNBM = 2795000;
+                    $scope.dashboard.PPNIMPOR = 63443115000;
+                    $scope.dashboard.PPH22 = 16899406000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
 
                if ($scope.singleSelect === '07/01/2016') {
-                    $scope.target = 7000000;
-                    $scope.totalCapaian = 700000;
-                    $scope.targetBulan = 70000;
-                    $scope.realisasi = 700000;
+                    $scope.totalCapaian = 207590853351;
+                   
+                    $scope.realisasi = 35123205480;
 
-                    $scope.dashboard.PPNBM = 7;
-                    $scope.dashboard.PPNIMPOR = 7;
-                    $scope.dashboard.PPH22 = 7;
-                    $scope.dashboard.PPNCUKAIHT = 7;
-
-                    $scope.dashboard.PPNBM2 = 7;
-                    $scope.dashboard.PPNIMPOR2 = 7;
-                    $scope.dashboard.PPH222 = 7;
-                    $scope.dashboard.PPNCUKAIHT2 = 7;
-
-                    $scope.dashboard.PPNBM2P = 7;
-                    $scope.dashboard.PPNIMPOR2P = 7;
-                    $scope.dashboard.PPH222P = 7;
-                    $scope.dashboard.PPNCUKAIHT2P = 7;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 84474023000;
+                    $scope.dashboard.PPH22 = 22215561000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
 
                if ($scope.singleSelect === '08/01/2016') {
-                    $scope.target = 8000000;
-                    $scope.totalCapaian = 800000;
-                    $scope.targetBulan = 800000;
-                    $scope.realisasi = 800000;
+                     $scope.totalCapaian = 207590853351;
+                   
+                    $scope.realisasi = 22467579000;
 
-                    $scope.dashboard.PPNBM = 8;
-                    $scope.dashboard.PPNIMPOR = 8;
-                    $scope.dashboard.PPH22 = 8;
-                    $scope.dashboard.PPNCUKAIHT = 8;
-
-                    $scope.dashboard.PPNBM2 = 8;
-                    $scope.dashboard.PPNIMPOR2 = 8;
-                    $scope.dashboard.PPH222 = 8;
-                    $scope.dashboard.PPNCUKAIHT2 = 8;
-
-                    $scope.dashboard.PPNBM2P = 8;
-                    $scope.dashboard.PPNIMPOR2P = 8;
-                    $scope.dashboard.PPH222P = 8;
-                    $scope.dashboard.PPNCUKAIHT2P = 8;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 50630668000;
+                    $scope.dashboard.PPH22 = 13384756000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
                if ($scope.singleSelect === '09/01/2016') {
-                    $scope.target = 9000000;
-                    $scope.totalCapaian = 900000;
-                    $scope.targetBulan = 900000;
-                    $scope.realisasi = 900000;
+                     $scope.totalCapaian = 273561430831;
+                   
+                    $scope.realisasi = 30847372000;
 
-                    $scope.dashboard.PPNBM = 9;
-                    $scope.dashboard.PPNIMPOR = 9;
-                    $scope.dashboard.PPH22 = 9;
-                    $scope.dashboard.PPNCUKAIHT = 9;
-
-                    $scope.dashboard.PPNBM2 = 9;
-                    $scope.dashboard.PPNIMPOR2 = 9;
-                    $scope.dashboard.PPH222 = 9;
-                    $scope.dashboard.PPNCUKAIHT2 = 9;
-
-                    $scope.dashboard.PPNBM2P = 9;
-                    $scope.dashboard.PPNIMPOR2P = 9;
-                    $scope.dashboard.PPH222P = 9;
-                    $scope.dashboard.PPNCUKAIHT2P = 9;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 57960474000;
+                    $scope.dashboard.PPH22 = 18251574000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
                if ($scope.singleSelect === '10/01/2016') {
-                    $scope.target = 10000000;
-                    $scope.totalCapaian = 1000000;
-                    $scope.targetBulan = 1000000;
-                    $scope.realisasi = 1000000;
+                  $scope.totalCapaian = 300931240659;
+                   
+                    $scope.realisasi = 27369809828;
 
-                    $scope.dashboard.PPNBM = 10;
-                    $scope.dashboard.PPNIMPOR = 10;
-                    $scope.dashboard.PPH22 = 10;
-                    $scope.dashboard.PPNCUKAIHT = 10;
-
-                    $scope.dashboard.PPNBM2 = 10;
-                    $scope.dashboard.PPNIMPOR2 = 10;
-                    $scope.dashboard.PPH222 = 10;
-                    $scope.dashboard.PPNCUKAIHT2 = 10;
-
-                    $scope.dashboard.PPNBM2P = 10;
-                    $scope.dashboard.PPNIMPOR2P = 10;
-                    $scope.dashboard.PPH222P = 10;
-                    $scope.dashboard.PPNCUKAIHT2P = 10;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 56539163000;
+                    $scope.dashboard.PPH22 = 15267894000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
                if ($scope.singleSelect === '11/01/2016') {
-                    $scope.target = 11000000;
-                    $scope.totalCapaian = 1100000;
-                    $scope.targetBulan = 1100000;
-                    $scope.realisasi = 1100000;
+                   $scope.totalCapaian = 332066460459;
+                   
+                    $scope.realisasi = 31135219800;
 
-                    $scope.dashboard.PPNBM = 11;
-                    $scope.dashboard.PPNIMPOR = 11;
-                    $scope.dashboard.PPH22 = 11;
-                    $scope.dashboard.PPNCUKAIHT = 11;
-
-                    $scope.dashboard.PPNBM2 = 11;
-                    $scope.dashboard.PPNIMPOR2 = 11;
-                    $scope.dashboard.PPH222 = 11;
-                    $scope.dashboard.PPNCUKAIHT2 = 11;
-
-                    $scope.dashboard.PPNBM2P = 11;
-                    $scope.dashboard.PPNIMPOR2P = 11;
-                    $scope.dashboard.PPH222P = 11;
-                    $scope.dashboard.PPNCUKAIHT2P = 11;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 61976801520;
+                    $scope.dashboard.PPH22 = 15054330000;
+                    $scope.dashboard.PPNCUKAIHT = 0;
                }
 
                if ($scope.singleSelect === '12/01/2016') {
-                    $scope.target = 339942425295;
-                    $scope.totalCapaian = 27508668000;
-                    $scope.targetBulan = 27508668000;
-                    $scope.realisasi = 27508668000;
+                    $scope.totalCapaian = 357487308959;
+                   
+                    $scope.realisasi = 25420848500;
 
-                    $scope.dashboard.PPNBM = 12;
-                    $scope.dashboard.PPNIMPOR = 12;
-                    $scope.dashboard.PPH22 = 12;
-                    $scope.dashboard.PPNCUKAIHT = 12;
-
-                    $scope.dashboard.PPNBM2 = 12;
-                    $scope.dashboard.PPNIMPOR2 = 12;
-                    $scope.dashboard.PPH222 = 12;
-                    $scope.dashboard.PPNCUKAIHT2 = 12;
-
-                    $scope.dashboard.PPNBM2P = 12;
-                    $scope.dashboard.PPNIMPOR2P = 12;
-                    $scope.dashboard.PPH222P = 12;
-                    $scope.dashboard.PPNCUKAIHT2P = 12;
+                    $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 70384038000;
+                    $scope.dashboard.PPH22 = 17055442780;
+                    $scope.dashboard.PPNCUKAIHT = 0;
+                    $scope.persenTahun = 0;
+                    $scope.persenBulan = 0;
                }
                if ($scope.singleSelect === '01/01/2017') {
                     $scope.target = 393202279000;
@@ -603,19 +473,11 @@ angular.module('app').controller(controllerId, [
                     $scope.realisasi = 21665640000;
 
                     $scope.dashboard.PPNBM = 0;
-                    $scope.dashboard.PPNIMPOR = 0;
-                    $scope.dashboard.PPH22 = 0;
+                    $scope.dashboard.PPNIMPOR = 49800465000;
+                    $scope.dashboard.PPH22 = 13890748000;
                     $scope.dashboard.PPNCUKAIHT = 0;
-
-                    $scope.dashboard.PPNBM2 = 0;
-                    $scope.dashboard.PPNIMPOR2 = 0;
-                    $scope.dashboard.PPH222 = 0;
-                    $scope.dashboard.PPNCUKAIHT2 = 0;
-
-                    $scope.dashboard.PPNBM2P = 0;
-                    $scope.dashboard.PPNIMPOR2P = 0;
-                    $scope.dashboard.PPH222P = 0;
-                    $scope.dashboard.PPNCUKAIHT2P = 0;
+                    $scope.persenTahun = 0;
+                    $scope.persenBulan = 0;
                }
                  if ($scope.singleSelect === '02/01/2017') {
                     $scope.target = 393202279000;
@@ -623,40 +485,25 @@ angular.module('app').controller(controllerId, [
                     $scope.targetBulan = 22748922000;
                     $scope.realisasi = 23251561000;
 
-                    $scope.dashboard.PPNBM = 0;
-                    $scope.dashboard.PPNIMPOR = 0;
-                    $scope.dashboard.PPH22 = 0;
+                     $scope.dashboard.PPNBM = 3970000;
+                    $scope.dashboard.PPNIMPOR = 49099621000;
+                    $scope.dashboard.PPH22 = 13302743812;
                     $scope.dashboard.PPNCUKAIHT = 0;
+                    $scope.persenTahun = 0;
+                    $scope.persenBulan = 0;
 
-                    $scope.dashboard.PPNBM2 = 0;
-                    $scope.dashboard.PPNIMPOR2 = 0;
-                    $scope.dashboard.PPH222 = 0;
-                    $scope.dashboard.PPNCUKAIHT2 = 0;
-
-                    $scope.dashboard.PPNBM2P = 0;
-                    $scope.dashboard.PPNIMPOR2P = 0;
-                    $scope.dashboard.PPH222P = 0;
-                    $scope.dashboard.PPNCUKAIHT2P = 0;
                }  if ($scope.singleSelect === '03/01/2017') {
                     $scope.target = 393202279000;
                     $scope.totalCapaian = 72629218000;
                     $scope.targetBulan = 34770443000;
                     $scope.realisasi = 28052487000;
 
-                    $scope.dashboard.PPNBM = 0;
-                    $scope.dashboard.PPNIMPOR = 0;
-                    $scope.dashboard.PPH22 = 0;
+                     $scope.dashboard.PPNBM = 0;
+                    $scope.dashboard.PPNIMPOR = 49800465000;
+                    $scope.dashboard.PPH22 = 13890748000;
                     $scope.dashboard.PPNCUKAIHT = 0;
-
-                    $scope.dashboard.PPNBM2 = 0;
-                    $scope.dashboard.PPNIMPOR2 = 0;
-                    $scope.dashboard.PPH222 = 0;
-                    $scope.dashboard.PPNCUKAIHT2 = 0;
-
-                    $scope.dashboard.PPNBM2P = 0;
-                    $scope.dashboard.PPNIMPOR2P = 0;
-                    $scope.dashboard.PPH222P = 0;
-                    $scope.dashboard.PPNCUKAIHT2P = 0;
+                    $scope.persenTahun = 0;
+                    $scope.persenBulan = 0;
                }
 
         }

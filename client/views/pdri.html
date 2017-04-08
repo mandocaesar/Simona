@@ -9,34 +9,33 @@
             </div>
         </div>
         <div class="col-lg-10 col-md-10" style="background-color:#0b87d5;">
-            <div class="row" style="color:yellow">
-                DETAIL PENERIMAAN PABEAN<br />
+            <div class="row" style="color:yellow;font-size:15px"  >
+                DETAIL PENERIMAAN PDRI<br />
                 {{singleSelect | moment: 'format': 'MMMM YYYY'}}
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="row">TARGET TAHUN 2016</div>
+                <div class="col-md-4" style="font-size: 15px">
+                    <div class="row"></div>
                     <div class="row">TOTAL CAPAIAN S/D {{singleSelect | moment: 'format': 'MMMM YYYY'}}</div>
-                    <div class="row">TARGET BULAN {{singleSelect | moment: 'format': 'MMMM'}}</div>
+                    <div class="row"></div>
                     <div class="row">REALISASI PENERIMAAN PDRI</div>
                 </div>
                 <div class="col-md-4">
-                    <div class="row"></div>
-                    <div class="row"></div>
+                    
                     <div class="row"></div>
                     <div class="row"></div>
                 </div>
                 <div class="col-md-4">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">{{target | currency : "Rp"}}</div>
+                        <div class="col-md-6" style="font-size: 15px">
+                           
                             <div class="row">{{totalCapaian | currency : "Rp"}}</div>
-                            <div class="row">{{targetBulan | currency : "Rp"}}</div>
+                           
                             <div class="row">{{realisasi | currency : "Rp"}}</div>
                         </div>
                         <div class="col-md-6">
-                            <div class="row">{{(totalCapaian/target) * 100 | number:0}} %</div>
-                            <div class="row">{{(realisasi/targetBulan) * 100 | number:0}} %</div>
+                            <div class="row"></div>
+                            <div class="row"></div>
                         </div>
                     </div>
                 </div>
@@ -47,34 +46,34 @@
                         <div id="div3" style="width:1200px;">
                             <div class="row" style="align-content:flex-end; text-align:left;padding-top:10px; margin-left:5px;">{{singleSelect | moment: 'format': 'MMMM YYYY'}} </div>
                             <div class="row" style="padding:20px;">
-                                <div class="col-lg-1 col-md-1">{{dashboard.PPNBM}}</div>
+                       <!--         <div class="col-lg-1 col-md-1">{{dashboard.PPNBM}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.PPNIMPOR}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.PPH22}}</div>
                                 <div class="col-lg-1 col-md-1">{{dashboard.PPNCUKAIHT}}</div>
-
+-->
                             </div>
-                            <div class="row" style="padding:20px;padding-top:-10px;font-size:small">
-                                <div class="col-lg-1 col-md-1">PPNBM</div>
-                                <div class="col-lg-1 col-md-1">PPNIMPOR</div>
-                                <div class="col-lg-1 col-md-1">PPH 22</div>
-                                <div class="col-lg-1 col-md-1">PPN CUKAI HT</div>
+                            <div class="row" style="padding:20px;padding-top:-10px;font-size:15px">
+                                <div class="col-lg-2 col-md-1">PPNBM</div>
+                                <div class="col-lg-2 col-md-1">PPNIMPOR</div>
+                                <div class="col-lg-2 col-md-1">PPH 22</div>
+                                <div class="col-lg-2 col-md-1">PPN CUKAI HT</div>
                             </div>
-                            <div class="row" style="font-size:12px;padding:20px;font-size:small">
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PPNBM2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PPNBM2P}} %</div>
+                            <div class="row" style="font-size:12px;padding:20px;font-size:15px">
+                                <div class="col-lg-2 col-md-1">
+                                    <div class="row">{{dashboard.PPNBM | currency : "Rp"}}</div>
+                                
                                 </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PPNIMPOR2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PPNIMPOR2P}} %</div>
+                                <div class="col-lg-2 col-md-1">
+                                    <div class="row">{{dashboard.PPNIMPOR| currency : "Rp"}}</div>
+                                    
                                 </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PPH222 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PPH222P }} %</div>
+                                <div class="col-lg-2 col-md-1">
+                                    <div class="row">{{dashboard.PPH22 | currency : "Rp"}}</div>
+                                  
                                 </div>
-                                <div class="col-lg-1 col-md-1">
-                                    <div class="row">{{dashboard.PPNCUKAIHT2 | currency : "Rp"}}</div>
-                                    <div class="row">{{dashboard.PPKPPPNCUKAIHT2P}} %</div>
+                                <div class="col-lg-2 col-md-1">
+                                    <div class="row">{{dashboard.PPNCUKAIHT | currency : "Rp"}}</div>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -86,13 +85,14 @@
     </div>
     <div class="row" style="background-color:#83d3fd; color:black; padding:10px;height:500px;">
        <div> DETAIL PENERIMAAN BERDASARKAN DOKUMEN </div>
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-10 col-lg-10">
             <div id="grid1" ui-grid="gridOpts2" class="grid" ui-grid-selection ui-grid-exporter style="margin-top:40px"></div>
         </div>
-        <div class="col-md-6 col-lg-6">
+      <!--  <div class="col-md-6 col-lg-6">
             <canvas id="line" class="chart chart-line" chart-data="data"
                     chart-labels="labels" chart-series="series" chart-options="options"
-                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>
+                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas></div>-->
+    <DIV></DIV>
     </div>
     <div class="row" style="background-color:#5bbaf6;color:black; padding:10px;height:500px;">
         <div style="color:white"> DETAIL PPN BM </div>
