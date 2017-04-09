@@ -178,8 +178,7 @@ angular.module('app').controller(controllerId, [
                 $scope.gridApi = gridApi;
             },
             data: []
-        };
-<<<<<<< HEAD
+        }; 
         $scope.gridOpts1.data = [{
                 "bulan": "January",
                 "penerimaan": "19590605000",
@@ -287,8 +286,7 @@ angular.module('app').controller(controllerId, [
             },
 
         ];
-=======
->>>>>>> 90317872d4d1261af7dc5c171521a70e750df561
+
 
         //datapibberkala
         $scope.gridOpts3 = {
@@ -745,7 +743,7 @@ angular.module('app').controller(controllerId, [
         $scope.labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November", "December"];
         $scope.series = ['Penerimaan A', 'Jumlah Dokumen B'];
         $scope.set2016 = function () {
-<<<<<<< HEAD
+
           //  $scope.data = [
           //      [65, 59, 80, 81, 56, 55, 40],
          //       [28, 48, 40, 19, 86, 27, 90]
@@ -775,7 +773,6 @@ angular.module('app').controller(controllerId, [
                 [20575000, 62082000, 25516000, 11210000, 8176000, 16080000, 9722000,14467000,27090000,45658428,71247000,106307000],
                 [33, 45, 55, 46, 35, 36, 39,24,61,88,168,133]
             ];
-=======
             //DATA PABEAN
             $scope.gridOpts2.data = [{
                     "bulan": "January",
@@ -1074,7 +1071,7 @@ angular.module('app').controller(controllerId, [
                     "rata": "39296039.5",
                     "cd": "10000"
                 },
->>>>>>> 90317872d4d1261af7dc5c171521a70e750df561
+
 
             ];
 
@@ -1524,38 +1521,38 @@ angular.module('app').controller(controllerId, [
             ];
 
             $scope.datapib = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+                [19590605000,15459502000,23518094000,20441015000,19708331000,25804483000,16252585000,23182457000,20494912000,18218541000,19960605000,14358859000],
+                [1158,1050,1457,1435,1424,1565,948,1540,1220,1408,1505,1371]
             ];
 
             $scope.datapibberkala = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+               [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
             $scope.datapibk = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+              [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
             $scope.datappkp = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+              [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
             $scope.datacd = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+              [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
             $scope.datape = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+              [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
             $scope.dataskkbm = [
-                [65, 59, 80, 81, 56, 55, 40],
-                [28, 48, 40, 19, 86, 27, 90]
+              [,,,,,,,,,,,,],
+                [,,,,,,,,,,,,]
             ];
 
         };
