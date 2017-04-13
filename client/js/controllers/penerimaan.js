@@ -1561,124 +1561,124 @@ angular.module('app').controller(controllerId, [
             //DATA PABEAN
             $scope.gridOpts2.data = [{
                     "bulan": "January",
-                    "pib": "19590605000",
-                    "pibk": "5223443000",
-                    "pibb": "15364000",
-                    "ppkp": "199316000",
-                    "cd": "20575000",
-                    "pe": "5150000",
-                    "spkpbm": "2072068000"
+                    "pib": "14431605000",
+                    "pibk": "6280388000",
+                    "pibb": "28838000",
+                    "ppkp": "297716000",
+                    "cd": "69940000",
+                    "pe": "4706000",
+                    "spkpbm": "401853000"
 
                 },
                 {
                     "bulan": "February",
-                    "pib": "15459502000",
-                    "pibk": "5859651000",
-                    "pibb": "1266563000",
-                    "ppkp": "206314000",
-                    "cd": "62082000",
-                    "pe": "0",
-                    "spkpbm": "470096000"
+                    "pib": "14544825000",
+                    "pibk": "5094212000",
+                    "pibb": "706343000",
+                    "ppkp": "303891000",
+                    "cd": "52460000",
+                    "pe": "1315000",
+                    "spkpbm": "2364660000"
                 },
                 {
                     "bulan": "March",
-                    "pib": "23518094000",
-                    "pibk": "5303044000",
-                    "pibb": "1540564000",
-                    "ppkp": "233909000",
-                    "cd": "25516000",
+                    "pib": "21720468000",
+                    "pibk": "6347630000",
+                    "pibb": "580731000",
+                    "ppkp": "203204000",
+                    "cd": "58085000",
                     "pe": "0",
-                    "spkpbm": "329443000"
+                    "spkpbm": "7181408000"
                 },
                 {
                     "bulan": "April",
-                    "pib": "20441015000",
-                    "pibk": "5901329000",
-                    "pibb": "2345143000",
-                    "ppkp": "253731000",
-                    "cd": "11210000",
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
                     "pe": "0",
-                    "spkpbm": "4723568000"
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "May",
-                    "pib": "19708331000",
-                    "pibk": "5898720000",
-                    "pibb": "2381105000",
-                    "ppkp": "186561000",
-                    "cd": "8176000",
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
                     "pe": "0",
-                    "spkpbm": "629166000"
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "June",
-                    "pib": "25804483000",
-                    "pibk": "6507628000",
-                    "pibb": "1923334000",
-                    "ppkp": "338557000",
-                    "cd": "16080000",
-                    "pe": "1010000",
-                    "spkpbm": "3438990000"
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
+                    "pe": "0",
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "July",
-                    "pib": "16252585000",
-                    "pibk": "3863411000",
-                    "pibb": "1842045000",
-                    "ppkp": "201828000",
-                    "cd": "9722000",
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
                     "pe": "0",
-                    "spkpbm": "239139000"
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "August",
-                    "pib": "23182457000",
-                    "pibk": "6566752000",
-                    "pibb": "1775491000",
-                    "ppkp": "187147000",
-                    "cd": "14467000",
-                    "pe": "4217000",
-                    "spkpbm": "3104806000"
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
+                    "pe": "0",
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "September",
-                    "pib": "20494912000",
-                    "pibk": "4550802000",
-                    "pibb": "2254282000",
-                    "ppkp": "181102000",
-                    "cd": "27090000",
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
                     "pe": "0",
-                    "spkpbm": "3083159000"
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "October",
-                    "pib": "18218541000",
-                    "pibk": "6234659000",
-                    "pibb": "1722868000",
-                    "ppkp": "272682000",
-                    "cd": "45658428",
-                    "pe": "4345000",
-                    "spkpbm": "163887000"
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
+                    "pe": "0",
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "November",
-                    "pib": "19960605000",
-                    "pibk": "7225365200",
-                    "pibb": "1915538000",
-                    "ppkp": "280291000",
-                    "cd": "71247000",
-                    "pe": "14360000",
-                    "spkpbm": "1581647000"
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
+                    "pe": "0",
+                    "spkpbm": "0"
                 },
                 {
                     "bulan": "December",
-                    "pib": "14358859000",
-                    "pibk": "6479609000",
-                    "pibb": "3208673000",
-                    "ppkp": "401635000",
-                    "cd": "80197000",
-                    "pe": "1609000",
-                    "spkpbm": "660112000"
+                    "pib": "0",
+                    "pibk": "0",
+                    "pibb": "0",
+                    "ppkp": "0",
+                    "cd": "0",
+                    "pe": "0",
+                    "spkpbm": "0"
                 },
 
             ];
@@ -1686,484 +1686,44 @@ angular.module('app').controller(controllerId, [
             //DATA PIB
             $scope.gridOpts1.data = [{
                     "bulan": "January",
-                    "penerimaan": "19590605000",
-                    "jumlah": "1158",
-                    "rata": "16917620.8",
+                    "penerimaan": "14431605000",
+                    "jumlah": "1059",
+                    "rata": "13627577.9",
                     "cd": "10000"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "15459502000",
-                    "jumlah": "1050",
-                    "rata": "14723335.2",
+                    "penerimaan": "14544825000",
+                    "jumlah": "1001",
+                    "rata": "14530294.7",
                     "cd": "10000"
                 },
                 {
                     "bulan": "March",
-                    "penerimaan": "23518094000",
-                    "jumlah": "1457",
-                    "rata": "16141450.9",
+                    "penerimaan": "21720468000",
+                    "jumlah": "1552",
+                    "rata": "13995146.9",
                     "cd": "10000"
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "20441015000",
-                    "jumlah": "1435",
-                    "rata": "14244609.7",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "May",
-                    "penerimaan": "19708331000",
-                    "jumlah": "1424",
-                    "rata": "13840120.0",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "June",
-                    "penerimaan": "25804483000",
-                    "jumlah": "1565",
-                    "rata": "16488487.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "July",
-                    "penerimaan": "16252585000",
-                    "jumlah": "948",
-                    "rata": "17144077",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "August",
-                    "penerimaan": "23182457000",
-                    "jumlah": "1540",
-                    "rata": "15053543.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "September",
-                    "penerimaan": "20494912000",
-                    "jumlah": "1220",
-                    "rata": "16799108.1",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "October",
-                    "penerimaan": "18218541000",
-                    "jumlah": "1408",
-                    "rata": "12939304.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "November",
-                    "penerimaan": "19960605000",
-                    "jumlah": "1505",
-                    "rata": "13262860.4",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "December",
-                    "penerimaan": "14358859000",
-                    "jumlah": "1371",
-                    "rata": "10473274.2",
-                    "cd": "10000"
-                },
-
-            ];
-
-            //DATA PIB BERKALA
-            $scope.gridOpts3.data = [{
-                    "bulan": "January",
-                    "penerimaan": "15364000",
-                    "jumlah": "3",
-                    "rata": "5121333",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "February",
-                    "penerimaan": "1266563000",
-                    "jumlah": "167",
-                    "rata": "7584209.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "March",
-                    "penerimaan": "1540564000",
-                    "jumlah": "242",
-                    "rata": "6365966.9",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "April",
-                    "penerimaan": "2345143000",
-                    "jumlah": "297",
-                    "rata": "7896104.3",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "May",
-                    "penerimaan": "2381105000",
-                    "jumlah": "355",
-                    "rata": "6707338",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "June",
-                    "penerimaan": "1923334000",
-                    "jumlah": "359",
-                    "rata": "5357476.3",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "July",
-                    "penerimaan": "1842045000",
-                    "jumlah": "337",
-                    "rata": "5466008.9",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "August",
-                    "penerimaan": "1775491000",
-                    "jumlah": "220",
-                    "rata": "8070413.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "September",
-                    "penerimaan": "2254282000",
-                    "jumlah": "358",
-                    "rata": "6296877",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "October",
-                    "penerimaan": "1722868000",
-                    "jumlah": "293",
-                    "rata": "5880095.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "November",
-                    "penerimaan": "1915538000",
-                    "jumlah": "404",
-                    "rata": "4741430.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "December",
-                    "penerimaan": "3208673000",
-                    "jumlah": "531",
-                    "rata": "39296039.5",
-                    "cd": "10000"
-                },
-
-            ];
-
-            //DATA PIBK
-            $scope.gridOpts4.data = [{
-                    "bulan": "January",
-                    "penerimaan": "5223443000",
-                    "jumlah": "3334",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "February",
-                    "penerimaan": "5859651000",
-                    "jumlah": "3288",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "March",
-                    "penerimaan": "5303044000",
-                    "jumlah": "3248",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "April",
-                    "penerimaan": "9482776000",
-                    "jumlah": "3877",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "May",
-                    "penerimaan": "5898720000",
-                    "jumlah": "4037",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "June",
-                    "penerimaan": "6507628000",
-                    "jumlah": "4338",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "July",
-                    "penerimaan": "3863411000",
-                    "jumlah": "2562",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "August",
-                    "penerimaan": "6566752000",
-                    "jumlah": "4104",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "September",
-                    "penerimaan": "4550802000",
-                    "jumlah": "3014",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "October",
-                    "penerimaan": "6234659000",
-                    "jumlah": "4080",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "November",
-                    "penerimaan": "7225365200",
-                    "jumlah": "4265",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "December",
-                    "penerimaan": "6479609000",
-                    "jumlah": "4316",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-
-            ];
-
-            //DATA PPKP
-            $scope.gridOpts5.data = [{
-                    "bulan": "January",
-                    "penerimaan": "199316000",
-                    "jumlah": "909",
-                    "rata": "219269.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "February",
-                    "penerimaan": "206314000",
-                    "jumlah": "1038",
-                    "rata": "198761",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "March",
-                    "penerimaan": "233909000",
-                    "jumlah": "1169",
-                    "rata": "200093.2",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "April",
-                    "penerimaan": "253731000",
-                    "jumlah": "1039",
-                    "rata": "244206.9",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "May",
-                    "penerimaan": "186561000",
-                    "jumlah": "828",
-                    "rata": "225315.2",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "June",
-                    "penerimaan": "338557000",
-                    "jumlah": "1851",
-                    "rata": "182904.9",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "July",
-                    "penerimaan": "201828000",
-                    "jumlah": "908",
-                    "rata": "222277.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "August",
-                    "penerimaan": "187147000",
-                    "jumlah": "954",
-                    "rata": "196170.8",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "September",
-                    "penerimaan": "181102000",
-                    "jumlah": "956",
-                    "rata": "189437.2",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "October",
-                    "penerimaan": "272682000",
-                    "jumlah": "1291",
-                    "rata": "211217.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "November",
-                    "penerimaan": "280291000",
-                    "jumlah": "1769",
-                    "rata": "158446",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "December",
-                    "penerimaan": "658622000",
-                    "jumlah": "1991",
-                    "rata": "330799.5",
-                    "cd": "10000"
-                },
-
-            ];
-
-            //DATA CD
-            $scope.gridOpts6.data = [{
-                    "bulan": "January",
-                    "penerimaan": "20575000",
-                    "jumlah": "33",
-                    "rata": "623484.8",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "February",
-                    "penerimaan": "62082000",
-                    "jumlah": "45",
-                    "rata": "1379600",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "March",
-                    "penerimaan": "25516000",
-                    "jumlah": "55",
-                    "rata": "463927.2",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "April",
-                    "penerimaan": "11210000",
-                    "jumlah": "46",
-                    "rata": "243695.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "May",
-                    "penerimaan": "8176000",
-                    "jumlah": "35",
-                    "rata": "233600",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "June",
-                    "penerimaan": "16080000",
-                    "jumlah": "36",
-                    "rata": "446666.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "July",
-                    "penerimaan": "9722000",
-                    "jumlah": "39",
-                    "rata": "7501.5",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "August",
-                    "penerimaan": "14467000",
-                    "jumlah": "24",
-                    "rata": "602791.6",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "September",
-                    "penerimaan": "27090000",
-                    "jumlah": "61",
-                    "rata": "444098.3",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "October",
-                    "penerimaan": "45658428",
-                    "jumlah": "88",
-                    "rata": "518845.7",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "November",
-                    "penerimaan": "71247000",
-                    "jumlah": "168",
-                    "rata": "424089.2",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "December",
-                    "penerimaan": "106307000",
-                    "jumlah": "133",
-                    "rata": "799300.7",
-                    "cd": "10000"
-                },
-
-            ];
-
-            //DATA PE
-            $scope.gridOpts7.data = [{
-                    "bulan": "January",
-                    "penerimaan": "5150000",
-                    "jumlah": "1",
-                    "rata": "5150000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "February",
-                    "penerimaan": "10000",
+                    "penerimaan": "0",
                     "jumlah": "0",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "March",
-                    "penerimaan": "10000",
-                    "jumlah": "0",
-                    "rata": "10000",
-                    "cd": "10000"
-                },
-                {
-                    "bulan": "April",
-                    "penerimaan": "10000",
-                    "jumlah": "0",
-                    "rata": "10000",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "May",
-                    "penerimaan": "10000",
+                    "penerimaan": "0",
                     "jumlah": "0",
-                    "rata": "10000",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "1010000",
-                    "jumlah": "1",
-                    "rata": "1010000",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
@@ -2175,9 +1735,449 @@ angular.module('app').controller(controllerId, [
                 },
                 {
                     "bulan": "August",
-                    "penerimaan": "4217000",
-                    "jumlah": "1",
-                    "rata": "4217000",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "September",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "October",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "November",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "December",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+
+            ];
+
+            //DATA PIB BERKALA
+            $scope.gridOpts3.data = [{
+                    "bulan": "January",
+                    "penerimaan": "28838000",
+                    "jumlah": "3",
+                    "rata": "9612666.6",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "February",
+                    "penerimaan": "706343000",
+                    "jumlah": "126",
+                    "rata": "5605896.8",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "March",
+                    "penerimaan": "580731000",
+                    "jumlah": "76",
+                    "rata": "7641197.3",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "April",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "May",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "June",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "July",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "August",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "September",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "October",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "November",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "December",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+
+            ];
+
+            //DATA PIBK
+            $scope.gridOpts4.data = [{
+                    "bulan": "January",
+                    "penerimaan": "6280388000",
+                    "jumlah": "4025",
+                    "rata": "1560344.8",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "February",
+                    "penerimaan": "5094212000",
+                    "jumlah": "3126",
+                    "rata": "1629626.3",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "March",
+                    "penerimaan": "6347630000",
+                    "jumlah": "4153",
+                    "rata": "1528444.4",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "April",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "May",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "June",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "July",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "August",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "September",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "October",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "November",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "10000",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "December",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+
+            ];
+
+            //DATA PPKP
+            $scope.gridOpts5.data = [{
+                    "bulan": "January",
+                    "penerimaan": "297716000",
+                    "jumlah": "909",
+                    "rata": "327520.3",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "February",
+                    "penerimaan": "303891000",
+                    "jumlah": "1038",
+                    "rata": "292765.8",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "March",
+                    "penerimaan": "203204000",
+                    "jumlah": "1169",
+                    "rata": "173827.2",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "April",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "May",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "June",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "July",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "August",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "September",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "October",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "November",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "December",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+
+            ];
+
+            //DATA CD
+            $scope.gridOpts6.data = [{
+                    "bulan": "January",
+                    "penerimaan": "69940000",
+                    "jumlah": "33",
+                    "rata": "2119393.9",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "February",
+                    "penerimaan": "52460000",
+                    "jumlah": "45",
+                    "rata": "1165777.7",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "March",
+                    "penerimaan": "58085000",
+                    "jumlah": "55",
+                    "rata": "1056090.9",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "April",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "May",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "June",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "July",
+                    "penerimaan": "97220000",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "August",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "September",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "October",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "November",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "December",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+
+            ];
+
+            //DATA PE
+            $scope.gridOpts7.data = [{
+                    "bulan": "January",
+                    "penerimaan": "4706000",
+                    "jumlah": "3",
+                    "rata": "1568666.6",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "February",
+                    "penerimaan": "1315000",
+                    "jumlah": "2",
+                    "rata": "657500",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "March",
+                    "penerimaan": "198000",
+                    "jumlah": "2",
+                    "rata": "99000",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "April",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "May",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "June",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "July",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
+                    "cd": "10000"
+                },
+                {
+                    "bulan": "August",
+                    "penerimaan": "0",
+                    "jumlah": "",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
@@ -2189,23 +2189,23 @@ angular.module('app').controller(controllerId, [
                 },
                 {
                     "bulan": "October",
-                    "penerimaan": "4345000",
-                    "jumlah": "2",
-                    "rata": "2172500",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "November",
-                    "penerimaan": "14360000",
-                    "jumlah": "6",
-                    "rata": "2393333.3",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "December",
-                    "penerimaan": "1609000",
-                    "jumlah": "1",
-                    "rata": "1609000",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
 
@@ -2214,129 +2214,129 @@ angular.module('app').controller(controllerId, [
             //DATA SKKBM
             $scope.gridOpts8.data = [{
                     "bulan": "January",
-                    "penerimaan": "2072068000",
-                    "jumlah": "84",
+                    "penerimaan": "401853000",
+                    "jumlah": "47",
                     "rata": "24667476.1",
                     "cd": "10000"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "470096000",
-                    "jumlah": "77",
+                    "penerimaan": "2364660000",
+                    "jumlah": "49",
                     "rata": "6105142.8",
                     "cd": "10000"
                 },
                 {
                     "bulan": "March",
-                    "penerimaan": "329443000",
-                    "jumlah": "63",
+                    "penerimaan": "7181408000",
+                    "jumlah": "116",
                     "rata": "3786701.1",
                     "cd": "10000"
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "4723568000",
-                    "jumlah": "87",
-                    "rata": "54293885",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "May",
-                    "penerimaan": "629166000",
-                    "jumlah": "77",
-                    "rata": "8170987",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "3438990000",
-                    "jumlah": "62",
-                    "rata": "55467580.6",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "July",
-                    "penerimaan": "239139000",
-                    "jumlah": "39",
-                    "rata": "6131769.2",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "August",
-                    "penerimaan": "3104806000",
-                    "jumlah": "46",
-                    "rata": "67495782.6",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "September",
-                    "penerimaan": "3083159000",
-                    "jumlah": "41",
-                    "rata": "1834121.9",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "October",
-                    "penerimaan": "163887000",
-                    "jumlah": "58",
-                    "rata": "2825637.9",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "November",
-                    "penerimaan": "1581647000",
-                    "jumlah": "60",
-                    "rata": "26360783.3",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
                 {
                     "bulan": "December",
-                    "penerimaan": "660112000",
-                    "jumlah": "75",
-                    "rata": "8801493.3",
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0",
                     "cd": "10000"
                 },
 
             ];
 
             $scope.data = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+                [14431605000, 14544825000, 21720468000],
+                [1059, 1001, 1552]
             ];
 
             $scope.datapib = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+               [14431605000, 14544825000, 21720468000],
+                [1059, 1001, 1552]
             ];
 
             $scope.datapibberkala = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+                [28838000, 706343000, 580731000],
+                [3, 126, 76]
             ];
 
             $scope.datapibk = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+                [6280388000, 5094212000, 6347630000],
+                [4025, 3126, 4153]
             ];
 
             $scope.datappkp = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+                [297716000, 303891000, 203204000],
+                [909, 1038, 1169 ]
             ];
 
             $scope.datacd = [
-                [165, 159, 180, 181, 156, 155, 140],
-                [128, 148, 140, 119, 186, 127, 190]
+                [69940000, 52460000, 58085000],
+                [3, 45, 55]
             ];
 
             $scope.datape = [
-                [165, 159, 180, 811, 156, 155, 140],
-                [128, 148, 140, 119, 186, 217, 190]
+                [4706000, 1315000, 198000],
+                [3, 2, 2]
             ];
 
             $scope.dataskkbm = [
-                [65, 159, 180, 81, 56, 55, 40],
-                [28, 148, 140, 19, 86, 27, 90]
+                [401853000, 2364660000, 7181408000],
+                [47, 49, 116]
             ];
 
         };
@@ -2763,7 +2763,7 @@ angular.module('app').controller(controllerId, [
             if ($scope.singleSelect === '02/01/2017') {
                 $scope.set2017();
 
-                $scope.target = 339942425295;
+                $scope.target = 393202279000;
                 $scope.totalCapaian = 44923222000;
                 $scope.targetBulan = 32766856583;
                 $scope.realisasi = 23252876000;
@@ -2792,29 +2792,28 @@ angular.module('app').controller(controllerId, [
             if ($scope.singleSelect === '03/01/2017') {
                 $scope.set2017();
 
-                $scope.target = 339942425295;
+                $scope.target = 3932022279000;
                 $scope.totalCapaian = 80827041000;
                 $scope.targetBulan = 32766856583;
                 $scope.realisasi = 35903819000;
                 $scope.persenTahun = 0;
                 $scope.persenBulan = 0;
 
-                $scope.dashboard.PIB = 1455;
-                $scope.dashboard.PIBB = 67;
-                $scope.dashboard.PIBK = 3814;
-                $scope.dashboard.PPKP = 902;
-                $scope.dashboard.CD = 177;
-                $scope.dashboard.PE = 1;
-                $scope.dashboard.SPKPBM = 112;
+                $scope.dashboard.PIB = 1552;
+                $scope.dashboard.PIBB = 76;
+                $scope.dashboard.PIBK = 4153;
+                $scope.dashboard.PPKP = 959;
+                $scope.dashboard.CD = 198;
+                $scope.dashboard.PE = 2;
+                $scope.dashboard.SPKPBM = 116;
 
 
-                $scope.dashboard.PIB2 = 21720468000;
-                $scope.dashboard.PIBB2 = 580731000;
-                $scope.dashboard.PIBK2 = 6347630000;
-                $scope.dashboard.PPKP2 = 203204000;
-                $scope.dashboard.CD2 = 58085000;
-                $scope.dashboard.PE2 = 198000;
-                $scope.dashboard.SPKPBM2 = 7181408000;
+                $scope.target2 = 393202279000;
+                $scope.totalCapaian2 = 44923222000;
+                $scope.targetBulan2 = 32766856583;
+                $scope.realisasi2 = 23252876000;
+                $scope.persenTahun2 = 0;
+                $scope.persenBulan2 = 0;
 
             }
         }
