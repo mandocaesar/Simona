@@ -813,28 +813,28 @@ angular.module('app').controller(controllerId, [
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "0"
+                    "pbk": "72727273"
                 },
                 {
                     "bulan": "February",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "86499091"
+                    "pbk": "100000000"
                 },
                 {
                     "bulan": "March",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "48354545"
+                    "pbk": "95454546"
                 },
                 {
                     "bulan": "April",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "218481820"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "May",
@@ -848,49 +848,49 @@ angular.module('app').controller(controllerId, [
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "36545455"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "July",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "127272728"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "August",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "63636364"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "September",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "104545455"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "October",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "100000002"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "November",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "40909091"
+                    "pbk": "0"
                 },
                 {
                     "bulan": "December",
                     "ck1": "0",
                     "ck1a": "0",
                     "ck5": "0",
-                    "pbk": "73462274"
+                    "pbk": "0"
                 },
 
             ];
@@ -1122,27 +1122,27 @@ angular.module('app').controller(controllerId, [
 
             $scope.gridOpts6.data = [{
                     "bulan": "January",
-                    "penerimaan": "0",
-                    "jumlah": "0",
-                    "rata": "0"
+                    "penerimaan": "72727273",
+                    "jumlah": "5",
+                    "rata": "14545454.6"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "86499091",
-                    "jumlah": "5",
-                    "rata": "17299818.2"
+                    "penerimaan": "100000000",
+                    "jumlah": "7",
+                    "rata": "14285714.2"
                 },
                 {
                     "bulan": "March",
-                    "penerimaan": "48354545",
-                    "jumlah": "4",
-                    "rata": "12088636.25"
+                    "penerimaan": "95454546",
+                    "jumlah": "3",
+                    "rata": "31818182"
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "218481820",
-                    "jumlah": "16",
-                    "rata": "13655113.75"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "May",
@@ -1152,45 +1152,45 @@ angular.module('app').controller(controllerId, [
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "36545455",
-                    "jumlah": "4",
-                    "rata": "9136363.75"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "July",
-                    "penerimaan": "127272728",
-                    "jumlah": "4",
-                    "rata": "31818182"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "August",
-                    "penerimaan": "63636364",
-                    "jumlah": "4",
-                    "rata": "15909091"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "September",
-                    "penerimaan": "104545455",
-                    "jumlah": "6",
-                    "rata": "17424242.5"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "October",
-                    "penerimaan": "100000002",
-                    "jumlah": "9",
-                    "rata": "11111111.3"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "November",
-                    "penerimaan": "40909091",
-                    "jumlah": "2",
-                    "rata": "20454545.5"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
                 {
                     "bulan": "December",
-                    "penerimaan": "73462274",
-                    "jumlah": "7",
-                    "rata": "10494610.5"
+                    "penerimaan": "0",
+                    "jumlah": "0",
+                    "rata": "0"
                 },
 
             ];
@@ -1208,8 +1208,8 @@ angular.module('app').controller(controllerId, [
                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ];
             $scope.datapbk = [
-                [0, 86499091, 48354545, 218481820, 0, 36545455, 127272728, 63636364, 104545455, 100000002, 40909091, 73462274],
-                [0, 5, 4, 16, 0, 4, 4, 4, 6, 9, 2, 7]
+                [72727273, 100000000, 95454546],
+                [5, 7, 3]
             ];
         };
 
