@@ -712,86 +712,86 @@ angular.module('app').controller(controllerId, [
         $scope.set2017 = function () {
             $scope.gridOpts2.data = [{
                     "bulan": "January",
-                    "ppnimpor": "44976136000",
-                    "ppnbm": "40000",
-                    "pph22": "12440842000",
-                    "ppncukaiht": "0"
+                    "ppnimpor": "49800465000",
+                    "ppnbm": "0",
+                    "pph22": "13890748000",
+                    "ppncukaiht": "54545455"
                 },
                 {
                     "bulan": "February",
-                    "ppnimpor": "52602234000",
+                    "ppnimpor": "49099621000",
                     "ppnbm": "0",
-                    "pph22": "144362334000",
-                    "ppncukaiht": "0"
+                    "pph22": "13302743812",
+                    "ppncukaiht": "63636364"
                 },
                 {
                     "bulan": "March",
-                    "ppnimpor": "64403619000",
+                    "ppnimpor": "62065006000",
                     "ppnbm": "0",
-                    "pph22": "17220639000",
+                    "pph22": "17518044000",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "April",
-                    "ppnimpor": "54674447000",
-                    "ppnbm": "752000",
-                    "pph22": "115743081000",
+                    "ppnimpor": "0",
+                    "ppnbm": "0",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "May",
-                    "ppnimpor": "63443115000",
-                    "ppnbm": "2795000",
-                    "pph22": "16899406000",
+                    "ppnimpor": "0",
+                    "ppnbm": "0",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "June",
-                    "ppnimpor": "84474023000",
-                    "ppnbm": "2701000",
-                    "pph22": "10022215561000",
+                    "ppnimpor": "0",
+                    "ppnbm": "0",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "July",
-                    "ppnimpor": "50630668000",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "13384756000",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "August",
-                    "ppnimpor": "74476856000",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "18251574000",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "September",
-                    "ppnimpor": "57960474000",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "15267894000",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "October",
-                    "ppnimpor": "56539163000",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "15054330000",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "November",
-                    "ppnimpor": "61976801520",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "17055442780",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
                 {
                     "bulan": "December",
-                    "ppnimpor": "70384038000",
+                    "ppnimpor": "0",
                     "ppnbm": "0",
-                    "pph22": "19530793000",
+                    "pph22": "0",
                     "ppncukaiht": "0"
                 },
 
@@ -799,7 +799,7 @@ angular.module('app').controller(controllerId, [
 
             $scope.gridOpts3.data = [{
                     "bulan": "January",
-                    "penerimaan": "40000"
+                    "penerimaan": " 0"
                 },
                 {
                     "bulan": "February",
@@ -811,15 +811,15 @@ angular.module('app').controller(controllerId, [
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "752000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "May",
-                    "penerimaan": "2795000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "2701000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "July",
@@ -850,51 +850,51 @@ angular.module('app').controller(controllerId, [
 
             $scope.gridOpts4.data = [{
                     "bulan": "January",
-                    "penerimaan": "44976136000"
+                    "penerimaan": "49800465000"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "52602234000"
+                    "penerimaan": "49099621000"
                 },
                 {
                     "bulan": "March",
-                    "penerimaan": "64403619000"
+                    "penerimaan": "62065006000"
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "54674447000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "May",
-                    "penerimaan": "63443115000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "84474023000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "July",
-                    "penerimaan": "50630668000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "August",
-                    "penerimaan": "50630668000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "September",
-                    "penerimaan": "57960474000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "October",
-                    "penerimaan": "56539163000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "November",
-                    "penerimaan": "61976801520"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "December",
-                    "penerimaan": "70384038000"
+                    "penerimaan": "0"
                 },
 
             ];
@@ -903,65 +903,65 @@ angular.module('app').controller(controllerId, [
                 //pph 22
                 {
                     "bulan": "January",
-                    "penerimaan": "12440842000"
+                    "penerimaan": "13890748000"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "14436233400"
+                    "penerimaan": "13302743812"
                 },
                 {
                     "bulan": "March",
-                    "penerimaan": "17220639000"
+                    "penerimaan": "17518044000"
                 },
                 {
                     "bulan": "April",
-                    "penerimaan": "11574308100"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "May",
-                    "penerimaan": "16899406000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "June",
-                    "penerimaan": "22215561000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "July",
-                    "penerimaan": "13384756000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "August",
-                    "penerimaan": "18251574000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "September",
-                    "penerimaan": "15267894000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "October",
-                    "penerimaan": "15054330000"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "November",
-                    "penerimaan": "17055442780"
+                    "penerimaan": "0"
                 },
                 {
                     "bulan": "December",
-                    "penerimaan": "19530793000"
+                    "penerimaan": "0"
                 },
 
             ];
 
             $scope.gridOpts6.data = [{
                     "bulan": "January",
-                    "penerimaan": "0",
+                    "penerimaan": "54545455",
                     "jumlah": "0",
                     "rata": "0",
                     "cd": "0"
                 },
                 {
                     "bulan": "February",
-                    "penerimaan": "0",
+                    "penerimaan": "63636364",
                     "jumlah": "0",
                     "rata": "0",
                     "cd": "0"
@@ -1051,17 +1051,17 @@ angular.module('app').controller(controllerId, [
             ];
 
             $scope.datappnimpor = [
-                [44976136000, 52602234000, 64403619000, 54674447000, 63443115000, 84474023000, 50630668000, 50630668000, 57960474000, 56539163000, 61976801520, 70384038000]
+                [49800465000, 49099621000, 62065006000]
 
             ];
 
             $scope.datapph22 = [
-                [12440842000, 14436233400, 17220639000, 11574308100, 16899406000, 22215561000, 13384756000, 18251574000, 15267894000, 15054330000, 17055442780, 19530793000]
+                [13890748000, 13302743812, 17518044000]
 
             ];
 
             $scope.datappncukaiht = [
-                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                [54545455, 63636364,0]
 
             ];
         };
